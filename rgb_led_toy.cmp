@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CVpcb (20090216-final) date = Tue 05 Jan 2010 07:42:15 PM CET
+Cmp-Mod V01 Created by CVpcb (20090216-final) date = Tue 05 Jan 2010 09:16:08 PM CET
 
 BeginCmp
 TimeStamp = /49EB6692;
@@ -10,7 +10,7 @@ EndCmp
 BeginCmp
 TimeStamp = /4AECDE50;
 Reference = C2;
-ValeurCmp = 1muF;
+ValeurCmp = 10muF;
 IdModule  = -C1206;
 EndCmp
 
@@ -19,6 +19,20 @@ TimeStamp = /4AEE0723;
 Reference = C3;
 ValeurCmp = 100nF;
 IdModule  = -C0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4B439132;
+Reference = C4;
+ValeurCmp = 10muF;
+IdModule  = -C3216;
+EndCmp
+
+BeginCmp
+TimeStamp = /4B43913E;
+Reference = C5;
+ValeurCmp = 10muF;
+IdModule  = -C3216;
 EndCmp
 
 BeginCmp
@@ -85,6 +99,13 @@ IdModule  = MADW__TQFP_32_7x7;
 EndCmp
 
 BeginCmp
+TimeStamp = /4B438EB8;
+Reference = IC2;
+ValeurCmp = TS2940;
+IdModule  = -SOT223;
+EndCmp
+
+BeginCmp
 TimeStamp = /49EB4A28;
 Reference = P1;
 ValeurCmp = I2C;
@@ -108,7 +129,21 @@ EndCmp
 BeginCmp
 TimeStamp = /49EB51D3;
 Reference = P4;
-ValeurCmp = ICSP;
+ValeurCmp = ISP;
+IdModule  = pin_array_3x2;
+EndCmp
+
+BeginCmp
+TimeStamp = /4B439420;
+Reference = P5;
+ValeurCmp = VSEL;
+IdModule  = SIL-3;
+EndCmp
+
+BeginCmp
+TimeStamp = /4B439579;
+Reference = P6;
+ValeurCmp = ISP_E;
 IdModule  = pin_array_3x2;
 EndCmp
 
@@ -138,27 +173,6 @@ TimeStamp = /49EB58E2;
 Reference = R4;
 ValeurCmp = 10k;
 IdModule  = -R0805;
-EndCmp
-
-BeginCmp
-TimeStamp = /49EB5EFC;
-Reference = SBR1;
-ValeurCmp = _;
-IdModule  = MADW__SMD-SOLDER-BRIDGE;
-EndCmp
-
-BeginCmp
-TimeStamp = /49EB5F27;
-Reference = SBR2;
-ValeurCmp = _;
-IdModule  = MADW__SMD-SOLDER-BRIDGE;
-EndCmp
-
-BeginCmp
-TimeStamp = /49EB5F2C;
-Reference = SBR3;
-ValeurCmp = _;
-IdModule  = MADW__SMD-SOLDER-BRIDGE;
 EndCmp
 
 EndListe

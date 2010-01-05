@@ -1,16 +1,24 @@
-# EESchema Netlist Version 1.1 created  Tue 05 Jan 2010 07:42:15 PM CET
+# EESchema Netlist Version 1.1 created  Tue 05 Jan 2010 09:16:08 PM CET
 (
  ( /49EB6692 -C0805 C1 100nF
   ( 1 /VCC )
-  ( 2 /GND )
+  ( 2 GND )
  )
- ( /4AECDE50 -C1206 C2 1muF
+ ( /4AECDE50 -C1206 C2 10muF
   ( 1 /VCC )
-  ( 2 /GND )
+  ( 2 GND )
  )
  ( /4AEE0723 -C0805 C3 100nF
   ( 1 /RESET )
   ( 2 /DTR )
+ )
+ ( /4B439132 -C3216 C4 10muF
+  ( 1 /V_reg )
+  ( 2 GND )
+ )
+ ( /4B43913E -C3216 C5 10muF
+  ( 1 /VCC )
+  ( 2 GND )
  )
  ( /49EB57EA MADW__impolux_rgb_smd D1 RGB_SMD
   ( 1 /PB0 )
@@ -79,15 +87,15 @@
  ( /49EB35FB MADW__TQFP_32_7x7 IC1 AT168
   ( 1 ? )
   ( 2 ? )
-  ( 3 /GND )
+  ( 3 GND )
   ( 4 /VCC )
-  ( 5 /GND )
+  ( 5 GND )
   ( 6 /VCC )
   ( 7 /PB6 )
   ( 8 /PB7 )
-  ( 9 N-000021 )
-  ( 10 N-000004 )
-  ( 11 N-000022 )
+  ( 9 N-000006 )
+  ( 10 N-000023 )
+  ( 11 N-000005 )
   ( 12 /PB0 )
   ( 13 /PB1 )
   ( 14 /PB2 )
@@ -97,7 +105,7 @@
   ( 18 /VCC )
   ( 19 ? )
   ( 20 ? )
-  ( 21 /GND )
+  ( 21 GND )
   ( 22 ? )
   ( 23 ? )
   ( 24 ? )
@@ -110,65 +118,71 @@
   ( 31 /TXD )
   ( 32 ? )
  )
+ ( /4B438EB8 -SOT223 IC2 TS2940
+  ( 1 /V_reg )
+  ( 2 GND )
+  ( 3 /VCC )
+ )
  ( /49EB4A28 SIL-6 P1 I2C
-  ( 1 /VCC )
-  ( 2 /GND )
+  ( 1 /V_in )
+  ( 2 GND )
   ( 3 /SCL )
   ( 4 /SDA )
   ( 5 /ADC3 )
   ( 6 /ADC2 )
  )
  ( /49EB4A3D SIL-6 P2 I2C
-  ( 1 /VCC )
-  ( 2 /GND )
+  ( 1 /V_in )
+  ( 2 GND )
   ( 3 /SCL )
   ( 4 /SDA )
   ( 5 /ADC3 )
   ( 6 /ADC2 )
  )
  ( /49EB4CC3 SIL-6 P3 FTDI
-  ( 1 /GND )
+  ( 1 GND )
   ( 2 ? )
   ( 3 /VCC )
   ( 4 /RXD )
   ( 5 /TXD )
   ( 6 /DTR )
  )
- ( /49EB51D3 pin_array_3x2 P4 ICSP
+ ( /49EB51D3 pin_array_3x2 P4 ISP
   ( 1 /PB4/MISO )
   ( 2 /VCC )
   ( 3 /PB5/SCK )
   ( 4 /PB3/MOSI )
   ( 5 /RESET )
-  ( 6 /GND )
+  ( 6 GND )
+ )
+ ( /4B439420 SIL-3 P5 VSEL
+  ( 1 /V_reg )
+  ( 2 /V_in )
+  ( 3 /VCC )
+ )
+ ( /4B439579 pin_array_3x2 P6 ISP_E
+  ( 1 /PB3/MOSI )
+  ( 2 /MOSI2/PB3 )
+  ( 3 /PB4/MISO )
+  ( 4 /MISO2/PB4 )
+  ( 5 /PB5/SCK )
+  ( 6 /SCK2/PB5 )
  )
  ( /49EB5619 -R0805 R1 R
-  ( 1 N-000022 )
+  ( 1 N-000005 )
   ( 2 /BLUE )
  )
  ( /49EB5627 -R0805 R2 R
-  ( 1 N-000004 )
+  ( 1 N-000023 )
   ( 2 /GREEN )
  )
  ( /49EB562A -R0805 R3 R
-  ( 1 N-000021 )
+  ( 1 N-000006 )
   ( 2 /RED )
  )
  ( /49EB58E2 -R0805 R4 10k
   ( 1 /RESET )
   ( 2 /VCC )
- )
- ( /49EB5EFC MADW__SMD-SOLDER-BRIDGE SBR1 _
-  ( 1 /MOSI2/PB3 )
-  ( 2 /PB3/MOSI )
- )
- ( /49EB5F27 MADW__SMD-SOLDER-BRIDGE SBR2 _
-  ( 1 /MISO2/PB4 )
-  ( 2 /PB4/MISO )
- )
- ( /49EB5F2C MADW__SMD-SOLDER-BRIDGE SBR3 _
-  ( 1 /SCK2/PB5 )
-  ( 2 /PB5/SCK )
  )
 )
 *
@@ -188,6 +202,14 @@ $component C3
  C?
  C1-1
 $endlist
+$component C4
+ CP*
+ SM*
+$endlist
+$component C5
+ CP*
+ SM*
+$endlist
 $component R1
  R?
  SM0603
@@ -204,21 +226,6 @@ $component R3
  SM0805
 $endlist
 $component R4
- R?
- SM0603
- SM0805
-$endlist
-$component SBR1
- R?
- SM0603
- SM0805
-$endlist
-$component SBR2
- R?
- SM0603
- SM0805
-$endlist
-$component SBR3
  R?
  SM0603
  SM0805
