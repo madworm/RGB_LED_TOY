@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Tue 05 Jan 2010 09:46:32 PM CET
+EESchema Schematic File Version 2  date Tue 05 Jan 2010 11:42:43 PM CET
 LIBS:power,/home/robert/Arduino/KiCAD/atmega8_168_328_TQFP,/home/robert/Arduino/KiCAD/my_parts,device,conn,linear,regul,74xx,cmos4000,adc-dac,memory,xilinx,special,microcontrollers,dsp,microchip,analog_switches,motorola,texas,intel,audio,interface,digital-audio,philips,display,cypress,siliconi,contrib,valves,./rgb_led_toy.cache
 EELAYER 24  0
 EELAYER END
