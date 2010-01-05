@@ -1,0 +1,4304 @@
+
+(PCB "rgb_led_toy"
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "Kicad's PCBNEW")
+    (host_version "(20090216-final)")
+    (generated_by_freeroute)
+  )
+  (resolution mil 10)
+  (structure
+    (boundary
+      (rect pcb 2158.0 -3939.0 4422.0 -1675.0)
+    )
+    (boundary
+      (polygon signal 0
+        3290.0 -3639.0
+        3434.5 -3626.4
+        3574.6 -3588.8
+        3706.0 -3527.5
+        3824.8 -3444.3
+        3927.3 -3341.8
+        4010.5 -3223.0
+        4071.8 -3091.6
+        4109.4 -2951.5
+        4122.0 -2807.0
+        4109.4 -2662.5
+        4071.8 -2522.4
+        4010.5 -2391.0
+        3927.3 -2272.2
+        3824.8 -2169.7
+        3706.0 -2086.5
+        3574.6 -2025.2
+        3434.5 -1987.6
+        3290.0 -1975.0
+        3145.5 -1987.6
+        3005.4 -2025.2
+        2874.0 -2086.5
+        2755.2 -2169.7
+        2652.7 -2272.2
+        2569.5 -2391.0
+        2508.2 -2522.4
+        2470.6 -2662.5
+        2458.0 -2807.0
+        2470.6 -2951.5
+        2508.2 -3091.6
+        2569.5 -3223.0
+        2652.7 -3341.8
+        2755.2 -3444.3
+        2874.0 -3527.5
+        3005.4 -3588.8
+        3145.5 -3626.4
+      )
+    )
+    (snap_angle 
+      fortyfive_degree
+    )
+    (via "Via[0-1]_45:25_mil")
+    (control
+      (via_at_smd off)
+    )
+    (rule
+      (width 12.0)
+      (clear 8.2)
+      (clear 6.0 (type smd_to_turn_gap))
+      (clear 10.2 (type default_smd))
+      (clear 2.0 (type smd_smd))
+    )
+    (layer Component
+      (type signal)
+    )
+    (layer Copper
+      (type signal)
+    )
+    (autoroute_settings
+      (fanout off)
+      (autoroute on)
+      (postroute on)
+      (vias on)
+      (via_costs 50)
+      (plane_via_costs 5)
+      (start_ripup_costs 100)
+      (start_pass_no 21)
+      (layer_rule Component
+        (active on)
+        (preferred_direction horizontal)
+        (preferred_direction_trace_costs 1.0)
+        (against_preferred_direction_trace_costs 2.0)
+      )
+      (layer_rule Copper
+        (active on)
+        (preferred_direction vertical)
+        (preferred_direction_trace_costs 1.0)
+        (against_preferred_direction_trace_costs 2.0)
+      )
+    )
+  )
+  (placement
+    (component "SIL-6"
+      (place 
+        P3 3280.0 -2440.0 back 180
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+        (pin 4 (clearance_class default))
+        (pin 5 (clearance_class default))
+        (pin 6 (clearance_class default))
+      )
+    )
+    (component "pin_array_3x2"
+      (place 
+        P4 3290.0 -3184.0 back 180
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+        (pin 4 (clearance_class default))
+        (pin 5 (clearance_class default))
+        (pin 6 (clearance_class default))
+      )
+    )
+    (component "MADW__TQFP_32_7x7"
+      (place 
+        IC1 3291.7 -2790.0 front 0
+        (pin 8 (clearance_class smd))
+        (pin 7 (clearance_class smd))
+        (pin 6 (clearance_class smd))
+        (pin 5 (clearance_class smd))
+        (pin 4 (clearance_class smd))
+        (pin 3 (clearance_class smd))
+        (pin 2 (clearance_class smd))
+        (pin 1 (clearance_class smd))
+        (pin 24 (clearance_class smd))
+        (pin 17 (clearance_class smd))
+        (pin 18 (clearance_class smd))
+        (pin 19 (clearance_class smd))
+        (pin 20 (clearance_class smd))
+        (pin 21 (clearance_class smd))
+        (pin 22 (clearance_class smd))
+        (pin 23 (clearance_class smd))
+        (pin 32 (clearance_class smd))
+        (pin 31 (clearance_class smd))
+        (pin 30 (clearance_class smd))
+        (pin 29 (clearance_class smd))
+        (pin 28 (clearance_class smd))
+        (pin 27 (clearance_class smd))
+        (pin 26 (clearance_class smd))
+        (pin 25 (clearance_class smd))
+        (pin 9 (clearance_class smd))
+        (pin 10 (clearance_class smd))
+        (pin 11 (clearance_class smd))
+        (pin 12 (clearance_class smd))
+        (pin 13 (clearance_class smd))
+        (pin 14 (clearance_class smd))
+        (pin 15 (clearance_class smd))
+        (pin 16 (clearance_class smd))
+      )
+    )
+    (component "SIL-6::1"
+      (place 
+        P2 3630.0 -2790.0 back 90
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+        (pin 4 (clearance_class default))
+        (pin 5 (clearance_class default))
+        (pin 6 (clearance_class default))
+      )
+      (place 
+        P1 2929.5 -2790.0 back 90
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+        (pin 4 (clearance_class default))
+        (pin 5 (clearance_class default))
+        (pin 6 (clearance_class default))
+      )
+    )
+    (component "-C0805"
+      (place 
+        C1 3904.0 -2548.0 back 0
+        (pin 1 (clearance_class smd))
+        (pin 2 (clearance_class smd))
+      )
+      (place 
+        C3 4003.0 -2805.0 back 180
+        (pin 1 (clearance_class smd))
+        (pin 2 (clearance_class smd))
+      )
+    )
+    (component "-R0805"
+      (place 
+        R1 3284.0 -2053.0 back 180
+        (pin 1 (clearance_class smd))
+        (pin 2 (clearance_class smd))
+      )
+      (place 
+        R2 3286.0 -2171.0 back 180
+        (pin 1 (clearance_class smd))
+        (pin 2 (clearance_class smd))
+      )
+      (place 
+        R3 3288.0 -2280.0 back 180
+        (pin 1 (clearance_class smd))
+        (pin 2 (clearance_class smd))
+      )
+      (place 
+        R4 2582.0 -2792.0 back 0
+        (pin 1 (clearance_class smd))
+        (pin 2 (clearance_class smd))
+      )
+    )
+    (component "-C1206"
+      (place 
+        C2 2690.0 -2548.0 back 180
+        (pin 1 (clearance_class smd))
+        (pin 2 (clearance_class smd))
+      )
+    )
+    (component "MADW__impolux_rgb_smd"
+      (place 
+        D8 2782.0 -3301.0 front 225
+        (pin 1 (clearance_class smd))
+        (pin 2 (clearance_class smd))
+        (pin 3 (clearance_class smd))
+        (pin 4 (clearance_class smd))
+        (pin 5 (clearance_class smd))
+        (pin 6 (clearance_class smd))
+      )
+      (place 
+        D7 2583.0 -2789.0 front 180
+        (pin 1 (clearance_class smd))
+        (pin 2 (clearance_class smd))
+        (pin 3 (clearance_class smd))
+        (pin 4 (clearance_class smd))
+        (pin 5 (clearance_class smd))
+        (pin 6 (clearance_class smd))
+      )
+      (place 
+        D6 2799.0 -2296.0 front 135
+        (pin 1 (clearance_class smd))
+        (pin 2 (clearance_class smd))
+        (pin 3 (clearance_class smd))
+        (pin 4 (clearance_class smd))
+        (pin 5 (clearance_class smd))
+        (pin 6 (clearance_class smd))
+      )
+      (place 
+        D5 3285.0 -2099.0 front 90
+        (pin 1 (clearance_class smd))
+        (pin 2 (clearance_class smd))
+        (pin 3 (clearance_class smd))
+        (pin 4 (clearance_class smd))
+        (pin 5 (clearance_class smd))
+        (pin 6 (clearance_class smd))
+      )
+      (place 
+        D4 3784.0 -2297.0 front 45
+        (pin 1 (clearance_class smd))
+        (pin 2 (clearance_class smd))
+        (pin 3 (clearance_class smd))
+        (pin 4 (clearance_class smd))
+        (pin 5 (clearance_class smd))
+        (pin 6 (clearance_class smd))
+      )
+      (place 
+        D3 4000.0 -2806.0 front 0
+        (pin 1 (clearance_class smd))
+        (pin 2 (clearance_class smd))
+        (pin 3 (clearance_class smd))
+        (pin 4 (clearance_class smd))
+        (pin 5 (clearance_class smd))
+        (pin 6 (clearance_class smd))
+      )
+      (place 
+        D2 3790.0 -3308.0 front 315
+        (pin 1 (clearance_class smd))
+        (pin 2 (clearance_class smd))
+        (pin 3 (clearance_class smd))
+        (pin 4 (clearance_class smd))
+        (pin 5 (clearance_class smd))
+        (pin 6 (clearance_class smd))
+      )
+      (place 
+        D1 3293.0 -3511.0 front 270
+        (pin 1 (clearance_class smd))
+        (pin 2 (clearance_class smd))
+        (pin 3 (clearance_class smd))
+        (pin 4 (clearance_class smd))
+        (pin 5 (clearance_class smd))
+        (pin 6 (clearance_class smd))
+      )
+    )
+    (component "MADW__SMD-solder-bridge"
+      (place 
+        SBR1 3290.0 -3360.0 back 0
+        (pin 1 (clearance_class smd))
+        (pin 2 (clearance_class smd))
+      )
+      (place 
+        SBR2 3290.0 -3460.0 back 180
+        (pin 1 (clearance_class smd))
+        (pin 2 (clearance_class smd))
+      )
+      (place 
+        SBR3 3290.0 -3560.0 back 180
+        (pin 1 (clearance_class smd))
+        (pin 2 (clearance_class smd))
+      )
+    )
+  )
+  (library
+    (image "SIL-6"
+      (side front)
+      (pin "Rect[A]Pad_55x55_mil" 1 -250.0 0.0)
+      (pin "Round[A]Pad_55_mil" 2 -150.0 0.0)
+      (pin "Round[A]Pad_55_mil" 3 -50.0 0.0)
+      (pin "Round[A]Pad_55_mil" 4 50.0 0.0)
+      (pin "Round[A]Pad_55_mil" 5 150.0 0.0)
+      (pin "Round[A]Pad_55_mil" 6 250.0 0.0)
+      (outline
+        (polygon signal 0
+          -363.1 -22.5
+          -356.9 -22.5
+          -352.5 -18.1
+          -352.5 18.1
+          -356.9 22.5
+          -363.1 22.5
+          -367.5 18.1
+          -367.5 -18.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          -348.1 -7.5
+          -321.9 -7.5
+          -317.5 -3.1
+          -317.5 3.1
+          -341.9 27.5
+          -368.1 27.5
+          -372.5 23.1
+          -372.5 16.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          -368.1 -27.5
+          -361.9 -27.5
+          -357.5 -23.1
+          -357.5 23.1
+          -361.9 27.5
+          -368.1 27.5
+          -372.5 23.1
+          -372.5 -23.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          -368.1 -27.5
+          -341.9 -27.5
+          -317.5 -3.1
+          -317.5 3.1
+          -321.9 7.5
+          -348.1 7.5
+          -372.5 -16.9
+          -372.5 -23.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          -368.1 -7.5
+          -321.9 -7.5
+          -317.5 -3.1
+          -317.5 3.1
+          -321.9 7.5
+          -368.1 7.5
+          -372.5 3.1
+          -372.5 -3.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          -302.5 -56.0
+          -297.5 -56.0
+          -294.0 -52.5
+          -294.0 52.5
+          -297.5 56.0
+          -302.5 56.0
+          -306.0 52.5
+          -306.0 -52.5
+        )
+      )
+      (outline
+        (polygon signal 0
+          -302.5 44.0
+          302.5 44.0
+          306.0 47.5
+          306.0 52.5
+          302.5 56.0
+          -302.5 56.0
+          -306.0 52.5
+          -306.0 47.5
+        )
+      )
+      (outline
+        (polygon signal 0
+          297.5 -56.0
+          302.5 -56.0
+          306.0 -52.5
+          306.0 52.5
+          302.5 56.0
+          297.5 56.0
+          294.0 52.5
+          294.0 -52.5
+        )
+      )
+      (outline
+        (polygon signal 0
+          -302.5 -56.0
+          302.5 -56.0
+          306.0 -52.5
+          306.0 -47.5
+          302.5 -44.0
+          -302.5 -44.0
+          -306.0 -47.5
+          -306.0 -52.5
+        )
+      )
+      (outline
+        (polygon signal 0
+          -202.5 -56.0
+          -197.5 -56.0
+          -194.0 -52.5
+          -194.0 52.5
+          -197.5 56.0
+          -202.5 56.0
+          -206.0 52.5
+          -206.0 -52.5
+        )
+      )
+    )
+    (image "pin_array_3x2"
+      (side front)
+      (pin "Rect[A]Pad_60x60_mil" 1 -100.0 -50.0)
+      (pin "Round[A]Pad_60_mil" 2 -100.0 50.0)
+      (pin "Round[A]Pad_60_mil" 3 0.0 -50.0)
+      (pin "Round[A]Pad_60_mil" 4 0.0 50.0)
+      (pin "Round[A]Pad_60_mil" 5 100.0 -50.0)
+      (pin "Round[A]Pad_60_mil" 6 100.0 50.0)
+      (outline
+        (polygon signal 0
+          -203.1 -57.5
+          -171.9 -57.5
+          -167.5 -53.1
+          -167.5 -46.9
+          -201.9 -12.5
+          -233.1 -12.5
+          -237.5 -16.9
+          -237.5 -23.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          -233.1 -87.5
+          -226.9 -87.5
+          -222.5 -83.1
+          -222.5 -16.9
+          -226.9 -12.5
+          -233.1 -12.5
+          -237.5 -16.9
+          -237.5 -83.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          -233.1 -87.5
+          -201.9 -87.5
+          -167.5 -53.1
+          -167.5 -46.9
+          -171.9 -42.5
+          -203.1 -42.5
+          -237.5 -76.9
+          -237.5 -83.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          -233.1 -57.5
+          -171.9 -57.5
+          -167.5 -53.1
+          -167.5 -46.9
+          -171.9 -42.5
+          -233.1 -42.5
+          -237.5 -46.9
+          -237.5 -53.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          -233.1 -57.5
+          -226.9 -57.5
+          -212.5 -43.1
+          -212.5 -31.9
+          -216.9 -27.5
+          -223.1 -27.5
+          -237.5 -41.9
+          -237.5 -53.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          -208.1 -57.5
+          -191.9 -57.5
+          -187.5 -53.1
+          -187.5 -46.9
+          -206.9 -27.5
+          -223.1 -27.5
+          -227.5 -31.9
+          -227.5 -38.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          -228.1 -72.5
+          -206.9 -72.5
+          -187.5 -53.1
+          -187.5 -46.9
+          -191.9 -42.5
+          -213.1 -42.5
+          -232.5 -61.9
+          -232.5 -68.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          -151.7 -104.0
+          151.7 -104.0
+          154.0 -101.7
+          154.0 -98.3
+          151.7 -96.0
+          -151.7 -96.0
+          -154.0 -98.3
+          -154.0 -101.7
+        )
+      )
+      (outline
+        (polygon signal 0
+          -151.7 96.0
+          151.7 96.0
+          154.0 98.3
+          154.0 101.7
+          151.7 104.0
+          -151.7 104.0
+          -154.0 101.7
+          -154.0 98.3
+        )
+      )
+      (outline
+        (polygon signal 0
+          148.3 -104.0
+          151.7 -104.0
+          154.0 -101.7
+          154.0 101.7
+          151.7 104.0
+          148.3 104.0
+          146.0 101.7
+          146.0 -101.7
+        )
+      )
+      (outline
+        (polygon signal 0
+          -151.7 -104.0
+          -148.3 -104.0
+          -146.0 -101.7
+          -146.0 101.7
+          -148.3 104.0
+          -151.7 104.0
+          -154.0 101.7
+          -154.0 -101.7
+        )
+      )
+    )
+    (image "MADW__TQFP_32_7x7"
+      (side front)
+      (pin "Rect[T]Pad_78.7x17.7_mil" 8 -189.6 -109.3)
+      (pin "Rect[T]Pad_78.7x17.7_mil" 7 -189.6 -77.8)
+      (pin "Rect[T]Pad_78.7x17.7_mil" 6 -189.6 -46.3)
+      (pin "Rect[T]Pad_78.7x17.7_mil" 5 -189.6 -14.8)
+      (pin "Rect[T]Pad_78.7x17.7_mil" 4 -189.6 16.7)
+      (pin "Rect[T]Pad_78.7x17.7_mil" 3 -189.6 48.2)
+      (pin "Rect[T]Pad_78.7x17.7_mil" 2 -189.6 79.7)
+      (pin "Rect[T]Pad_78.7x17.7_mil" 1 -189.6 111.2)
+      (pin "Rect[T]Pad_78.7x17.7_mil" 24 187.0 111.0)
+      (pin "Rect[T]Pad_78.7x17.7_mil" 17 187.0 -110.0)
+      (pin "Rect[T]Pad_78.7x17.7_mil" 18 187.0 -78.0)
+      (pin "Rect[T]Pad_78.7x17.7_mil" 19 187.0 -46.0)
+      (pin "Rect[T]Pad_78.7x17.7_mil" 20 187.0 -15.0)
+      (pin "Rect[T]Pad_78.7x17.7_mil" 21 187.0 17.0)
+      (pin "Rect[T]Pad_78.7x17.7_mil" 22 187.0 48.0)
+      (pin "Rect[T]Pad_78.7x17.7_mil" 23 187.0 80.0)
+      (pin "Rect[T]Pad_17.7x78.7_mil" 32 -111.2 190.0)
+      (pin "Rect[T]Pad_17.7x78.7_mil" 31 -79.8 190.0)
+      (pin "Rect[T]Pad_17.7x78.7_mil" 30 -48.2 190.0)
+      (pin "Rect[T]Pad_17.7x78.7_mil" 29 -16.8 190.0)
+      (pin "Rect[T]Pad_17.7x78.7_mil" 28 14.8 190.0)
+      (pin "Rect[T]Pad_17.7x78.7_mil" 27 46.2 190.0)
+      (pin "Rect[T]Pad_17.7x78.7_mil" 26 77.8 190.0)
+      (pin "Rect[T]Pad_17.7x78.7_mil" 25 109.2 190.0)
+      (pin "Rect[T]Pad_17.7x78.7_mil" 9 -111.0 -188.0)
+      (pin "Rect[T]Pad_17.7x78.7_mil" 10 -80.0 -188.0)
+      (pin "Rect[T]Pad_17.7x78.7_mil" 11 -48.0 -188.0)
+      (pin "Rect[T]Pad_17.7x78.7_mil" 12 -17.0 -188.0)
+      (pin "Rect[T]Pad_17.7x78.7_mil" 13 14.0 -188.0)
+      (pin "Rect[T]Pad_17.7x78.7_mil" 14 46.0 -188.0)
+      (pin "Rect[T]Pad_17.7x78.7_mil" 15 78.0 -188.0)
+      (pin "Rect[T]Pad_17.7x78.7_mil" 16 110.0 -188.0)
+      (outline
+        (polygon signal 0
+          -163.1 152.5
+          -156.9 152.5
+          -152.5 156.9
+          -152.5 173.1
+          -176.9 197.5
+          -183.1 197.5
+          -187.5 193.1
+          -187.5 176.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          -193.1 172.5
+          -186.9 172.5
+          -172.5 186.9
+          -172.5 193.1
+          -176.9 197.5
+          -183.1 197.5
+          -197.5 183.1
+          -197.5 176.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          -173.1 152.5
+          -156.9 152.5
+          -152.5 156.9
+          -152.5 163.1
+          -176.9 187.5
+          -193.1 187.5
+          -197.5 183.1
+          -197.5 176.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          149.9 -116.5
+          201.1 -116.5
+          205.5 -112.1
+          205.5 -105.9
+          201.1 -101.5
+          149.9 -101.5
+          145.5 -105.9
+          145.5 -112.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          150.9 101.5
+          201.1 101.5
+          205.5 105.9
+          205.5 112.1
+          201.1 116.5
+          150.9 116.5
+          146.5 112.1
+          146.5 105.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          194.9 -116.5
+          201.1 -116.5
+          205.5 -112.1
+          205.5 112.1
+          201.1 116.5
+          194.9 116.5
+          190.5 112.1
+          190.5 -112.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          106.9 -206.5
+          113.1 -206.5
+          117.5 -202.1
+          117.5 -152.9
+          113.1 -148.5
+          106.9 -148.5
+          102.5 -152.9
+          102.5 -202.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          -114.1 -206.5
+          -107.9 -206.5
+          -103.5 -202.1
+          -103.5 -153.9
+          -107.9 -149.5
+          -114.1 -149.5
+          -118.5 -153.9
+          -118.5 -202.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          -114.1 -207.5
+          113.1 -207.5
+          117.5 -203.1
+          117.5 -196.9
+          112.1 -191.5
+          -115.1 -191.5
+          -119.5 -195.9
+          -119.5 -202.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          -113.1 190.5
+          109.1 190.5
+          114.5 195.9
+          114.5 202.1
+          110.1 206.5
+          -112.1 206.5
+          -117.5 201.1
+          -117.5 194.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          -156.1 -161.5
+          -149.9 -161.5
+          -145.5 -157.1
+          -145.5 132.1
+          -149.9 136.5
+          -156.1 136.5
+          -160.5 132.1
+          -160.5 -157.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          104.9 149.5
+          111.1 149.5
+          115.5 153.9
+          115.5 201.1
+          111.1 205.5
+          104.9 205.5
+          100.5 201.1
+          100.5 153.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          -131.1 145.5
+          153.1 145.5
+          157.5 149.9
+          157.5 156.1
+          153.1 160.5
+          -131.1 160.5
+          -135.5 156.1
+          -135.5 149.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          148.9 -162.5
+          155.1 -162.5
+          159.5 -158.1
+          159.5 152.1
+          155.1 156.5
+          148.9 156.5
+          144.5 152.1
+          144.5 -158.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          -156.1 -162.5
+          150.1 -162.5
+          154.5 -158.1
+          154.5 -151.9
+          150.1 -147.5
+          -156.1 -147.5
+          -160.5 -151.9
+          -160.5 -158.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          -201.1 -117.5
+          -194.9 -117.5
+          -190.5 -113.1
+          -190.5 115.1
+          -194.9 119.5
+          -201.1 119.5
+          -205.5 115.1
+          -205.5 -113.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          -201.1 -117.5
+          -149.9 -117.5
+          -145.5 -113.1
+          -145.5 -106.9
+          -149.9 -102.5
+          -201.1 -102.5
+          -205.5 -106.9
+          -205.5 -113.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          -155.7 122.5
+          -149.5 122.5
+          -122.1 149.9
+          -122.1 156.1
+          -126.5 160.5
+          -132.7 160.5
+          -160.1 133.1
+          -160.1 126.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          -200.9 104.5
+          -149.5 104.5
+          -145.1 108.9
+          -145.1 115.1
+          -149.5 119.5
+          -200.9 119.5
+          -205.3 115.1
+          -205.3 108.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          -113.1 145.5
+          -106.9 145.5
+          -102.5 149.9
+          -102.5 201.3
+          -106.9 205.7
+          -113.1 205.7
+          -117.5 201.3
+          -117.5 149.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          -112.4 86.3
+          -111.2 86.3
+          -103.5 87.5
+          -96.4 91.2
+          -90.4 97.2
+          -86.7 104.3
+          -85.5 112.0
+          -85.5 113.2
+          -86.7 120.9
+          -90.4 128.0
+          -96.4 134.0
+          -103.5 137.7
+          -111.2 138.9
+          -112.4 138.9
+          -120.1 137.7
+          -127.2 134.0
+          -133.2 128.0
+          -136.9 120.9
+          -138.1 113.2
+          -138.1 112.0
+          -136.9 104.3
+          -133.2 97.2
+          -127.2 91.2
+          -120.1 87.5
+        )
+      )
+    )
+    (image "SIL-6::1"
+      (side front)
+      (pin "Rect[A]Pad_55x55_mil" 1 -250.0 0.0)
+      (pin "Round[A]Pad_55_mil" 2 -150.0 0.0)
+      (pin "Round[A]Pad_55_mil" 3 -50.0 0.0)
+      (pin "Round[A]Pad_55_mil" 4 50.0 0.0)
+      (pin "Round[A]Pad_55_mil" 5 150.0 0.0)
+      (pin "Round[A]Pad_55_mil" 6 250.0 0.0)
+      (outline
+        (polygon signal 0
+          -302.5 -56.0
+          -297.5 -56.0
+          -294.0 -52.5
+          -294.0 52.5
+          -297.5 56.0
+          -302.5 56.0
+          -306.0 52.5
+          -306.0 -52.5
+        )
+      )
+      (outline
+        (polygon signal 0
+          -302.5 44.0
+          302.5 44.0
+          306.0 47.5
+          306.0 52.5
+          302.5 56.0
+          -302.5 56.0
+          -306.0 52.5
+          -306.0 47.5
+        )
+      )
+      (outline
+        (polygon signal 0
+          297.5 -56.0
+          302.5 -56.0
+          306.0 -52.5
+          306.0 52.5
+          302.5 56.0
+          297.5 56.0
+          294.0 52.5
+          294.0 -52.5
+        )
+      )
+      (outline
+        (polygon signal 0
+          -302.5 -56.0
+          302.5 -56.0
+          306.0 -52.5
+          306.0 -47.5
+          302.5 -44.0
+          -302.5 -44.0
+          -306.0 -47.5
+          -306.0 -52.5
+        )
+      )
+      (outline
+        (polygon signal 0
+          -202.5 -56.0
+          -197.5 -56.0
+          -194.0 -52.5
+          -194.0 52.5
+          -197.5 56.0
+          -202.5 56.0
+          -206.0 52.5
+          -206.0 -52.5
+        )
+      )
+    )
+    (image "-C0805"
+      (side front)
+      (pin "Rect[T]Pad_51.1x59_mil" 1 -37.4 0.0)
+      (pin "Rect[T]Pad_51.1x59_mil" 2 37.4 0.0)
+      (outline
+        (polygon signal 0
+          -43.4 -29.8
+          -12.9 -29.8
+          -12.1 -29.0
+          -12.1 -28.0
+          -12.9 -27.2
+          -43.4 -27.2
+          -44.2 -28.0
+          -44.2 -29.0
+        )
+      )
+      (outline
+        (polygon signal 0
+          -13.9 -29.8
+          -12.9 -29.8
+          -12.1 -29.0
+          -12.1 29.0
+          -12.9 29.8
+          -13.9 29.8
+          -14.7 29.0
+          -14.7 -29.0
+        )
+      )
+      (outline
+        (polygon signal 0
+          -43.4 27.2
+          -12.9 27.2
+          -12.1 28.0
+          -12.1 29.0
+          -12.9 29.8
+          -43.4 29.8
+          -44.2 29.0
+          -44.2 28.0
+        )
+      )
+      (outline
+        (polygon signal 0
+          -43.4 -29.8
+          -42.4 -29.8
+          -41.6 -29.0
+          -41.6 29.0
+          -42.4 29.8
+          -43.4 29.8
+          -44.2 29.0
+          -44.2 -29.0
+        )
+      )
+      (outline
+        (polygon signal 0
+          13.5 -29.8
+          44.0 -29.8
+          44.8 -29.0
+          44.8 -28.0
+          44.0 -27.2
+          13.5 -27.2
+          12.7 -28.0
+          12.7 -29.0
+        )
+      )
+      (outline
+        (polygon signal 0
+          43.0 -29.8
+          44.0 -29.8
+          44.8 -29.0
+          44.8 29.0
+          44.0 29.8
+          43.0 29.8
+          42.2 29.0
+          42.2 -29.0
+        )
+      )
+      (outline
+        (polygon signal 0
+          13.5 27.2
+          44.0 27.2
+          44.8 28.0
+          44.8 29.0
+          44.0 29.8
+          13.5 29.8
+          12.7 29.0
+          12.7 28.0
+        )
+      )
+      (outline
+        (polygon signal 0
+          13.5 -29.8
+          14.5 -29.8
+          15.3 -29.0
+          15.3 29.0
+          14.5 29.8
+          13.5 29.8
+          12.7 29.0
+          12.7 -29.0
+        )
+      )
+      (outline
+        (polygon signal 0
+          -4.4 -17.0
+          4.4 -17.0
+          5.2 -16.2
+          5.2 -15.2
+          4.4 -14.4
+          -4.4 -14.4
+          -5.2 -15.2
+          -5.2 -16.2
+        )
+      )
+      (outline
+        (polygon signal 0
+          3.4 -17.0
+          4.4 -17.0
+          5.2 -16.2
+          5.2 16.2
+          4.4 17.0
+          3.4 17.0
+          2.6 16.2
+          2.6 -16.2
+        )
+      )
+      (outline
+        (polygon signal 0
+          -4.4 14.4
+          4.4 14.4
+          5.2 15.2
+          5.2 16.2
+          4.4 17.0
+          -4.4 17.0
+          -5.2 16.2
+          -5.2 15.2
+        )
+      )
+      (outline
+        (polygon signal 0
+          -4.4 -17.0
+          -3.4 -17.0
+          -2.6 -16.2
+          -2.6 16.2
+          -3.4 17.0
+          -4.4 17.0
+          -5.2 16.2
+          -5.2 -16.2
+        )
+      )
+      (outline
+        (polygon signal 0
+          -78.0 37.7
+          78.0 37.7
+          78.6 38.3
+          78.6 39.1
+          78.0 39.7
+          -78.0 39.7
+          -78.6 39.1
+          -78.6 38.3
+        )
+      )
+      (outline
+        (polygon signal 0
+          -78.0 -39.7
+          78.0 -39.7
+          78.6 -39.1
+          78.6 -38.3
+          78.0 -37.7
+          -78.0 -37.7
+          -78.6 -38.3
+          -78.6 -39.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          -78.0 -39.7
+          -77.2 -39.7
+          -76.6 -39.1
+          -76.6 39.1
+          -77.2 39.7
+          -78.0 39.7
+          -78.6 39.1
+          -78.6 -39.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          -15.8 23.9
+          15.8 23.9
+          17.0 25.1
+          17.0 26.7
+          15.8 27.9
+          -15.8 27.9
+          -17.0 26.7
+          -17.0 25.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          -14.8 -27.9
+          15.8 -27.9
+          17.0 -26.7
+          17.0 -25.1
+          15.8 -23.9
+          -14.8 -23.9
+          -16.0 -25.1
+          -16.0 -26.7
+        )
+      )
+      (outline
+        (polygon signal 0
+          77.2 -39.7
+          78.0 -39.7
+          78.6 -39.1
+          78.6 39.1
+          78.0 39.7
+          77.2 39.7
+          76.6 39.1
+          76.6 -39.1
+        )
+      )
+    )
+    (image "-R0805"
+      (side front)
+      (pin "Rect[T]Pad_51.1x59_mil" 1 -37.4 0.0)
+      (pin "Rect[T]Pad_51.1x59_mil" 2 37.4 0.0)
+      (outline
+        (polygon signal 0
+          15.5 -28.8
+          42.0 -28.8
+          42.8 -28.0
+          42.8 -27.0
+          42.0 -26.2
+          15.5 -26.2
+          14.7 -27.0
+          14.7 -28.0
+        )
+      )
+      (outline
+        (polygon signal 0
+          41.0 -28.8
+          42.0 -28.8
+          42.8 -28.0
+          42.8 28.1
+          42.0 28.9
+          41.0 28.9
+          40.2 28.1
+          40.2 -28.0
+        )
+      )
+      (outline
+        (polygon signal 0
+          15.5 26.3
+          42.0 26.3
+          42.8 27.1
+          42.8 28.1
+          42.0 28.9
+          15.5 28.9
+          14.7 28.1
+          14.7 27.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          15.5 -28.8
+          16.5 -28.8
+          17.3 -28.0
+          17.3 28.1
+          16.5 28.9
+          15.5 28.9
+          14.7 28.1
+          14.7 -28.0
+        )
+      )
+      (outline
+        (polygon signal 0
+          -42.5 -28.8
+          -15.9 -28.8
+          -15.1 -28.0
+          -15.1 -27.0
+          -15.9 -26.2
+          -42.5 -26.2
+          -43.3 -27.0
+          -43.3 -28.0
+        )
+      )
+      (outline
+        (polygon signal 0
+          -16.9 -28.8
+          -15.9 -28.8
+          -15.1 -28.0
+          -15.1 28.1
+          -15.9 28.9
+          -16.9 28.9
+          -17.7 28.1
+          -17.7 -28.0
+        )
+      )
+      (outline
+        (polygon signal 0
+          -42.5 26.3
+          -15.9 26.3
+          -15.1 27.1
+          -15.1 28.1
+          -15.9 28.9
+          -42.5 28.9
+          -43.3 28.1
+          -43.3 27.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          -42.5 -28.8
+          -41.5 -28.8
+          -40.7 -28.0
+          -40.7 28.1
+          -41.5 28.9
+          -42.5 28.9
+          -43.3 28.1
+          -43.3 -28.0
+        )
+      )
+      (outline
+        (polygon signal 0
+          -8.3 -20.9
+          8.3 -20.9
+          9.1 -20.1
+          9.1 -19.1
+          8.3 -18.3
+          -8.3 -18.3
+          -9.1 -19.1
+          -9.1 -20.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          7.3 -20.9
+          8.3 -20.9
+          9.1 -20.1
+          9.1 20.1
+          8.3 20.9
+          7.3 20.9
+          6.5 20.1
+          6.5 -20.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          -8.3 18.3
+          8.3 18.3
+          9.1 19.1
+          9.1 20.1
+          8.3 20.9
+          -8.3 20.9
+          -9.1 20.1
+          -9.1 19.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          -8.3 -20.9
+          -7.3 -20.9
+          -6.5 -20.1
+          -6.5 20.1
+          -7.3 20.9
+          -8.3 20.9
+          -9.1 20.1
+          -9.1 -20.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          -17.3 22.0
+          17.3 22.0
+          19.1 23.8
+          19.1 26.2
+          17.3 28.0
+          -17.3 28.0
+          -19.1 26.2
+          -19.1 23.8
+        )
+      )
+      (outline
+        (polygon signal 0
+          -17.3 -28.0
+          17.3 -28.0
+          19.1 -26.2
+          19.1 -23.8
+          17.3 -22.0
+          -17.3 -22.0
+          -19.1 -23.8
+          -19.1 -26.2
+        )
+      )
+      (outline
+        (polygon signal 0
+          -78.0 37.7
+          78.0 37.7
+          78.6 38.3
+          78.6 39.1
+          78.0 39.7
+          -78.0 39.7
+          -78.6 39.1
+          -78.6 38.3
+        )
+      )
+      (outline
+        (polygon signal 0
+          77.2 -39.7
+          78.0 -39.7
+          78.6 -39.1
+          78.6 39.1
+          78.0 39.7
+          77.2 39.7
+          76.6 39.1
+          76.6 -39.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          -78.0 -39.7
+          78.0 -39.7
+          78.6 -39.1
+          78.6 -38.3
+          78.0 -37.7
+          -78.0 -37.7
+          -78.6 -38.3
+          -78.6 -39.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          -78.0 -39.7
+          -77.2 -39.7
+          -76.6 -39.1
+          -76.6 39.1
+          -77.2 39.7
+          -78.0 39.7
+          -78.6 39.1
+          -78.6 -39.1
+        )
+      )
+    )
+    (image "-C1206"
+      (side front)
+      (pin "Rect[T]Pad_62.9x70.8_mil" 1 -55.1 0.0)
+      (pin "Rect[T]Pad_62.9x70.8_mil" 2 55.1 0.0)
+      (outline
+        (polygon signal 0
+          -67.5 -34.8
+          -36.9 -34.8
+          -36.1 -34.0
+          -36.1 -33.0
+          -36.9 -32.2
+          -67.5 -32.2
+          -68.3 -33.0
+          -68.3 -34.0
+        )
+      )
+      (outline
+        (polygon signal 0
+          -37.9 -34.8
+          -36.9 -34.8
+          -36.1 -34.0
+          -36.1 33.9
+          -36.9 34.7
+          -37.9 34.7
+          -38.7 33.9
+          -38.7 -34.0
+        )
+      )
+      (outline
+        (polygon signal 0
+          -67.5 32.1
+          -36.9 32.1
+          -36.1 32.9
+          -36.1 33.9
+          -36.9 34.7
+          -67.5 34.7
+          -68.3 33.9
+          -68.3 32.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          -67.5 -34.8
+          -66.5 -34.8
+          -65.7 -34.0
+          -65.7 33.9
+          -66.5 34.7
+          -67.5 34.7
+          -68.3 33.9
+          -68.3 -34.0
+        )
+      )
+      (outline
+        (polygon signal 0
+          36.9 -34.7
+          67.5 -34.7
+          68.3 -33.9
+          68.3 -32.9
+          67.5 -32.1
+          36.9 -32.1
+          36.1 -32.9
+          36.1 -33.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          66.5 -34.7
+          67.5 -34.7
+          68.3 -33.9
+          68.3 34.0
+          67.5 34.8
+          66.5 34.8
+          65.7 34.0
+          65.7 -33.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          36.9 32.2
+          67.5 32.2
+          68.3 33.0
+          68.3 34.0
+          67.5 34.8
+          36.9 34.8
+          36.1 34.0
+          36.1 33.0
+        )
+      )
+      (outline
+        (polygon signal 0
+          36.9 -34.7
+          37.9 -34.7
+          38.7 -33.9
+          38.7 34.0
+          37.9 34.8
+          36.9 34.8
+          36.1 34.0
+          36.1 -33.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          -8.3 -17.0
+          8.3 -17.0
+          9.1 -16.2
+          9.1 -15.2
+          8.3 -14.4
+          -8.3 -14.4
+          -9.1 -15.2
+          -9.1 -16.2
+        )
+      )
+      (outline
+        (polygon signal 0
+          7.3 -17.0
+          8.3 -17.0
+          9.1 -16.2
+          9.1 16.2
+          8.3 17.0
+          7.3 17.0
+          6.5 16.2
+          6.5 -16.2
+        )
+      )
+      (outline
+        (polygon signal 0
+          -8.3 14.4
+          8.3 14.4
+          9.1 15.2
+          9.1 16.2
+          8.3 17.0
+          -8.3 17.0
+          -9.1 16.2
+          -9.1 15.2
+        )
+      )
+      (outline
+        (polygon signal 0
+          -8.3 -17.0
+          -7.3 -17.0
+          -6.5 -16.2
+          -6.5 16.2
+          -7.3 17.0
+          -8.3 17.0
+          -9.1 16.2
+          -9.1 -16.2
+        )
+      )
+      (outline
+        (polygon signal 0
+          -97.7 37.7
+          97.7 37.7
+          98.3 38.3
+          98.3 39.1
+          97.7 39.7
+          -97.7 39.7
+          -98.3 39.1
+          -98.3 38.3
+        )
+      )
+      (outline
+        (polygon signal 0
+          -97.7 -39.7
+          97.7 -39.7
+          98.3 -39.1
+          98.3 -38.3
+          97.7 -37.7
+          -97.7 -37.7
+          -98.3 -38.3
+          -98.3 -39.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          -97.7 -39.7
+          -96.9 -39.7
+          -96.3 -39.1
+          -96.3 39.1
+          -96.9 39.7
+          -97.7 39.7
+          -98.3 39.1
+          -98.3 -39.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          96.9 -39.7
+          97.7 -39.7
+          98.3 -39.1
+          98.3 39.1
+          97.7 39.7
+          96.9 39.7
+          96.3 39.1
+          96.3 -39.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          -38.7 28.9
+          38.7 28.9
+          39.9 30.1
+          39.9 31.7
+          38.7 32.9
+          -38.7 32.9
+          -39.9 31.7
+          -39.9 30.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          -38.7 -32.9
+          38.7 -32.9
+          39.9 -31.7
+          39.9 -30.1
+          38.7 -28.9
+          -38.7 -28.9
+          -39.9 -30.1
+          -39.9 -31.7
+        )
+      )
+    )
+    (image "MADW__impolux_rgb_smd"
+      (side front)
+      (pin "Rect[T]Pad_35.4x59.1_mil" 1 63.0 98.4)
+      (pin "Rect[T]Pad_35.4x59.1_mil" 2 0.0 98.4)
+      (pin "Rect[T]Pad_35.4x59.1_mil" 3 -63.0 98.4)
+      (pin "Rect[T]Pad_35.4x59.1_mil" 4 -63.0 -98.4)
+      (pin "Rect[T]Pad_35.4x59.1_mil" 5 0.0 -98.4)
+      (pin "Rect[T]Pad_35.4x59.1_mil" 6 63.0 -98.4)
+      (outline
+        (polygon signal 0
+          71.9 -32.5
+          98.1 -32.5
+          102.5 -28.1
+          102.5 -21.9
+          98.1 -17.5
+          71.9 -17.5
+          67.5 -21.9
+          67.5 -28.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          71.9 -32.5
+          78.1 -32.5
+          82.5 -28.1
+          82.5 23.1
+          78.1 27.5
+          71.9 27.5
+          67.5 23.1
+          67.5 -28.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          71.9 12.5
+          78.1 12.5
+          82.5 16.9
+          82.5 28.1
+          78.1 32.5
+          71.9 32.5
+          67.5 28.1
+          67.5 16.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          71.9 17.5
+          98.1 17.5
+          102.5 21.9
+          102.5 28.1
+          98.1 32.5
+          71.9 32.5
+          67.5 28.1
+          67.5 21.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          -101.5 90.9
+          101.5 90.9
+          105.9 95.3
+          105.9 101.5
+          101.5 105.9
+          -101.5 105.9
+          -105.9 101.5
+          -105.9 95.3
+        )
+      )
+      (outline
+        (polygon signal 0
+          95.3 -105.9
+          101.5 -105.9
+          105.9 -101.5
+          105.9 101.5
+          101.5 105.9
+          95.3 105.9
+          90.9 101.5
+          90.9 -101.5
+        )
+      )
+      (outline
+        (polygon signal 0
+          -101.5 -105.9
+          101.5 -105.9
+          105.9 -101.5
+          105.9 -95.3
+          101.5 -90.9
+          -101.5 -90.9
+          -105.9 -95.3
+          -105.9 -101.5
+        )
+      )
+      (outline
+        (polygon signal 0
+          -101.5 -105.9
+          -95.3 -105.9
+          -90.9 -101.5
+          -90.9 101.5
+          -95.3 105.9
+          -101.5 105.9
+          -105.9 101.5
+          -105.9 -101.5
+        )
+      )
+    )
+    (image "MADW__SMD-solder-bridge"
+      (side front)
+      (pin "Rect[T]Pad_40x40_mil" 1 -27.5 0.0)
+      (pin "Rect[T]Pad_40x40_mil" 2 27.5 0.0)
+    )
+    (padstack "Round[A]Pad_55_mil"
+      (shape
+        (circle Component 55.0 0.0 0.0)
+      )
+      (shape
+        (circle Copper 55.0 0.0 0.0)
+      )
+      (attach off)
+    )
+    (padstack "Round[A]Pad_60_mil"
+      (shape
+        (circle Component 60.0 0.0 0.0)
+      )
+      (shape
+        (circle Copper 60.0 0.0 0.0)
+      )
+      (attach off)
+    )
+    (padstack "Rect[T]Pad_35.4x59.1_mil"
+      (shape
+        (rect Component -17.7 -29.5 17.7 29.6)
+      )
+      (attach off)
+    )
+    (padstack "Rect[T]Pad_40x40_mil"
+      (shape
+        (rect Component -20.0 -20.0 20.0 20.0)
+      )
+      (attach off)
+    )
+    (padstack "Rect[T]Pad_51.1x59_mil"
+      (shape
+        (rect Component -25.5 -29.5 25.6 29.5)
+      )
+      (attach off)
+    )
+    (padstack "Rect[A]Pad_55x55_mil"
+      (shape
+        (rect Component -27.5 -27.5 27.5 27.5)
+      )
+      (shape
+        (rect Copper -27.5 -27.5 27.5 27.5)
+      )
+      (attach off)
+    )
+    (padstack "Rect[A]Pad_60x60_mil"
+      (shape
+        (rect Component -30.0 -30.0 30.0 30.0)
+      )
+      (shape
+        (rect Copper -30.0 -30.0 30.0 30.0)
+      )
+      (attach off)
+    )
+    (padstack "Rect[T]Pad_62.9x70.8_mil"
+      (shape
+        (rect Component -31.4 -35.4 31.5 35.4)
+      )
+      (attach off)
+    )
+    (padstack "Rect[T]Pad_78.7x17.7_mil"
+      (shape
+        (rect Component -39.3 -8.8 39.4 8.9)
+      )
+      (attach off)
+    )
+    (padstack "Rect[T]Pad_17.7x78.7_mil"
+      (shape
+        (rect Component -8.8 -39.3 8.9 39.4)
+      )
+      (attach off)
+    )
+    (padstack "Via[0-1]_45:25_mil"
+      (shape
+        (circle Component 45.0 0.0 0.0)
+      )
+      (shape
+        (circle Copper 45.0 0.0 0.0)
+      )
+      (attach off)
+    )
+  )
+  (network
+    (net /GND 1
+      (pins
+        C2-2
+        C1-2
+        P1-2
+        P2-2
+        IC1-21
+        IC1-3
+        IC1-5
+        P4-6
+        P3-1
+      )
+    )
+    (net /VCC 1
+      (pins
+        C2-1
+        R4-2
+        C1-1
+        P1-1
+        P2-1
+        IC1-18
+        IC1-4
+        IC1-6
+        P4-2
+        P3-3
+      )
+    )
+    (net /RXD 1
+      (pins
+        IC1-30
+        P3-4
+      )
+    )
+    (net /TXD 1
+      (pins
+        IC1-31
+        P3-5
+      )
+    )
+    (net /DTR 1
+      (pins
+        C3-2
+        P3-6
+      )
+    )
+    (net /PB4/MISO 1
+      (pins
+        SBR2-2
+        IC1-16
+        P4-1
+      )
+    )
+    (net /PB5/SCK 1
+      (pins
+        SBR3-2
+        IC1-17
+        P4-3
+      )
+    )
+    (net /PB3/MOSI 1
+      (pins
+        SBR1-2
+        IC1-15
+        P4-4
+      )
+    )
+    (net /RESET 1
+      (pins
+        R4-1
+        C3-1
+        IC1-29
+        P4-5
+      )
+    )
+    (net /PB7 1
+      (pins
+        D8-3
+        D8-2
+        D8-1
+        IC1-8
+      )
+    )
+    (net /PB6 1
+      (pins
+        D7-3
+        D7-2
+        D7-1
+        IC1-7
+      )
+    )
+    (net /SCL 1
+      (pins
+        P1-3
+        P2-3
+        IC1-28
+      )
+    )
+    (net /SDA 1
+      (pins
+        P1-4
+        P2-4
+        IC1-27
+      )
+    )
+    (net /ADC3 1
+      (pins
+        P1-5
+        P2-5
+        IC1-26
+      )
+    )
+    (net /ADC2 1
+      (pins
+        P1-6
+        P2-6
+        IC1-25
+      )
+    )
+    (net "N-000021" 1
+      (pins
+        R3-1
+        IC1-9
+      )
+    )
+    (net "N-000004" 1
+      (pins
+        R2-1
+        IC1-10
+      )
+    )
+    (net "N-000022" 1
+      (pins
+        R1-1
+        IC1-11
+      )
+    )
+    (net /PB0 1
+      (pins
+        D1-3
+        D1-2
+        D1-1
+        IC1-12
+      )
+    )
+    (net /PB1 1
+      (pins
+        D2-3
+        D2-2
+        D2-1
+        IC1-13
+      )
+    )
+    (net /PB2 1
+      (pins
+        D3-3
+        D3-2
+        D3-1
+        IC1-14
+      )
+    )
+    (net /BLUE 1
+      (pins
+        D1-6
+        D2-6
+        D3-6
+        D4-6
+        D5-6
+        D6-6
+        D7-6
+        D8-6
+        R1-2
+      )
+    )
+    (net /GREEN 1
+      (pins
+        D1-4
+        D2-4
+        D3-4
+        D4-4
+        D5-4
+        D6-4
+        D7-4
+        D8-4
+        R2-2
+      )
+    )
+    (net /RED 1
+      (pins
+        D1-5
+        D2-5
+        D3-5
+        D4-5
+        D5-5
+        D6-5
+        D7-5
+        D8-5
+        R3-2
+      )
+    )
+    (net /SCK2/PB5 1
+      (pins
+        SBR3-1
+        D6-3
+        D6-2
+        D6-1
+      )
+    )
+    (net /MISO2/PB4 1
+      (pins
+        SBR2-1
+        D5-3
+        D5-2
+        D5-1
+      )
+    )
+    (net /MOSI2/PB3 1
+      (pins
+        SBR1-1
+        D4-3
+        D4-2
+        D4-1
+      )
+    )
+    (via 
+      "Via[0-1]_45:25_mil" "Via[0-1]_45:25_mil" default
+    )
+    (via_rule
+      default "Via[0-1]_45:25_mil"
+    )
+    (via_rule
+      "kicad_default" "Via[0-1]_45:25_mil"
+    )
+    (class default
+      (clearance_class default)
+      (via_rule default)
+      (rule
+        (width 12.0)
+      )
+      (circuit 
+        (use_layer Component Copper)
+      )
+    )
+    (class "kicad_default"
+      /GND /VCC /RXD /TXD /DTR /PB4/MISO /PB5/SCK /PB3/MOSI
+      /RESET /PB7 /PB6 /SCL /SDA /ADC3 /ADC2 "N-000021"
+      "N-000004" "N-000022" /PB0 /PB1 /PB2 /BLUE /GREEN /RED
+      /SCK2/PB5 /MISO2/PB4 /MOSI2/PB3
+      (clearance_class default)
+      (via_rule kicad_default)
+      (rule
+        (width 12.0)
+      )
+      (circuit 
+        (use_layer Component Copper)
+      )
+    )
+  )
+  (wiring
+    (wire
+      (polyline_path Component 12.0
+        3616.1 -3292.3 3616.0 -3292.3 
+        3616.1 -3292.3 3616.1 -3223.0 
+        3616.1 -3223.0 3746.1 -3093.0 
+        3746.1 -3093.0 3746.1 -2508.0 
+        3746.1 -2508.0 3508.6 -2270.5 
+        3508.6 -2270.5 3077.3 -2270.5 
+        3077.3 -2270.5 3014.7 -2207.9 
+        3014.7 -2207.9 3014.8 -2207.8 
+      )
+      (net /SCK2/PB5 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        2612.0 -2407.7 2612.0 -2407.6 
+        2612.0 -2407.7 2814.9 -2407.7 
+        2814.9 -2407.7 3014.7 -2207.9 
+        3014.7 -2207.9 3014.8 -2208.0 
+      )
+      (net /SCK2/PB5 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3337.5 -2036.0 3337.6 -2036.0 
+        3337.5 -2036.0 3337.5 -2092.3 
+        3337.5 -2092.3 3233.7 -2196.1 
+        3233.7 -2196.1 3108.6 -2196.1 
+        3108.6 -2192.3 3046.8 -2130.5 
+        3046.8 -2130.5 2923.5 -2130.5 
+        2923.5 -2130.5 2899.5 -2106.4 
+        2899.5 -2106.4 2824.0 -2181.9 
+        2824.0 -2181.9 2823.9 -2181.8 
+      )
+      (net /BLUE 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3383.4 -2099.0 3383.4 -2099.1 
+        3383.4 -2099.0 3359.7 -2099.0 
+        3359.7 -2099.0 3242.0 -2216.7 
+        3242.0 -2216.7 3100.5 -2216.7 
+        3100.5 -2212.9 3038.4 -2150.8 
+        3038.4 -2150.8 2944.2 -2150.8 
+        2944.2 -2150.8 2901.0 -2194.0 
+        2901.0 -2194.0 2900.9 -2193.9 
+      )
+      (net /RED 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3186.6 -2162.0 3186.6 -2162.1 
+        3186.6 -2162.0 3130.5 -2162.0 
+        3130.5 -2162.0 3115.3 -2146.8 
+        3115.3 -2146.8 3115.4 -2146.7 
+      )
+      (net /MISO2/PB4 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        3262.5 -3423.7 3262.5 -3423.8 
+        3262.5 -3423.7 3226.2 -3423.7 
+        3226.2 -3423.7 3086.2 -3283.7 
+        3086.2 -3283.7 3086.2 -2172.1 
+        3115.3 -2146.8 3115.4 -2146.7 
+        3115.3 -2146.8 3115.3 -2146.9 
+      )
+      (net /MISO2/PB4 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3337.5 -2162.0 3337.6 -2162.1 
+        3337.5 -2162.0 3255.2 -2244.3 
+        3255.2 -2244.3 3053.4 -2244.3 
+        858.9 0.0 858.8 0.1 
+        0.0 -2171.1 -0.1 -2171.1 
+        2987.2 -2179.6 2987.1 -2179.7 
+        2945.5 -2234.3 2945.5 -2234.4 
+        706.9 0.1 707.0 0.0 
+        2913.2 -2270.9 2913.1 -2271.0 
+      )
+      (net /GREEN 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        2913.1 -2271.0 2913.0 -2270.9 
+        2913.1 -2271.0 2913.2 -2270.9 
+        707.0 0.0 706.9 0.1 
+      )
+      (net /GREEN 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        2634.9 -2548.0 2634.9 -2548.1 
+        2634.9 -2548.0 2634.8 -2548.0 
+        2587.1 0.0 2587.1 -0.1 
+      )
+      (net /VCC 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        2634.9 -2548.0 2634.9 -2547.9 
+        2634.9 -2548.0 2635.0 -2548.0 
+        2682.6 0.0 2682.6 0.1 
+      )
+      (net /VCC 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        2929.5 -2540.0 2929.5 -2540.1 
+        2929.5 -2540.0 2929.4 -2540.0 
+        2887.7 0.0 2887.7 -0.1 
+      )
+      (net /VCC 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        3866.6 -2548.0 3866.6 -2548.1 
+        3866.6 -2548.0 3866.5 -2548.0 
+        3824.8 0.0 3824.8 -0.1 
+      )
+      (net /GND 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        3630.0 -2540.0 3630.0 -2539.9 
+        3630.0 -2540.0 3630.1 -2540.0 
+        3671.8 0.0 3671.8 0.1 
+      )
+      (net /VCC 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        3941.4 -2548.0 3941.3 -2548.0 
+        3941.4 -2548.0 3941.4 -2547.9 
+        0.0 -2502.2 -0.1 -2502.2 
+      )
+      (net /VCC 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        3325.4 -2280.0 3325.4 -2279.9 
+        3325.4 -2280.0 3325.5 -2280.0 
+        3367.2 0.0 3367.2 0.1 
+      )
+      (net /RED 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        3965.6 -2805.0 3965.6 -2805.1 
+        3965.6 -2805.0 3965.5 -2805.0 
+        3923.7 0.0 3923.7 -0.1 
+      )
+      (net /RESET 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        3250.6 -2280.0 3250.7 -2280.0 
+        3250.6 -2280.0 3250.6 -2280.1 
+        0.0 -2325.8 0.1 -2325.8 
+      )
+      (net "N-000021" 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        3248.6 -2171.0 3248.6 -2171.1 
+        3248.6 -2171.0 3248.5 -2171.0 
+        3206.7 0.0 3206.7 -0.1 
+      )
+      (net "N-000004" 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        3246.6 -2053.0 3246.7 -2053.0 
+        3246.6 -2053.0 3246.6 -2053.1 
+        0.0 -2098.8 0.1 -2098.8 
+      )
+      (net "N-000022" 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        3262.5 -3460.0 3262.4 -3460.0 
+        3262.5 -3460.0 3262.5 -3459.9 
+        0.0 -3423.7 -0.1 -3423.7 
+      )
+      (net /MISO2/PB4 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3391.4 -3511.0 3391.4 -3511.1 
+        3391.4 -3511.0 3391.3 -3511.0 
+        3345.6 0.0 3345.6 -0.1 
+      )
+      (net /PB0 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3391.4 -3511.0 3391.4 -3511.1 
+        3391.4 -3511.0 3391.3 -3511.0 
+        3345.6 0.0 3345.6 -0.1 
+      )
+      (net /PB0 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3345.6 -3511.0 3345.5 -3511.0 
+        3345.6 -3511.0 3345.6 -3480.4 
+        3345.6 -3480.4 3378.0 -3448.0 
+        3378.0 -3448.0 3391.4 -3448.0 
+        3391.4 -3448.0 3391.4 -3448.1 
+      )
+      (net /PB0 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3391.4 -3574.0 3391.4 -3574.1 
+        3391.4 -3574.0 3391.3 -3574.0 
+        3345.6 0.0 3345.6 -0.1 
+      )
+      (net /PB0 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3102.1 -2773.3 3102.1 -2773.4 
+        3102.1 -2773.3 3102.0 -2773.3 
+        3046.5 0.0 3046.5 -0.1 
+      )
+      (net /VCC 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Component 12.0
+        4063.0 -2707.6 4063.1 -2707.6 
+        4063.0 -2707.6 4063.0 -2707.7 
+        0.0 -2753.4 0.1 -2753.4 
+      )
+      (net /PB2 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3194.6 -3574.0 3194.6 -3573.9 
+        3194.6 -3574.0 3194.7 -3574.0 
+        3240.5 0.0 3240.5 0.1 
+      )
+      (net /BLUE 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3765.0 -3422.1 3765.1 -3422.2 
+        3765.0 -3422.1 3764.9 -3422.2 
+        278.0 0.0 278.1 -0.1 
+      )
+      (net /BLUE 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3194.6 -3448.0 3194.6 -3448.1 
+        3194.6 -3448.0 3194.5 -3448.0 
+        3148.8 0.0 3148.8 -0.1 
+      )
+      (net /GREEN 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Component 12.0
+        2757.0 -3186.9 2757.1 -3186.8 
+        2757.0 -3186.9 2757.1 -3187.0 
+        6008.8 0.0 6008.9 0.1 
+      )
+      (net /GREEN 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3391.4 -3511.0 3391.3 -3511.0 
+        3345.6 0.0 3345.6 -0.1 
+        3345.6 -3574.0 3345.5 -3574.0 
+      )
+      (net /PB0 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3337.7 -2978.0 3337.6 -2978.0 
+        3337.7 -2978.0 3337.7 -2977.9 
+        0.0 -2922.3 -0.1 -2922.3 
+      )
+      (net /PB2 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Component 12.0
+        4063.0 -2904.4 4062.9 -2904.4 
+        4063.0 -2904.4 4063.0 -2904.3 
+        0.0 -2858.5 -0.1 -2858.5 
+      )
+      (net /BLUE 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3898.1 -2322.0 3898.2 -2321.9 
+        3898.1 -2322.0 3898.2 -2322.1 
+        6285.0 0.0 6285.1 0.1 
+      )
+      (net /BLUE 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Component 12.0
+        4000.0 -2904.4 3999.9 -2904.4 
+        4000.0 -2904.4 4000.0 -2904.3 
+        0.0 -2858.5 -0.1 -2858.5 
+      )
+      (net /RED 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3904.1 -3283.0 3904.2 -3283.1 
+        3904.1 -3283.0 3904.0 -3283.1 
+        556.4 0.0 556.5 -0.1 
+      )
+      (net /PB1 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3194.6 -3448.0 3194.6 -3447.9 
+        3194.6 -3448.0 3194.7 -3448.0 
+        3240.5 0.0 3240.5 0.1 
+      )
+      (net /GREEN 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3675.9 -3333.0 3676.0 -3333.1 
+        3675.9 -3333.0 3675.8 -3333.1 
+        278.0 0.0 278.1 -0.1 
+      )
+      (net /GREEN 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3720.4 -3377.6 3720.5 -3377.7 
+        3720.4 -3377.6 3720.3 -3377.7 
+        278.0 0.0 278.1 -0.1 
+      )
+      (net /RED 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3937.0 -2707.6 3937.1 -2707.7 
+        4000.0 -2707.6 4000.1 -2707.6 
+        4000.0 -2730.5 4000.0 -2707.6 
+      )
+      (net /PB2 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3675.9 -3333.0 3675.8 -3332.9 
+        3675.9 -3333.0 3676.0 -3332.9 
+        407.8 0.0 407.7 0.1 
+      )
+      (net /GREEN 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3720.4 -3377.6 3720.3 -3377.5 
+        3720.4 -3377.6 3720.5 -3377.5 
+        407.8 0.0 407.7 0.1 
+      )
+      (net /RED 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Component 12.0
+        4000.0 -2904.4 4000.1 -2904.4 
+        4000.0 -2904.4 4000.0 -2904.5 
+        0.0 -2950.2 0.1 -2950.2 
+      )
+      (net /RED 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3630.0 -2540.0 3630.1 -2540.0 
+        3630.0 -2540.0 3630.0 -2540.1 
+        0.0 -2581.8 0.1 -2581.8 
+      )
+      (net /VCC 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3898.1 -2322.0 3898.0 -2322.1 
+        3898.1 -2322.0 3898.0 -2321.9 
+        6155.2 0.0 6155.1 -0.1 
+      )
+      (net /BLUE 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3853.6 -2366.6 3853.7 -2366.5 
+        3853.6 -2366.6 3853.7 -2366.7 
+        6285.0 0.0 6285.1 0.1 
+      )
+      (net /RED 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3809.0 -2411.1 3809.1 -2411.0 
+        3809.0 -2411.1 3809.1 -2411.2 
+        6285.0 0.0 6285.1 0.1 
+      )
+      (net /GREEN 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3759.0 -2182.9 3759.1 -2182.8 
+        3759.0 -2182.9 3759.1 -2183.0 
+        6006.6 0.0 6006.7 0.1 
+      )
+      (net /MOSI2/PB3 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3853.6 -2366.6 3853.5 -2366.7 
+        3853.6 -2366.6 3853.5 -2366.5 
+        6155.2 0.0 6155.1 -0.1 
+      )
+      (net /RED 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3714.4 -2227.4 3714.5 -2227.5 
+        6006.7 0.0 6006.8 0.1 
+        3746.9 -2259.8 3746.9 -2259.7 
+        6006.6 0.0 6006.7 0.1 
+        3759.1 -2183.0 3759.0 -2182.9 
+      )
+      (net /MOSI2/PB3 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3669.9 -2272.0 3670.0 -2272.1 
+        6006.6 0.0 6006.7 0.1 
+        3669.9 -2272.0 3702.3 -2304.3 
+        3702.3 -2304.3 3702.4 -2304.3 
+        6006.7 0.0 6006.8 0.1 
+        3714.4 -2227.4 3714.5 -2227.5 
+      )
+      (net /MOSI2/PB3 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3714.4 -2227.4 3714.5 -2227.3 
+        3714.4 -2227.4 3714.5 -2227.5 
+        6006.7 0.0 6006.8 0.1 
+      )
+      (net /MOSI2/PB3 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3714.4 -2227.4 3714.3 -2227.5 
+        3714.4 -2227.4 3714.3 -2227.3 
+        5876.9 0.0 5876.8 -0.1 
+      )
+      (net /MOSI2/PB3 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3937.0 -2904.4 3936.9 -2904.4 
+        3937.0 -2904.4 3937.0 -2904.3 
+        0.0 -2858.5 -0.1 -2858.5 
+      )
+      (net /GREEN 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3566.0 -2167.5 3566.1 -2167.4 
+        3470.9 -2162.0 3524.5 -2215.6 
+        3524.5 -2215.6 3524.5 -2235.2 
+        3524.5 -2235.2 3668.0 -2378.7 
+        3776.5 -2378.6 3776.6 -2378.6 
+        3776.6 -2378.6 3809.0 -2411.1 
+        6155.2 0.0 6155.1 -0.1 
+        3808.9 -2411.0 3809.0 -2411.1 
+      )
+      (net /GREEN 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3383.4 -2162.0 3383.4 -2161.9 
+        3383.4 -2162.0 3470.9 -2162.0 
+        3470.9 -2162.0 3524.5 -2215.6 
+        3566.0 -2167.5 3566.1 -2167.4 
+      )
+      (net /GREEN 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3524.5 -2215.6 3470.9 -2162.0 
+        3566.0 -2167.5 3566.1 -2167.4 
+        3566.0 -2167.5 3566.1 -2167.5 
+      )
+      (net /GREEN 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3669.9 -2272.0 3670.0 -2271.9 
+        3669.9 -2272.0 3670.0 -2272.1 
+        6006.6 0.0 6006.7 0.1 
+      )
+      (net /MOSI2/PB3 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3809.0 -2411.1 3808.9 -2411.2 
+        3809.0 -2411.1 3808.9 -2411.0 
+        6155.2 0.0 6155.1 -0.1 
+      )
+      (net /GREEN 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Component 12.0
+        2929.5 -2540.0 2929.6 -2540.0 
+        2929.5 -2540.0 2929.5 -2540.1 
+        0.0 -2581.8 0.1 -2581.8 
+      )
+      (net /VCC 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3383.4 -2036.0 3383.4 -2036.1 
+        3383.4 -2036.0 3383.3 -2036.0 
+        3337.5 0.0 3337.5 -0.1 
+      )
+      (net /BLUE 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Component 12.0
+        2824.0 -2181.9 2824.1 -2182.0 
+        2824.0 -2181.9 2823.9 -2182.0 
+        577.2 0.0 577.3 -0.1 
+      )
+      (net /BLUE 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3186.6 -2036.0 3186.6 -2035.9 
+        3186.6 -2036.0 3186.7 -2036.0 
+        3232.4 0.0 3232.4 0.1 
+      )
+      (net /MISO2/PB4 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Component 12.0
+        2684.9 -2321.0 2685.0 -2321.1 
+        2684.9 -2321.0 2684.8 -2321.1 
+        298.9 0.0 299.0 -0.1 
+      )
+      (net /SCK2/PB5 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        3262.5 -3560.0 3262.6 -3560.0 
+        3262.5 -3560.0 3262.5 -3560.1 
+        0.0 -3596.3 0.1 -3596.3 
+      )
+      (net /SCK2/PB5 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Component 12.0
+        2583.0 -2690.6 2582.9 -2690.6 
+        2583.0 -2690.6 2583.0 -2690.5 
+        0.0 -2644.8 -0.1 -2644.8 
+      )
+      (net /RED 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Component 12.0
+        2868.6 -2226.4 2868.7 -2226.5 
+        2868.6 -2226.4 2868.5 -2226.5 
+        577.2 0.0 577.3 -0.1 
+      )
+      (net /RED 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Component 12.0
+        2868.6 -2226.4 2868.5 -2226.3 
+        2868.6 -2226.4 2868.7 -2226.3 
+        707.0 0.0 706.9 0.1 
+      )
+      (net /RED 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3186.6 -2162.0 3186.6 -2161.9 
+        3186.6 -2162.0 3186.7 -2162.0 
+        3232.4 0.0 3232.4 0.1 
+      )
+      (net /MISO2/PB4 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Component 12.0
+        2697.0 -2398.0 2697.0 -2398.1 
+        2680.7 -2381.8 2713.2 -2381.8 
+        2697.0 -2398.0 2729.4 -2365.6 
+        2729.5 -2365.7 2729.4 -2365.6 
+      )
+      (net /SCK2/PB5 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        2652.4 -2353.5 2652.5 -2353.4 
+        2652.4 -2353.5 2680.7 -2381.8 
+        2680.7 -2381.8 2697.0 -2381.8 
+        2697.0 -2381.8 2697.0 -2381.9 
+      )
+      (net /SCK2/PB5 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        2713.2 -2381.8 2680.7 -2381.8 
+        2697.0 -2398.0 2697.0 -2398.1 
+        2697.0 -2398.0 2696.9 -2397.9 
+      )
+      (net /SCK2/PB5 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        2913.1 -2271.0 2913.2 -2271.1 
+        2913.1 -2271.0 2913.0 -2271.1 
+        577.2 0.0 577.3 -0.1 
+      )
+      (net /GREEN 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3383.4 -2162.0 3383.4 -2162.1 
+        3383.4 -2162.0 3383.3 -2162.0 
+        3337.5 0.0 3337.5 -0.1 
+      )
+      (net /GREEN 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        3262.5 -3560.0 3262.5 -3560.1 
+        0.0 -3596.3 0.1 -3596.3 
+        3395.5 -3600.2 3616.1 -3379.6 
+        3616.1 -3379.6 3616.1 -3246.8 
+        3616.1 -3292.3 3616.0 -3292.3 
+      )
+      (net /SCK2/PB5 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        3317.5 -3360.0 3317.6 -3360.0 
+        3317.5 -3360.0 3317.5 -3380.0 
+        3317.5 -3380.0 3294.7 -3402.8 
+        3294.7 -3402.8 3241.7 -3402.8 
+        3241.7 -3402.8 3145.6 -3306.7 
+        3145.6 -3306.7 3145.6 -3097.1 
+        3145.6 -3097.1 3269.1 -2973.6 
+        3269.1 -2973.6 3269.1 -2814.8 
+        3269.1 -2814.8 3247.6 -2793.3 
+        3247.6 -2793.3 3247.6 -2721.4 
+        3247.6 -2721.4 3486.8 -2482.2 
+        3486.8 -2482.2 3486.8 -2401.5 
+        3486.8 -2401.5 3592.5 -2295.8 
+        3592.5 -2295.8 3658.9 -2295.8 
+        3658.9 -2295.8 3662.3 -2292.4 
+        3662.3 -2292.4 3662.3 -2169.7 
+        3662.3 -2169.7 3662.4 -2169.7 
+      )
+      (net /MOSI2/PB3 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        3317.5 -3460.0 3317.4 -3460.0 
+        3317.5 -3460.0 3317.5 -3459.9 
+        0.0 -3423.7 -0.1 -3423.7 
+      )
+      (net /PB4/MISO 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        3190.0 -3134.0 3190.0 -3133.9 
+        3190.0 -3134.0 3190.1 -3134.0 
+        3234.3 0.0 3234.3 0.1 
+      )
+      (net /PB4/MISO 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        3234.3 -3134.0 3234.4 -3134.0 
+        3234.3 -3134.0 3234.3 -3174.9 
+        3234.3 -3174.9 3237.7 -3178.3 
+        3237.7 -3178.3 3302.7 -3178.3 
+        3302.7 -3178.3 3345.2 -3220.8 
+        3345.2 -3220.8 3345.2 -3307.5 
+        3345.2 -3307.5 3353.9 -3316.2 
+        3353.8 -3423.7 3353.8 -3423.8 
+        3317.5 -3423.7 3317.4 -3423.8 
+        3317.5 -3423.7 3317.5 -3423.6 
+      )
+      (net /PB4/MISO 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        3445.5 -3319.9 3445.6 -3319.9 
+        3445.5 -3319.9 3445.5 -3493.7 
+        3445.5 -3493.7 3379.2 -3560.0 
+        3379.2 -3560.0 3317.5 -3560.0 
+        3317.5 -3560.0 3317.5 -3559.9 
+      )
+      (net /PB5/SCK 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        3290.1 -3133.9 3290.0 -3134.0 
+        3290.0 -3134.0 3345.6 -3189.6 
+        3345.6 -3189.6 3408.3 -3189.6 
+        3408.3 -3189.6 3445.5 -3226.8 
+        3445.5 -3226.8 3445.5 -3319.9 
+        3445.5 -3319.9 3490.3 -3319.9 
+      )
+      (net /PB5/SCK 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        3445.5 -3226.8 3445.5 -3319.9 
+        3445.5 -3319.9 3490.3 -3319.9 
+        3490.3 -3319.9 3490.3 -3320.0 
+      )
+      (net /PB5/SCK 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        3254.6 -3292.3 3254.7 -3292.2 
+        3254.6 -3292.3 3262.5 -3300.2 
+        3262.5 -3300.2 3262.5 -3360.0 
+        3262.5 -3360.0 3262.4 -3360.0 
+      )
+      (net /PB3/MOSI 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        3254.6 -3292.3 3262.5 -3300.2 
+        3254.6 -3361.0 3254.6 -3269.4 
+        3254.6 -3269.4 3290.0 -3234.0 
+        3290.0 -3234.0 3290.1 -3234.1 
+      )
+      (net /PB3/MOSI 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3209.5 -2099.0 3232.4 -2076.1 
+        3232.4 -2099.0 3186.6 -2099.0 
+        3186.6 -2098.9 3186.6 -2099.0 
+      )
+      (net /MISO2/PB4 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3232.4 -2162.0 3232.3 -2162.0 
+        3232.4 -2162.0 3232.4 -2099.0 
+        3209.5 -2099.0 3209.4 -2098.9 
+        3209.5 -2099.0 3209.5 -2098.9 
+      )
+      (net /MISO2/PB4 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3720.4 -3377.6 3720.3 -3377.7 
+        3670.7 -3392.7 3670.6 -3392.6 
+        3663.8 -3385.8 3339.7 -3385.8 
+        3339.7 -3385.8 3214.5 -3511.0 
+        3214.5 -3511.0 3194.6 -3511.0 
+        3194.6 -3511.0 3194.6 -3510.9 
+      )
+      (net /RED 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        4000.0 -2904.4 4000.0 -2904.5 
+        0.1 -2950.2 0.0 -2950.2 
+        4000.0 -2929.2 3729.3 -3199.9 
+        3735.6 -3327.8 3735.6 -3327.9 
+        407.7 0.1 407.8 0.0 
+        3720.5 -3377.5 3720.4 -3377.6 
+      )
+      (net /RED 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3675.9 -3333.0 3675.8 -3333.1 
+        278.1 -0.1 278.0 0.0 
+        3643.5 -3365.4 3277.2 -3365.4 
+        3240.5 -3448.0 3240.4 -3448.1 
+        3194.7 -3448.0 3194.6 -3448.0 
+      )
+      (net /GREEN 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3937.0 -2904.4 3937.1 -2904.4 
+        3937.0 -2904.4 3937.0 -2950.2 
+        3937.0 -2950.2 3675.9 -3211.3 
+        3708.3 -3283.3 3708.3 -3283.4 
+        407.7 0.1 407.8 0.0 
+        3676.0 -3332.9 3675.9 -3333.0 
+      )
+      (net /GREEN 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3937.0 -2858.5 3937.0 -2858.6 
+        3937.0 -2858.5 3936.9 -2858.4 
+        3841.5 -2797.0 3841.5 -2443.5 
+        3841.5 -2443.5 3825.2 -2427.3 
+        6285.1 0.1 6285.0 0.0 
+        3809.1 -2411.2 3809.0 -2411.1 
+      )
+      (net /GREEN 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3815.0 -3258.5 3827.3 -3270.7 
+        3827.3 -3270.7 3851.4 -3294.7 
+        7138.9 0.0 7138.8 -0.1 
+        3847.7 0.0 3847.7 -0.1 
+        556.4 0.0 556.5 -0.1 
+        3904.0 -3283.1 3904.1 -3283.0 
+      )
+      (net /PB1 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3859.6 -3238.4 3859.7 -3238.5 
+        3859.6 -3238.4 3827.2 -3270.8 
+        3815.0 -3258.5 3827.3 -3270.7 
+      )
+      (net /PB1 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        2646.0 -2910.3 2623.0 -2933.3 
+        2646.0 -2887.4 2646.0 -2933.3 
+        2646.0 -2933.3 2659.1 -2946.4 
+        2659.1 -2946.4 2659.1 -2951.2 
+        2659.1 -2951.2 2659.0 -2951.2 
+      )
+      (net /PB6 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        2646.0 -2887.4 2646.1 -2887.4 
+        2646.0 -2887.4 2646.0 -2933.3 
+        2646.0 -2910.3 2623.0 -2933.3 
+      )
+      (net /PB6 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        2583.0 -2887.4 2583.1 -2887.4 
+        2583.0 -2887.4 2583.0 -2933.3 
+        2560.0 -2933.3 2583.0 -2910.3 
+      )
+      (net /PB6 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3420.9 -2770.8 3157.8 -2770.8 
+        3157.8 -2741.8 3157.8 -2804.8 
+        3154.4 -2804.8 3154.3 -2804.9 
+        3157.8 -2804.8 3102.1 -2804.8 
+        3102.1 -2804.7 3102.1 -2804.8 
+      )
+      (net /GND 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3102.1 -2741.8 3102.1 -2741.7 
+        3102.1 -2741.8 3157.8 -2741.8 
+        3154.4 -2741.8 3154.5 -2741.9 
+        3157.8 -2741.8 3157.8 -2804.8 
+        3420.9 -2770.8 3157.8 -2770.8 
+      )
+      (net /GND 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3714.4 -2227.4 3714.3 -2227.3 
+        5876.8 -0.1 5876.9 0.0 
+        3714.4 -2227.4 3682.0 -2194.9 
+        3682.0 -2194.9 3662.3 -2175.3 
+        3662.3 -2175.3 3662.3 -2169.7 
+        3662.3 -2169.7 3662.4 -2169.7 
+      )
+      (net /MOSI2/PB3 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3232.4 -2036.0 3232.5 -2036.0 
+        3232.4 -2036.0 3232.4 -2099.0 
+        3209.5 -2099.0 3209.4 -2099.1 
+        3209.5 -2099.0 3209.5 -2098.9 
+      )
+      (net /MISO2/PB4 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        2697.0 -2398.0 2697.1 -2398.1 
+        2697.0 -2398.0 2687.3 -2407.7 
+        2687.3 -2407.7 2612.0 -2407.7 
+        2612.0 -2407.7 2612.0 -2407.6 
+      )
+      (net /SCK2/PB5 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        2774.0 -2410.1 2774.1 -2410.2 
+        2774.0 -2410.1 2741.5 -2442.6 
+        2741.5 -2442.6 2697.0 -2398.0 
+        2697.0 -2398.0 2741.6 -2353.5 
+      )
+      (net /SCK2/PB5 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3602.0 -2213.7 3601.9 -2213.6 
+        3602.0 -2213.7 3602.8 -2212.9 
+        3602.8 -2212.9 3602.8 -2152.2 
+        3602.8 -2152.2 3549.6 -2099.0 
+        3549.6 -2099.0 3383.4 -2099.0 
+        3383.4 -2099.0 3383.4 -2098.9 
+      )
+      (net /RED 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3853.6 -2366.6 3853.5 -2366.5 
+        3803.8 -2351.4 3803.7 -2351.5 
+        3797.6 -2357.6 3676.0 -2357.6 
+        3676.0 -2357.6 3597.1 -2278.7 
+        3597.1 -2278.7 3597.1 -2218.6 
+        3597.1 -2218.6 3602.0 -2213.7 
+        3602.0 -2213.7 3602.1 -2213.8 
+      )
+      (net /RED 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        3325.4 -2280.0 3325.5 -2280.0 
+        3367.2 -2280.0 3367.3 -2279.9 
+        3391.7 -2213.7 3602.0 -2213.7 
+        3602.0 -2213.7 3602.0 -2213.8 
+      )
+      (net /RED 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3194.6 -3511.0 3194.6 -3511.1 
+        3194.6 -3511.0 3148.8 -3511.0 
+        3148.8 -3478.4 2934.3 -3263.9 
+        2934.3 -3263.9 2744.9 -3263.9 
+        2744.9 -3263.9 2712.4 -3231.4 
+        2712.5 -3231.3 2712.4 -3231.4 
+      )
+      (net /RED 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3853.6 -2366.6 3853.7 -2366.7 
+        3868.7 -2416.3 3868.6 -2416.4 
+        3865.7 -2378.7 3865.7 -2752.9 
+        3974.7 -2861.9 3974.8 -2862.0 
+        -0.1 -2858.5 0.0 -2858.5 
+        4000.0 -2904.3 4000.0 -2904.4 
+      )
+      (net /RED 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        2836.1 -2258.9 2836.2 -2258.8 
+        2836.1 -2258.9 2852.7 -2275.5 
+        2852.7 -2275.5 2852.7 -2409.1 
+        2852.7 -2409.1 2617.0 -2644.8 
+        2617.0 -2644.8 2583.0 -2644.8 
+        2583.0 -2644.8 2583.0 -2644.7 
+      )
+      (net /RED 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        3323.4 -2171.0 3323.4 -2170.9 
+        3365.2 -2171.0 3562.5 -2171.0 
+        3562.5 -2171.0 3566.0 -2167.5 
+        3566.0 -2167.5 3566.1 -2167.6 
+      )
+      (net /GREEN 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        2646.0 -2690.6 2645.9 -2690.6 
+        2646.0 -2690.6 2646.0 -2644.7 
+        2646.0 -2644.7 2913.1 -2377.6 
+        2880.7 -2320.7 2880.7 -2320.6 
+        577.3 -0.1 577.2 0.0 
+        2913.0 -2271.1 2913.1 -2271.0 
+      )
+      (net /GREEN 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        2757.0 -3186.9 2757.1 -3187.0 
+        6008.8 0.0 6008.9 0.1 
+        2789.5 -3219.3 2965.9 -3219.3 
+        3148.8 -3448.0 3148.9 -3448.1 
+        3194.5 -3448.0 3194.6 -3448.0 
+      )
+      (net /GREEN 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3898.1 -2322.0 3898.0 -2321.9 
+        6155.1 -0.1 6155.2 0.0 
+        3895.6 -2319.5 3865.7 -2289.5 
+        3865.7 -2289.5 3819.4 -2289.5 
+        3819.4 -2289.5 3774.8 -2334.1 
+        3774.8 -2334.1 3683.9 -2334.1 
+        3683.9 -2334.1 3618.3 -2268.5 
+        3618.3 -2268.5 3618.3 -2249.5 
+        3618.3 -2249.5 3638.8 -2229.0 
+        3638.8 -2229.0 3638.8 -2198.4 
+        3638.8 -2198.4 3623.1 -2182.7 
+        3623.1 -2182.7 3623.1 -2143.8 
+        3623.1 -2143.8 3533.8 -2054.5 
+        3533.8 -2054.5 3517.9 -2054.5 
+        3517.9 -2054.5 3517.9 -2054.4 
+      )
+      (net /BLUE 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        4063.1 -2904.4 4063.0 -2904.4 
+        4063.0 -2905.8 4063.0 -2950.2 
+        4063.0 -2950.2 4042.6 -2970.6 
+        4042.6 -2970.6 3988.5 -2970.6 
+        3988.5 -2970.6 3764.8 -3194.3 
+        3764.8 -3194.3 3764.8 -3328.3 
+        3764.8 -3328.3 3789.0 -3352.5 
+        3789.0 -3352.5 3789.0 -3381.2 
+        3789.0 -3381.2 3797.5 -3389.6 
+        3797.5 -3389.6 3765.0 -3422.1 
+        3764.9 -3422.0 3765.0 -3422.1 
+      )
+      (net /BLUE 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3765.0 -3422.1 3764.9 -3422.2 
+        278.1 -0.1 278.0 0.0 
+        3732.6 -3454.5 3720.5 -3442.5 
+        3720.5 -3442.5 3556.3 -3442.5 
+        3556.3 -3442.5 3520.2 -3406.4 
+        3520.2 -3406.4 3360.3 -3406.4 
+        3360.3 -3406.4 3240.5 -3526.2 
+        3240.5 0.1 3240.5 0.0 
+        3194.7 -3574.0 3194.6 -3574.0 
+      )
+      (net /BLUE 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3898.1 -2322.0 3898.2 -2322.1 
+        6285.0 0.0 6285.1 0.1 
+        3898.1 -2322.0 3930.6 -2354.4 
+        3930.6 -2354.4 3930.6 -2583.2 
+        3930.6 -2583.2 3902.9 -2610.9 
+        3902.9 -2610.9 3902.9 -2754.6 
+        3906.3 -2754.6 3906.4 -2754.7 
+        3902.9 -2754.6 3955.7 -2754.6 
+        3955.7 -2754.6 4063.0 -2861.9 
+        -0.1 -2858.5 0.0 -2858.5 
+        4063.0 -2904.3 4063.0 -2904.4 
+      )
+      (net /BLUE 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        2520.0 -2690.6 2519.9 -2690.6 
+        2520.0 -2690.6 2520.0 -2644.8 
+        2520.0 -2644.8 2546.1 -2618.7 
+        2546.1 -2618.7 2614.2 -2618.7 
+        2614.2 -2618.7 2829.9 -2403.0 
+        2829.9 -2403.0 2829.9 -2397.7 
+        2829.9 -2397.7 2815.7 -2383.5 
+        2815.7 -2383.5 2815.7 -2238.5 
+        2808.8 -2231.6 2784.7 -2207.4 
+        577.3 -0.1 577.2 0.0 
+        2823.9 -2182.0 2824.0 -2181.9 
+      )
+      (net /BLUE 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        2520.0 -2690.6 2520.1 -2690.6 
+        2520.0 -2690.6 2520.0 -2736.5 
+        2520.0 -2736.5 2520.1 -2736.5 
+        2520.1 -2736.5 2523.4 -2739.8 
+        2523.4 -2739.8 2579.7 -2739.8 
+        2579.7 -2739.8 2696.0 -2856.1 
+        2696.0 -2856.1 2696.0 -3121.2 
+        2696.0 -3121.2 2659.5 -3157.7 
+        2659.5 -3157.7 2659.5 -3219.5 
+        2659.5 -3219.5 2635.5 -3243.5 
+        2635.5 -3243.5 2667.9 -3276.0 
+        2635.4 -3308.4 2667.9 -3276.0 
+      )
+      (net /BLUE 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3517.9 -2054.5 3517.8 -2054.6 
+        3517.9 -2054.5 3499.4 -2036.0 
+        3499.4 -2036.0 3383.4 -2036.0 
+        3383.4 -2036.0 3383.4 -2035.9 
+      )
+      (net /BLUE 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        3321.4 -2053.0 3321.4 -2052.9 
+        3321.4 -2053.0 3516.4 -2053.0 
+        3516.4 -2053.0 3517.9 -2054.5 
+        3517.9 -2054.5 3517.8 -2054.6 
+      )
+      (net /BLUE 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3337.7 -2978.0 3337.7 -2977.9 
+        -0.1 -2922.3 0.0 -2922.3 
+        3423.1 -2922.3 3495.4 -2994.6 
+        3495.4 -2994.6 3525.0 -2994.6 
+        3525.0 -2994.6 3525.0 -2994.7 
+      )
+      (net /PB2 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        4000.0 -2644.3 4000.1 -2644.4 
+        4000.0 -2644.3 3727.3 -2917.0 
+        3727.3 -2917.0 3727.3 -3005.8 
+        3727.3 -3005.8 3633.8 -3099.3 
+        3633.8 -3099.3 3629.7 -3099.3 
+        3629.7 -3099.3 3525.0 -2994.6 
+        3525.0 -2994.6 3525.1 -2994.5 
+      )
+      (net /PB2 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        4063.0 -2753.4 4063.0 -2753.5 
+        4063.0 -2753.4 4000.0 -2753.4 
+        4003.4 -2753.4 4003.3 -2753.3 
+        4000.0 -2753.4 4000.0 -2707.6 
+        4000.0 -2707.6 4000.1 -2707.6 
+      )
+      (net /PB2 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        4000.0 -2707.6 3999.9 -2707.6 
+        4000.0 -2707.6 4000.0 -2644.3 
+        4000.0 -2644.3 4000.1 -2644.3 
+      )
+      (net /PB2 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3859.6 -3238.4 3859.5 -3238.3 
+        3859.6 -3238.4 3933.0 -3165.0 
+        3933.0 -3165.0 3933.0 -3158.5 
+        3933.0 -3158.5 3933.1 -3158.5 
+      )
+      (net /PB1 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3815.0 -3193.9 3815.1 -3193.9 
+        3815.0 -3193.9 3815.0 -3258.5 
+        3815.0 -3258.5 3827.3 -3270.7 
+        3827.3 -3270.7 3815.1 -3283.0 
+      )
+      (net /PB1 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        3353.1 -2884.1 3353.2 -2884.1 
+        3353.1 -2884.1 3353.1 -2912.7 
+        3353.1 -2912.7 3598.9 -3158.5 
+        3598.9 -3158.5 3933.0 -3158.5 
+        3933.0 -3158.5 3933.0 -3158.6 
+      )
+      (net /PB1 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3305.7 -2978.0 3305.6 -2978.0 
+        3305.7 -2978.0 3305.7 -2922.3 
+        3305.7 -2922.3 3343.9 -2884.1 
+        3343.9 -2884.1 3353.1 -2884.1 
+        3353.1 -2884.1 3353.1 -2884.2 
+      )
+      (net /PB1 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        3486.4 -3448.0 3486.3 -3447.9 
+        3486.4 -3448.0 3536.9 -3397.5 
+        3536.9 -3397.5 3536.9 -3125.2 
+        3536.9 -3125.2 3314.8 -2903.1 
+        3314.8 -2903.1 3314.8 -2846.7 
+        3314.8 -2846.7 3326.3 -2835.2 
+        3326.3 -2835.2 3326.4 -2835.3 
+      )
+      (net /PB0 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3274.7 -2978.0 3274.6 -2978.0 
+        3274.7 -2978.0 3274.7 -2886.8 
+        3274.7 -2886.8 3326.3 -2835.2 
+        3326.3 -2835.2 3326.4 -2835.3 
+      )
+      (net /PB0 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3391.4 -3448.0 3391.4 -3447.9 
+        3391.4 -3448.0 3486.4 -3448.0 
+        3486.4 -3448.0 3486.4 -3448.1 
+      )
+      (net /PB0 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        3230.4 -2835.2 3230.3 -2835.3 
+        3230.4 -2835.2 3227.2 -2832.0 
+        3227.2 -2832.0 3227.2 -2707.9 
+        3227.2 -2707.9 3375.0 -2560.1 
+        3375.0 -2560.1 3375.0 -2426.3 
+        3375.0 -2426.3 3528.6 -2272.7 
+        3528.6 -2272.7 3595.1 -2272.7 
+        3595.1 -2272.7 3638.8 -2229.0 
+        3638.8 -2229.0 3638.8 -2198.4 
+        3638.8 -2198.4 3602.8 -2162.4 
+        3602.8 -2162.4 3602.8 -2152.2 
+        3602.8 -2152.2 3549.4 -2098.8 
+        0.1 -2098.8 0.0 -2098.8 
+        3246.6 -2053.1 3246.6 -2053.0 
+      )
+      (net "N-000022" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3230.4 -2835.2 3230.5 -2835.1 
+        3230.4 -2835.2 3243.7 -2848.5 
+        3243.7 -2922.3 3243.7 -2978.0 
+        3243.6 -2978.0 3243.7 -2978.0 
+      )
+      (net "N-000022" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3211.7 -2978.0 3211.8 -2978.0 
+        3211.7 -2978.0 3211.7 -3033.6 
+        3208.3 -3033.6 3208.2 -3033.7 
+        3211.7 -3033.6 3124.6 -3033.6 
+        3124.6 -3033.6 3124.6 -3033.5 
+      )
+      (net "N-000004" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        3206.7 -2171.0 3206.8 -2171.1 
+        3206.7 -2171.0 3187.4 -2190.3 
+        3187.4 -2190.3 3187.4 -2457.6 
+        3187.4 -2457.6 3124.6 -2520.4 
+        3124.6 -2520.4 3124.6 -3033.6 
+        3124.6 -3033.6 3124.5 -3033.6 
+      )
+      (net "N-000004" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        3250.6 -2280.0 3250.6 -2280.1 
+        3250.6 -2325.8 3250.7 -2325.9 
+        3280.0 -2309.4 3280.0 -2561.4 
+        3280.0 -2561.4 3193.5 -2647.9 
+        3193.5 -2647.9 3193.5 -2896.2 
+        3193.5 -2896.2 3200.8 -2903.5 
+        3200.8 -2903.5 3200.7 -2903.6 
+      )
+      (net "N-000021" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3180.7 -2978.0 3180.6 -2978.0 
+        3180.7 -2978.0 3180.7 -2922.3 
+        3182.0 -2922.3 3200.8 -2903.5 
+        3200.9 -2903.6 3200.8 -2903.5 
+      )
+      (net "N-000021" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        2929.5 -3040.0 2929.6 -3040.0 
+        2929.5 -3040.0 2929.5 -3142.8 
+        2929.5 -3142.8 3092.8 -3306.1 
+        3092.8 -3306.1 3384.8 -3306.1 
+        3384.8 -3306.1 3630.0 -3060.9 
+        3630.0 -3060.9 3630.0 -3040.0 
+        3630.0 -3040.0 3630.1 -3040.0 
+      )
+      (net /ADC2 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3400.9 -2600.0 3401.0 -2599.9 
+        3400.9 -2600.0 3407.5 -2606.6 
+        3407.5 -2606.6 3407.5 -2731.1 
+        3407.5 -2731.1 3405.2 -2733.4 
+        3405.2 -2733.4 3405.1 -2733.3 
+      )
+      (net /ADC2 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        3630.0 -3040.0 3629.9 -3040.1 
+        3630.0 -3040.0 3405.2 -2815.2 
+        3405.2 -2815.2 3405.2 -2733.4 
+        3405.2 -2733.4 3405.3 -2733.4 
+      )
+      (net /ADC2 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        2929.5 -2940.0 2929.4 -2940.1 
+        2929.5 -2940.0 2816.4 -2826.9 
+        2816.4 -2826.9 2816.4 -2518.6 
+        2816.4 -2518.6 3020.1 -2314.9 
+        3020.1 -2314.9 3522.4 -2314.9 
+        3522.4 -2314.9 3712.5 -2505.0 
+        3712.5 -2505.0 3712.5 -2857.5 
+        3712.5 -2857.5 3630.0 -2940.0 
+        3630.0 -2940.0 3629.9 -2939.9 
+      )
+      (net /ADC3 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3369.5 -2600.0 3369.6 -2600.0 
+        3369.5 -2600.0 3369.5 -2676.5 
+        3369.5 -2676.5 3369.9 -2676.9 
+        3369.9 -2676.9 3369.8 -2677.0 
+      )
+      (net /ADC3 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        3630.0 -2940.0 3629.9 -2940.0 
+        3630.0 -2940.0 3630.0 -2906.1 
+        3630.0 -2906.1 3400.8 -2676.9 
+        3400.8 -2676.9 3369.9 -2676.9 
+        3369.9 -2676.9 3369.9 -2676.8 
+      )
+      (net /ADC3 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3337.9 -2600.0 3337.8 -2600.0 
+        3337.9 -2600.0 3337.9 -2544.3 
+        3341.3 -2544.3 3341.4 -2544.2 
+        3337.9 -2544.3 3416.7 -2544.3 
+        3416.7 -2544.3 3477.8 -2605.4 
+        3477.8 -2605.4 3477.8 -2636.5 
+        3477.8 -2636.5 3477.7 -2636.5 
+      )
+      (net /SDA 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        3630.0 -2840.0 3629.9 -2840.1 
+        3630.0 -2840.0 3477.8 -2687.8 
+        3477.8 -2687.8 3477.8 -2636.5 
+        3477.8 -2636.5 3477.9 -2636.5 
+      )
+      (net /SDA 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        2929.5 -2840.0 2929.4 -2840.1 
+        2929.5 -2840.0 2836.8 -2747.3 
+        2836.8 -2747.3 2836.8 -2527.1 
+        2836.8 -2527.1 3027.8 -2336.1 
+        3027.8 -2336.1 3514.9 -2336.1 
+        3514.9 -2336.1 3692.2 -2513.4 
+        3692.2 -2513.4 3692.2 -2807.2 
+        3692.2 -2807.2 3659.4 -2840.0 
+        3659.4 -2840.0 3630.0 -2840.0 
+        3630.0 -2840.0 3630.0 -2839.9 
+      )
+      (net /SDA 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3630.0 -2740.0 3629.9 -2740.1 
+        3630.0 -2740.0 3561.7 -2671.7 
+        3561.7 -2671.7 3561.7 -2613.8 
+        3561.7 -2613.8 3471.9 -2524.0 
+        3471.9 -2524.0 3472.0 -2523.9 
+      )
+      (net /SCL 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3306.5 -2600.0 3306.4 -2600.0 
+        3306.5 -2600.0 3306.5 -2544.3 
+        3306.5 -2544.3 3326.8 -2524.0 
+        3326.8 -2524.0 3471.9 -2524.0 
+        3471.9 -2524.0 3471.9 -2524.1 
+      )
+      (net /SCL 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3471.9 -2524.0 3471.8 -2524.0 
+        3471.9 -2524.0 3471.9 -2408.8 
+        3471.9 -2408.8 3439.9 -2376.8 
+        3439.9 -2376.8 3109.6 -2376.8 
+        3109.6 -2376.8 3071.9 -2414.5 
+        3071.9 -2414.5 3071.9 -2473.3 
+        3071.9 -2473.3 3063.4 -2481.8 
+        3063.4 -2481.8 2912.5 -2481.8 
+        2912.5 -2481.8 2858.3 -2536.0 
+        2858.3 -2536.0 2858.3 -2668.8 
+        2858.3 -2668.8 2899.2 -2709.7 
+        2899.2 -2709.7 2899.3 -2709.7 
+        2899.3 -2709.7 2899.3 -2709.8 
+        2899.3 -2709.8 2929.5 -2740.0 
+        2929.5 -2740.0 2929.4 -2740.1 
+      )
+      (net /SCL 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3102.1 -2867.8 3102.1 -2867.9 
+        3046.5 -2867.8 3024.8 -2867.8 
+        3024.8 -2867.8 3019.3 -2873.3 
+        3019.3 -2873.3 3019.2 -2873.2 
+      )
+      (net /PB6 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        2659.1 -2951.2 2659.0 -2951.1 
+        2659.1 -2951.2 2712.2 -2898.1 
+        2712.2 -2898.1 2994.5 -2898.1 
+        2994.5 -2898.1 3019.3 -2873.3 
+        3019.3 -2873.3 3019.4 -2873.4 
+      )
+      (net /PB6 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        2520.0 -2887.4 2520.1 -2887.4 
+        2520.0 -2887.4 2520.0 -2933.3 
+        2520.0 -2933.3 2560.0 -2933.3 
+        2560.0 -2933.3 2583.0 -2910.3 
+        2583.1 -2910.4 2583.0 -2910.3 
+      )
+      (net /PB6 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        2646.0 -2910.3 2646.1 -2910.4 
+        2646.0 -2910.3 2623.0 -2933.3 
+        2623.0 -2933.3 2583.0 -2933.3 
+        2583.0 -2933.3 2583.0 -2887.4 
+        2583.0 -2910.3 2560.0 -2933.3 
+      )
+      (net /PB6 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3102.1 -2899.3 3102.1 -2899.4 
+        3102.1 -2899.3 3046.5 -2899.3 
+        3026.4 -2968.5 3026.3 -2968.6 
+        3026.4 -2968.5 3026.3 -2968.5 
+      )
+      (net /PB7 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        2962.4 -3355.0 2962.3 -3354.9 
+        2962.4 -3355.0 3026.4 -3291.0 
+        3026.4 -3291.0 3026.4 -2968.5 
+        3026.4 -2968.5 3026.5 -2968.5 
+      )
+      (net /PB7 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        2925.1 -3355.0 2925.1 -3354.9 
+        2925.1 -3355.0 2962.4 -3355.0 
+        2962.4 -3355.0 2962.4 -3355.1 
+      )
+      (net /PB7 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        2875.4 -3394.4 2875.4 -3394.3 
+        2875.4 -3394.4 2885.7 -3394.4 
+        2885.7 -3394.4 2925.1 -3355.0 
+        2925.1 -3355.0 2925.2 -3355.1 
+      )
+      (net /PB7 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        2807.0 -3415.1 2807.1 -3415.0 
+        2807.0 -3415.1 2839.5 -3447.6 
+        2839.5 -3447.6 2875.4 -3411.7 
+        2875.4 -3411.7 2875.4 -3394.4 
+        2875.5 -3394.4 2875.4 -3394.4 
+      )
+      (net /PB7 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        2851.6 -3370.6 2851.7 -3370.5 
+        2851.6 -3370.6 2875.4 -3394.4 
+        2875.4 -3394.4 2875.3 -3394.5 
+      )
+      (net /PB7 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        2896.1 -3326.0 2896.2 -3325.9 
+        2896.1 -3326.0 2925.1 -3355.0 
+        2925.1 -3355.0 2925.0 -3355.1 
+      )
+      (net /PB7 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3390.0 -3134.0 3390.1 -3134.1 
+        3390.0 -3134.0 3334.4 -3189.6 
+        3334.4 -3189.6 3334.4 -3257.8 
+        3334.4 -3257.8 3313.8 -3278.4 
+        3313.8 -3278.4 3171.6 -3278.4 
+        3171.6 -3278.4 2971.4 -3078.2 
+        2971.4 -3078.2 2971.4 -3018.7 
+        2971.4 -3018.7 2934.6 -2981.9 
+        2934.6 -2981.9 2906.3 -2981.9 
+        2906.3 -2981.9 2714.1 -2789.7 
+        2714.1 -2789.7 2714.2 -2789.6 
+      )
+      (net /RESET 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        2619.4 -2792.0 2619.4 -2791.9 
+        2619.4 -2792.0 2711.8 -2792.0 
+        2711.8 -2792.0 2714.1 -2789.7 
+        2714.1 -2789.7 2714.2 -2789.8 
+      )
+      (net /RESET 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        3289.5 -2798.3 3289.5 -2798.2 
+        3289.5 -2798.3 3342.8 -2798.3 
+        3342.8 -2798.3 3488.2 -2943.7 
+        3488.2 -2943.7 3488.2 -3009.8 
+        3488.2 -3009.8 3607.1 -3128.7 
+        3607.1 -3128.7 3641.9 -3128.7 
+        3965.6 -2805.0 3965.7 -2804.9 
+        3923.7 -0.1 3923.7 0.0 
+        3965.5 -2805.0 3965.6 -2805.0 
+      )
+      (net /RESET 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        3289.5 -2798.3 3289.4 -2798.3 
+        3289.5 -2798.3 3289.5 -2731.5 
+        3289.5 -2731.5 3289.6 -2731.5 
+      )
+      (net /RESET 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        3390.0 -3134.0 3389.9 -3134.1 
+        3390.0 -3134.0 3289.5 -3033.5 
+        3289.5 -3033.5 3289.5 -2798.3 
+        3289.5 -2798.3 3289.6 -2798.3 
+      )
+      (net /RESET 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3274.9 -2600.0 3275.0 -2600.0 
+        3274.9 -2600.0 3274.9 -2716.9 
+        3274.9 -2716.9 3289.5 -2731.5 
+        3289.5 -2731.5 3289.4 -2731.6 
+      )
+      (net /RESET 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3369.7 -2978.0 3369.8 -2978.0 
+        3369.7 -2978.0 3369.7 -3033.6 
+        3366.3 -3033.6 3366.2 -3033.7 
+        3369.7 -3033.6 3266.7 -3033.6 
+        3266.7 -3033.6 3210.7 -3089.6 
+        3210.7 -3089.6 3149.0 -3089.6 
+        3149.0 -3089.6 3145.6 -3093.0 
+        3145.6 -3093.0 3145.6 -3175.0 
+        3145.6 -3175.0 3149.0 -3178.4 
+        3149.0 -3178.4 3234.4 -3178.4 
+        3234.4 -3178.4 3290.0 -3234.0 
+        3289.9 -3234.1 3290.0 -3234.0 
+      )
+      (net /PB3/MOSI 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3478.7 -2900.0 3478.7 -2899.9 
+        3478.7 -2900.0 3534.4 -2900.0 
+        3534.4 -2925.1 3604.8 -2995.5 
+        3604.8 -2995.5 3668.5 -2995.5 
+        3668.5 -2995.5 3671.9 -2998.9 
+        3671.9 -2998.9 3671.9 -3138.3 
+        3671.9 -3138.3 3490.3 -3319.9 
+        3490.3 -3319.9 3490.2 -3319.8 
+      )
+      (net /PB5/SCK 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3190.0 -3134.0 3190.0 -3133.9 
+        3190.0 -3134.0 3234.3 -3134.0 
+        3234.3 -3105.1 3250.8 -3088.6 
+        3250.8 -3088.6 3346.9 -3088.6 
+        3346.9 -3088.6 3401.7 -3033.8 
+        3401.7 -3033.8 3401.7 -2978.0 
+        3401.7 -2978.0 3401.8 -2978.0 
+      )
+      (net /PB4/MISO 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        4040.4 -2805.0 4040.3 -2805.0 
+        4040.4 -2805.0 4040.4 -2536.1 
+        4040.4 -2536.1 3944.3 -2440.0 
+        3944.3 -2440.0 3530.0 -2440.0 
+        3530.0 -2440.0 3530.0 -2439.9 
+      )
+      (net /DTR 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3211.9 -2600.0 3211.8 -2600.0 
+        3211.9 -2600.0 3211.9 -2529.2 
+        3211.9 -2529.2 3286.8 -2454.3 
+        3286.8 -2454.3 3286.8 -2401.5 
+        3286.8 -2401.5 3290.2 -2398.1 
+        3290.2 -2398.1 3388.1 -2398.1 
+        3388.1 -2398.1 3430.0 -2440.0 
+        3430.0 -2440.0 3429.9 -2440.1 
+      )
+      (net /TXD 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3243.5 -2600.0 3243.4 -2600.0 
+        3243.5 -2600.0 3243.5 -2526.5 
+        3243.5 -2526.5 3330.0 -2440.0 
+        3330.0 -2440.0 3330.1 -2440.1 
+      )
+      (net /RXD 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        3941.4 -2548.0 3941.4 -2547.9 
+        0.0 -2502.2 -0.1 -2502.2 
+        3671.8 -2540.0 3671.7 -2540.1 
+        3630.1 -2540.0 3630.0 -2540.0 
+      )
+      (net /VCC 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3157.8 -2836.3 3157.7 -2836.2 
+        3157.8 -2836.3 3201.7 -2792.4 
+        3201.7 -2792.4 3347.5 -2792.4 
+        3347.5 -2792.4 3423.1 -2868.0 
+        3423.1 -2868.0 3478.7 -2868.0 
+        3478.7 -2868.1 3478.7 -2868.0 
+      )
+      (net /VCC 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3190.0 -3234.0 3190.0 -3234.1 
+        3190.0 -3234.0 3168.6 -3234.0 
+        3168.6 -3234.0 3043.5 -3108.9 
+        3043.5 -3108.9 3043.5 -3039.8 
+        3043.5 -3039.8 3157.8 -2925.5 
+        3157.8 -2925.5 3157.8 -2836.3 
+        3157.8 -2836.3 3157.9 -2836.3 
+      )
+      (net /VCC 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        2887.7 -2540.0 2887.6 -2540.0 
+        2887.7 -2540.0 2887.6 -2539.9 
+        2885.7 -2496.2 2686.7 -2496.2 
+        2686.7 -2496.2 2634.9 -2548.0 
+        2682.6 0.1 2682.6 0.0 
+        2635.0 -2548.0 2634.9 -2548.0 
+      )
+      (net /VCC 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        2544.6 -2792.0 2544.5 -2792.0 
+        2544.6 -2792.0 2544.6 -2590.5 
+        2544.6 -2590.5 2587.1 -2548.0 
+        2587.1 -2548.0 2587.2 -2548.1 
+      )
+      (net /VCC 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3046.5 -2774.3 3046.5 -2774.4 
+        3046.5 -2774.3 3023.1 -2774.3 
+        3023.1 -2774.3 2945.3 -2696.5 
+        2945.3 -2696.5 2914.8 -2696.5 
+        2914.8 -2696.5 2887.8 -2669.5 
+        2887.8 -2669.5 2887.7 -2669.5 
+        2887.7 -2669.5 2887.7 -2581.8 
+        2891.1 -2581.8 2891.2 -2581.7 
+        2887.7 -2581.8 2929.5 -2581.8 
+        2929.5 -2581.8 2929.5 -2581.9 
+      )
+      (net /VCC 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        2929.5 -2540.0 2929.5 -2539.9 
+        2929.5 -2540.0 3130.0 -2540.0 
+        3130.0 -2540.0 3230.0 -2440.0 
+        3230.0 -2440.0 3230.1 -2440.1 
+      )
+      (net /VCC 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3102.1 -2836.3 3102.1 -2836.4 
+        3102.1 -2836.3 3046.5 -2836.3 
+        3049.9 -2836.3 3049.8 -2836.2 
+        3046.5 -2836.3 3046.5 -2774.3 
+        3046.5 -2774.3 3023.1 -2774.3 
+      )
+      (net /VCC 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3630.0 -2581.8 3630.0 -2581.7 
+        3630.0 -2581.8 3671.8 -2581.8 
+        3668.4 -2581.8 3668.5 -2581.9 
+        3671.8 -2581.8 3671.8 -2770.6 
+        3671.8 -2770.6 3652.4 -2790.0 
+        3652.4 -2790.0 3616.8 -2790.0 
+        3616.8 -2790.0 3538.8 -2868.0 
+        3538.8 -2868.0 3478.7 -2868.0 
+        3478.7 -2868.0 3478.7 -2867.9 
+      )
+      (net /VCC 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3102.1 -2836.3 3102.1 -2836.2 
+        3102.1 -2836.3 3157.8 -2836.3 
+        3157.8 -2836.3 3157.8 -2836.4 
+      )
+      (net /VCC 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3102.1 -2773.3 3102.0 -2773.3 
+        3046.5 0.0 3046.5 -0.1 
+        3047.5 -2773.3 3046.5 -2774.3 
+      )
+      (net /VCC 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        3390.0 -3234.0 3390.1 -3234.0 
+        3390.0 -3234.0 3390.0 -3472.1 
+        3390.0 -3472.1 3355.0 -3507.1 
+        3355.0 -3507.1 3187.6 -3507.1 
+        3187.6 -3507.1 3063.2 -3382.7 
+        3063.2 -3382.7 3063.2 -2744.3 
+        3063.2 -2744.3 2958.9 -2640.0 
+        2958.9 -2640.0 2959.0 -2639.9 
+      )
+      (net /GND 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3030.0 -2440.0 3029.9 -2440.0 
+        3030.0 -2440.0 3030.0 -2398.2 
+        3030.0 -2398.2 3071.7 -2356.5 
+        3071.7 -2356.5 3506.6 -2356.5 
+        3506.6 -2356.5 3588.1 -2438.0 
+        3588.1 -2438.0 3588.1 -2598.1 
+        3588.1 -2598.1 3630.0 -2640.0 
+        3630.0 -2640.0 3629.9 -2640.1 
+      )
+      (net /GND 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        3478.7 -2773.0 3478.6 -2773.1 
+        3478.7 -2773.0 3476.5 -2770.8 
+        3476.5 -2770.8 3157.8 -2770.8 
+        3157.8 -2770.8 3157.8 -2770.7 
+      )
+      (net /GND 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Component 12.0
+        2929.5 -2640.0 2929.6 -2639.9 
+        2929.5 -2640.0 3031.3 -2741.8 
+        3031.3 -2741.8 3102.1 -2741.8 
+        3102.1 -2741.8 3102.1 -2741.9 
+      )
+      (net /GND 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        2958.9 -2640.0 2958.8 -2639.9 
+        2958.9 -2640.0 3030.0 -2568.9 
+        3030.0 -2481.8 3030.0 -2440.0 
+        3030.1 -2440.0 3030.0 -2440.0 
+      )
+      (net /GND 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        2929.5 -2640.0 2929.5 -2639.9 
+        2929.5 -2640.0 2958.9 -2640.0 
+        2958.9 -2640.0 2958.9 -2640.1 
+      )
+      (net /GND 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        3630.0 -2640.0 3630.0 -2639.9 
+        3630.0 -2640.0 3774.6 -2640.0 
+        3824.8 -2548.0 3824.9 -2547.9 
+        3866.5 -2548.0 3866.6 -2548.0 
+      )
+      (net /GND 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path Copper 12.0
+        2745.1 -2548.0 2745.1 -2547.9 
+        2745.1 -2548.0 2837.5 -2548.0 
+        2837.5 -2548.0 2929.5 -2640.0 
+        2929.5 -2640.0 2929.4 -2640.1 
+      )
+      (net /GND 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_45:25_mil" 3616.1 -3292.3
+      (net /SCK2/PB5 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_45:25_mil" 3014.7 -2207.9
+      (net /SCK2/PB5 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_45:25_mil" 3662.3 -2169.7
+      (net /MOSI2/PB3 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_45:25_mil" 3115.3 -2146.8
+      (net /MISO2/PB4 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_45:25_mil" 2612.0 -2407.7
+      (net /SCK2/PB5 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_45:25_mil" 3602.0 -2213.7
+      (net /RED 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_45:25_mil" 3566.0 -2167.5
+      (net /GREEN 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_45:25_mil" 3517.9 -2054.5
+      (net /BLUE 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_45:25_mil" 3525.0 -2994.6
+      (net /PB2 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_45:25_mil" 4000.0 -2644.3
+      (net /PB2 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_45:25_mil" 3353.1 -2884.1
+      (net /PB1 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_45:25_mil" 3933.0 -3158.5
+      (net /PB1 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_45:25_mil" 3326.3 -2835.2
+      (net /PB0 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_45:25_mil" 3486.4 -3448.0
+      (net /PB0 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_45:25_mil" 3230.4 -2835.2
+      (net "N-000022" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_45:25_mil" 3124.6 -3033.6
+      (net "N-000004" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_45:25_mil" 3200.8 -2903.5
+      (net "N-000021" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_45:25_mil" 3405.2 -2733.4
+      (net /ADC2 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_45:25_mil" 3369.9 -2676.9
+      (net /ADC3 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_45:25_mil" 3477.8 -2636.5
+      (net /SDA 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_45:25_mil" 3019.3 -2873.3
+      (net /PB6 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_45:25_mil" 2659.1 -2951.2
+      (net /PB6 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_45:25_mil" 3026.4 -2968.5
+      (net /PB7 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_45:25_mil" 2962.4 -3355.0
+      (net /PB7 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_45:25_mil" 2714.1 -2789.7
+      (net /RESET 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_45:25_mil" 3289.5 -2731.5
+      (net /RESET 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_45:25_mil" 3490.3 -3319.9
+      (net /PB5/SCK 1)
+      (clearance_class default)
+    )
+  )
+)
