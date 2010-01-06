@@ -1,4 +1,4 @@
-update=Tue 05 Jan 2010 07:50:01 PM CET
+update=Wed 06 Jan 2010 01:22:22 PM CET
 last_client=kicad
 [common]
 NetDir=
