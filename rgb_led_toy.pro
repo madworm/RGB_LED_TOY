@@ -1,4 +1,4 @@
-update=Wed 06 Jan 2010 01:22:22 PM CET
+update=Wed 06 Jan 2010 05:45:07 PM CET
 last_client=kicad
 [common]
 NetDir=
@@ -104,7 +104,7 @@ VEgarde=40
 DrawLar=150
 EdgeLar=150
 TxtLar=120
-MSegLar=150
+MSegLar=120
 WpenSer=10
 [pcbnew/libraries]
 LibDir=
