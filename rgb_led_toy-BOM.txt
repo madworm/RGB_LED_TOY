@@ -1,0 +1,19 @@
+V1.21
+
+1x PCB
+1x 10k Ohm 0805
+1x (prelim!) 91 Ohm 0805
+1x (prelim!) 100 Ohm 0805
+1x (prelim!) 110 Ohm 0805
+2x 10µF, 16V, tantalum, A3216
+1x 10µF, 25V, ceramic, X5R, 1206
+2x 100nF, 50V, ceramic, X7R, 0805
+1x TS 2940 CW-5.0, SOT-223
+1x anti static bag
+2x 6x1 female header
+2x 3x2 male header
+1x 6x1 male header
+1x 3x1 male header
+1x Atmega168-AU TQFP-32 7x7
+4x low profile jumper h=4mm
+8x RGB LEDs PLCC6 5050
