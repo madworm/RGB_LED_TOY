@@ -2,9 +2,9 @@ V1.21
 
 1x PCB
 1x 10k Ohm 0805
-1x (prelim!) 91 Ohm 0805
-1x (prelim!) 100 Ohm 0805
-1x (prelim!) 110 Ohm 0805
+1x 91 Ohm 0805 (RED, R2)
+1x 390 Ohm 0805 (GREEN, R3)
+1x 110 Ohm 0805 (BLUE, R1)
 2x 10µF, 16V, tantalum, A3216
 1x 10µF, 25V, ceramic, X5R, 1206
 2x 100nF, 50V, ceramic, X7R, 0805
@@ -16,4 +16,4 @@ V1.21
 1x 3x1 male header
 1x Atmega168-AU TQFP-32 7x7
 4x low profile jumper h=4mm
-8x RGB LEDs PLCC6 5050
+8x RGB LEDs PLCC6 5050 (ebay: JELEDHK, green very! efficient, R: 1.76V, G: 2.34V, B: 2.52V)
