@@ -1,4 +1,4 @@
-update=Thu 02 Sep 2010 05:53:13 AM CEST
+update=Sun 05 Sep 2010 11:36:23 PM CEST
 last_client=pcbnew
 [common]
 NetDir=
@@ -77,9 +77,9 @@ RootSch=
 BoardNm=
 [pcbnew]
 version=1
-PadDrlX=0
-PadDimH=400
-PadDimV=400
+PadDrlX=320
+PadDimH=550
+PadDimV=550
 BoardThickness=630
 SgPcb45=1
 TxtPcbV=800
@@ -87,7 +87,7 @@ TxtPcbH=600
 TxtModV=600
 TxtModH=600
 TxtModW=120
-VEgarde=40
+VEgarde=80
 DrawLar=150
 EdgeLar=150
 TxtLar=120
