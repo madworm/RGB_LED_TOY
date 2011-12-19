@@ -1,198 +1,241 @@
-# EESchema Netlist Version 1.1 created  Tue 05 Jan 2010 09:16:08 PM CET
+# EESchema Netlist Version 1.1 created  Mon 19 Dec 2011 10:00:16 PM CET
 (
- ( /49EB6692 -C0805 C1 100nF
-  ( 1 /VCC )
-  ( 2 GND )
+ ( /49EB35FB $noname  IC1 AT168 {Lib=ATMEGA8_168_328_TQFP}
+  (    1 ? )
+  (    2 ? )
+  (    3 GND )
+  (    4 VCC )
+  (    5 GND )
+  (    6 VCC )
+  (    7 /OE )
+  (    8 ? )
+  (    9 ? )
+  (   10 ? )
+  (   11 ? )
+  (   12 ? )
+  (   13 ? )
+  (   14 /LATCH )
+  (   15 /MOSI )
+  (   16 /MISO )
+  (   17 /SCK )
+  (   18 VCC )
+  (   19 ? )
+  (   20 ? )
+  (   21 GND )
+  (   22 ? )
+  (   23 ? )
+  (   24 ? )
+  (   25 ? )
+  (   26 ? )
+  (   27 ? )
+  (   28 ? )
+  (   29 /RESET )
+  (   30 ? )
+  (   31 ? )
+  (   32 ? )
  )
- ( /4AECDE50 -C1206 C2 10muF
-  ( 1 /VCC )
-  ( 2 GND )
+ ( /4EEF99A9 $noname  MH4 CONN_1 {Lib=CONN_1}
+  (    1 GND )
  )
- ( /4AEE0723 -C0805 C3 100nF
-  ( 1 /RESET )
-  ( 2 /DTR )
+ ( /4EEF99A6 $noname  MH3 CONN_1 {Lib=CONN_1}
+  (    1 GND )
  )
- ( /4B439132 -C3216 C4 10muF
-  ( 1 /V_reg )
-  ( 2 GND )
+ ( /4EEF99A3 $noname  MH2 CONN_1 {Lib=CONN_1}
+  (    1 GND )
  )
- ( /4B43913E -C3216 C5 10muF
-  ( 1 /VCC )
-  ( 2 GND )
+ ( /4EEF999D $noname  MH1 CONN_1 {Lib=CONN_1}
+  (    1 GND )
  )
- ( /49EB57EA MADW__impolux_rgb_smd D1 RGB_SMD
-  ( 1 /PB0 )
-  ( 2 /PB0 )
-  ( 3 /PB0 )
-  ( 4 /GREEN )
-  ( 5 /RED )
-  ( 6 /BLUE )
+ ( /4EEF92CE $noname  JP1 MADW__AVR_ISP {Lib=MADW__AVR_ISP}
+  (    1 /MISO )
+  (    2 VCC )
+  (    3 /SCK )
+  (    4 /MOSI )
+  (    5 /RESET )
+  (    6 GND )
  )
- ( /49EB57EC MADW__impolux_rgb_smd D2 RGB_SMD
-  ( 1 /PB1 )
-  ( 2 /PB1 )
-  ( 3 /PB1 )
-  ( 4 /GREEN )
-  ( 5 /RED )
-  ( 6 /BLUE )
+ ( /4EEF8E81 $noname  C5 0.1µ {Lib=C}
+  (    1 VCC )
+  (    2 GND )
  )
- ( /49EB57ED MADW__impolux_rgb_smd D3 RGB_SMD
-  ( 1 /PB2 )
-  ( 2 /PB2 )
-  ( 3 /PB2 )
-  ( 4 /GREEN )
-  ( 5 /RED )
-  ( 6 /BLUE )
+ ( /4EEF8E7C $noname  C4 0.1µ {Lib=C}
+  (    1 VCC )
+  (    2 GND )
  )
- ( /49EB57EB MADW__impolux_rgb_smd D4 RGB_SMD
-  ( 1 /MOSI2/PB3 )
-  ( 2 /MOSI2/PB3 )
-  ( 3 /MOSI2/PB3 )
-  ( 4 /GREEN )
-  ( 5 /RED )
-  ( 6 /BLUE )
+ ( /4EEF8E6C $noname  C3 0.1µ {Lib=C}
+  (    1 VCC )
+  (    2 GND )
  )
- ( /49EB3620 MADW__impolux_rgb_smd D5 RGB_SMD
-  ( 1 /MISO2/PB4 )
-  ( 2 /MISO2/PB4 )
-  ( 3 /MISO2/PB4 )
-  ( 4 /GREEN )
-  ( 5 /RED )
-  ( 6 /BLUE )
+ ( /4EEF8E04 $noname  R2 10k {Lib=R}
+  (    1 VCC )
+  (    2 /OE )
  )
- ( /49EB3626 MADW__impolux_rgb_smd D6 RGB_SMD
-  ( 1 /SCK2/PB5 )
-  ( 2 /SCK2/PB5 )
-  ( 3 /SCK2/PB5 )
-  ( 4 /GREEN )
-  ( 5 /RED )
-  ( 6 /BLUE )
+ ( /4EEF8D59 $noname  R5 600R {Lib=R}
+  (    1 N-000045 )
+  (    2 GND )
  )
- ( /49EB3628 MADW__impolux_rgb_smd D7 RGB_SMD
-  ( 1 /PB6 )
-  ( 2 /PB6 )
-  ( 3 /PB6 )
-  ( 4 /GREEN )
-  ( 5 /RED )
-  ( 6 /BLUE )
+ ( /4EEF8D55 $noname  R4 600R {Lib=R}
+  (    1 N-000046 )
+  (    2 GND )
  )
- ( /49EB3624 MADW__impolux_rgb_smd D8 RGB_SMD
-  ( 1 /PB7 )
-  ( 2 /PB7 )
-  ( 3 /PB7 )
-  ( 4 /GREEN )
-  ( 5 /RED )
-  ( 6 /BLUE )
+ ( /4EEF8D4E $noname  R3 600R {Lib=R}
+  (    1 N-000044 )
+  (    2 GND )
  )
- ( /49EB35FB MADW__TQFP_32_7x7 IC1 AT168
-  ( 1 ? )
-  ( 2 ? )
-  ( 3 GND )
-  ( 4 /VCC )
-  ( 5 GND )
-  ( 6 /VCC )
-  ( 7 /PB6 )
-  ( 8 /PB7 )
-  ( 9 N-000006 )
-  ( 10 N-000023 )
-  ( 11 N-000005 )
-  ( 12 /PB0 )
-  ( 13 /PB1 )
-  ( 14 /PB2 )
-  ( 15 /PB3/MOSI )
-  ( 16 /PB4/MISO )
-  ( 17 /PB5/SCK )
-  ( 18 /VCC )
-  ( 19 ? )
-  ( 20 ? )
-  ( 21 GND )
-  ( 22 ? )
-  ( 23 ? )
-  ( 24 ? )
-  ( 25 /ADC2 )
-  ( 26 /ADC3 )
-  ( 27 /SDA )
-  ( 28 /SCL )
-  ( 29 /RESET )
-  ( 30 /RXD )
-  ( 31 /TXD )
-  ( 32 ? )
+ ( /4EEF8D25 $noname  RV3 4k7 {Lib=POT}
+  (    1 /R.3 )
+  (    2 /R.3 )
+  (    3 N-000045 )
  )
- ( /4B438EB8 -SOT223 IC2 TS2940
-  ( 1 /V_reg )
-  ( 2 GND )
-  ( 3 /VCC )
+ ( /4EEF8D1E $noname  RV2 4k7 {Lib=POT}
+  (    1 /R.2 )
+  (    2 /R.2 )
+  (    3 N-000046 )
  )
- ( /49EB4A28 SIL-6 P1 I2C
-  ( 1 /V_in )
-  ( 2 GND )
-  ( 3 /SCL )
-  ( 4 /SDA )
-  ( 5 /ADC3 )
-  ( 6 /ADC2 )
+ ( /4EEF8D17 $noname  RV1 4k7 {Lib=POT}
+  (    1 /R.1 )
+  (    2 /R.1 )
+  (    3 N-000044 )
  )
- ( /49EB4A3D SIL-6 P2 I2C
-  ( 1 /V_in )
-  ( 2 GND )
-  ( 3 /SCL )
-  ( 4 /SDA )
-  ( 5 /ADC3 )
-  ( 6 /ADC2 )
+ ( /49EB57EA $noname  D1 RGB_SMD {Lib=IMPOLUX_RGB_SMD}
+  (    1 /O3.4 )
+  (    2 /O2.4 )
+  (    3 /O1.4 )
+  (    4 VCC )
+  (    5 VCC )
+  (    6 VCC )
  )
- ( /49EB4CC3 SIL-6 P3 FTDI
-  ( 1 GND )
-  ( 2 ? )
-  ( 3 /VCC )
-  ( 4 /RXD )
-  ( 5 /TXD )
-  ( 6 /DTR )
+ ( /49EB3628 $noname  D7 RGB_SMD {Lib=IMPOLUX_RGB_SMD}
+  (    1 /O3.2 )
+  (    2 /O2.2 )
+  (    3 /O1.2 )
+  (    4 VCC )
+  (    5 VCC )
+  (    6 VCC )
  )
- ( /49EB51D3 pin_array_3x2 P4 ISP
-  ( 1 /PB4/MISO )
-  ( 2 /VCC )
-  ( 3 /PB5/SCK )
-  ( 4 /PB3/MOSI )
-  ( 5 /RESET )
-  ( 6 GND )
+ ( /49EB3620 $noname  D5 RGB_SMD {Lib=IMPOLUX_RGB_SMD}
+  (    1 /O3.0 )
+  (    2 /O2.0 )
+  (    3 /O1.0 )
+  (    4 VCC )
+  (    5 VCC )
+  (    6 VCC )
  )
- ( /4B439420 SIL-3 P5 VSEL
-  ( 1 /V_reg )
-  ( 2 /V_in )
-  ( 3 /VCC )
+ ( /4EEF855F $noname  IC4 MBI5168 {Lib=MBI5168}
+  (    1 GND )
+  (    2 N-000005 )
+  (    3 /SCK )
+  (    4 /LATCH )
+  (    5 /O3.0 )
+  (    6 /O3.1 )
+  (    7 /O3.2 )
+  (    8 /O3.3 )
+  (    9 /O3.4 )
+  (   10 /O3.5 )
+  (   11 /O3.6 )
+  (   12 /O3.7 )
+  (   13 /LATCH )
+  (   14 ? )
+  (   15 /R.3 )
+  (   16 VCC )
  )
- ( /4B439579 pin_array_3x2 P6 ISP_E
-  ( 1 /PB3/MOSI )
-  ( 2 /MOSI2/PB3 )
-  ( 3 /PB4/MISO )
-  ( 4 /MISO2/PB4 )
-  ( 5 /PB5/SCK )
-  ( 6 /SCK2/PB5 )
+ ( /4EEF855B $noname  IC3 MBI5168 {Lib=MBI5168}
+  (    1 GND )
+  (    2 N-000047 )
+  (    3 /SCK )
+  (    4 /LATCH )
+  (    5 /O2.0 )
+  (    6 /O2.1 )
+  (    7 /O2.2 )
+  (    8 /O2.3 )
+  (    9 /O2.4 )
+  (   10 /O2.5 )
+  (   11 /O2.6 )
+  (   12 /O2.7 )
+  (   13 /OE )
+  (   14 N-000005 )
+  (   15 /R.2 )
+  (   16 VCC )
  )
- ( /49EB5619 -R0805 R1 R
-  ( 1 N-000005 )
-  ( 2 /BLUE )
+ ( /4EEF8554 $noname  IC2 MBI5168 {Lib=MBI5168}
+  (    1 GND )
+  (    2 /MOSI )
+  (    3 /SCK )
+  (    4 /LATCH )
+  (    5 /O1.0 )
+  (    6 /O1.1 )
+  (    7 /O1.2 )
+  (    8 /O1.3 )
+  (    9 /O1.4 )
+  (   10 /O1.5 )
+  (   11 /O1.6 )
+  (   12 /O1.7 )
+  (   13 /OE )
+  (   14 N-000047 )
+  (   15 /R.1 )
+  (   16 VCC )
  )
- ( /49EB5627 -R0805 R2 R
-  ( 1 N-000023 )
-  ( 2 /GREEN )
+ ( /4AECDE50 $noname  C2 10muF {Lib=C}
+  (    1 VCC )
+  (    2 GND )
  )
- ( /49EB562A -R0805 R3 R
-  ( 1 N-000006 )
-  ( 2 /RED )
+ ( /49EB6692 $noname  C1 100nF {Lib=C}
+  (    1 VCC )
+  (    2 GND )
  )
- ( /49EB58E2 -R0805 R4 10k
-  ( 1 /RESET )
-  ( 2 /VCC )
+ ( /49EB58E2 $noname  R1 10k {Lib=R}
+  (    1 /RESET )
+  (    2 VCC )
+ )
+ ( /49EB57ED $noname  D3 RGB_SMD {Lib=IMPOLUX_RGB_SMD}
+  (    1 /O3.6 )
+  (    2 /O2.6 )
+  (    3 /O1.6 )
+  (    4 VCC )
+  (    5 VCC )
+  (    6 VCC )
+ )
+ ( /49EB57EC $noname  D2 RGB_SMD {Lib=IMPOLUX_RGB_SMD}
+  (    1 /O3.5 )
+  (    2 /O2.5 )
+  (    3 /O1.5 )
+  (    4 VCC )
+  (    5 VCC )
+  (    6 VCC )
+ )
+ ( /49EB57EB $noname  D4 RGB_SMD {Lib=IMPOLUX_RGB_SMD}
+  (    1 /O3.7 )
+  (    2 /O2.7 )
+  (    3 /O1.7 )
+  (    4 VCC )
+  (    5 VCC )
+  (    6 VCC )
+ )
+ ( /49EB3626 $noname  D6 RGB_SMD {Lib=IMPOLUX_RGB_SMD}
+  (    1 /O3.1 )
+  (    2 /O2.1 )
+  (    3 /O1.1 )
+  (    4 VCC )
+  (    5 VCC )
+  (    6 VCC )
+ )
+ ( /49EB3624 $noname  D8 RGB_SMD {Lib=IMPOLUX_RGB_SMD}
+  (    1 /O3.3 )
+  (    2 /O2.3 )
+  (    3 /O1.3 )
+  (    4 VCC )
+  (    5 VCC )
+  (    6 VCC )
  )
 )
 *
 { Allowed footprints by component:
-$component C1
+$component C5
  SM*
  C?
  C1-1
 $endlist
-$component C2
+$component C4
  SM*
  C?
  C1-1
@@ -202,33 +245,234 @@ $component C3
  C?
  C1-1
 $endlist
-$component C4
- CP*
- SM*
-$endlist
-$component C5
- CP*
- SM*
-$endlist
-$component R1
- R?
- SM0603
- SM0805
-$endlist
 $component R2
  R?
  SM0603
  SM0805
+ R?-*
 $endlist
-$component R3
+$component R5
  R?
  SM0603
  SM0805
+ R?-*
 $endlist
 $component R4
  R?
  SM0603
  SM0805
+ R?-*
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component C2
+ SM*
+ C?
+ C1-1
+$endlist
+$component C1
+ SM*
+ C?
+ C1-1
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
 $endlist
 $endfootprintlist
 }
+{ Pin List by Nets
+Net 1 "/O3.3" "O3.3"
+ D8 1
+ IC4 8
+Net 2 "/O3.2" "O3.2"
+ IC4 7
+ D7 1
+Net 3 "/O3.1" "O3.1"
+ IC4 6
+ D6 1
+Net 4 "/O3.0" "O3.0"
+ D5 1
+ IC4 5
+Net 5 "" ""
+ IC4 2
+ IC3 14
+Net 6 "/O3.4" "O3.4"
+ D1 1
+ IC4 9
+Net 8 "/RESET" "RESET"
+ IC1 29
+ R1 1
+ JP1 5
+Net 9 "VCC" "VCC"
+ C2 1
+ IC4 16
+ D6 6
+ IC2 16
+ D8 4
+ D3 6
+ D3 5
+ D3 4
+ C1 1
+ D8 6
+ D8 5
+ IC3 16
+ D6 5
+ D6 4
+ IC1 4
+ R1 2
+ D7 4
+ D5 6
+ R2 1
+ D5 5
+ D5 4
+ C4 1
+ D7 6
+ D7 5
+ IC1 18
+ JP1 2
+ D1 6
+ D1 5
+ D1 4
+ IC1 6
+ D4 4
+ D2 4
+ D2 5
+ C3 1
+ D2 6
+ D4 5
+ D4 6
+ C5 1
+Net 10 "/MISO" "MISO"
+ IC1 16
+ JP1 1
+Net 11 "/O2.0" "O2.0"
+ IC3 5
+ D5 2
+Net 12 "GND" "GND"
+ C5 2
+ MH1 1
+ IC1 21
+ IC4 1
+ JP1 6
+ IC1 3
+ MH2 1
+ R3 2
+ IC2 1
+ IC1 5
+ R4 2
+ R5 2
+ IC3 1
+ C2 2
+ MH4 1
+ C1 2
+ C4 2
+ C3 2
+ MH3 1
+Net 13 "/R.2" "R.2"
+ IC3 15
+ RV2 1
+ RV2 2
+Net 14 "/O2.7" "O2.7"
+ IC3 12
+ D4 2
+Net 15 "/O2.6" "O2.6"
+ IC3 11
+ D3 2
+Net 16 "/O2.5" "O2.5"
+ D2 2
+ IC3 10
+Net 17 "/O2.4" "O2.4"
+ IC3 9
+ D1 2
+Net 18 "/O2.3" "O2.3"
+ IC3 8
+ D8 2
+Net 19 "/O2.2" "O2.2"
+ IC3 7
+ D7 2
+Net 20 "/O2.1" "O2.1"
+ IC3 6
+ D6 2
+Net 21 "/MOSI" "MOSI"
+ IC2 2
+ IC1 15
+ JP1 4
+Net 22 "/R.3" "R.3"
+ IC4 15
+ RV3 1
+ RV3 2
+Net 23 "/O3.7" "O3.7"
+ IC4 12
+ D4 1
+Net 24 "/O3.6" "O3.6"
+ D3 1
+ IC4 11
+Net 25 "/O3.5" "O3.5"
+ D2 1
+ IC4 10
+Net 26 "/R.1" "R.1"
+ RV1 2
+ RV1 1
+ IC2 15
+Net 27 "/OE" "OE"
+ IC2 13
+ IC3 13
+ R2 2
+ IC1 7
+Net 28 "/O1.7" "O1.7"
+ IC2 12
+ D4 3
+Net 29 "/O1.6" "O1.6"
+ IC2 11
+ D3 3
+Net 30 "/O1.5" "O1.5"
+ D2 3
+ IC2 10
+Net 31 "/O1.4" "O1.4"
+ D1 3
+ IC2 9
+Net 32 "/O1.3" "O1.3"
+ D8 3
+ IC2 8
+Net 33 "/O1.2" "O1.2"
+ IC2 7
+ D7 3
+Net 34 "/O1.1" "O1.1"
+ IC2 6
+ D6 3
+Net 35 "/O1.0" "O1.0"
+ IC2 5
+ D5 3
+Net 36 "/LATCH" "LATCH"
+ IC4 4
+ IC2 4
+ IC1 14
+ IC4 13
+ IC3 4
+Net 37 "/SCK" "SCK"
+ IC2 3
+ IC1 17
+ IC3 3
+ IC4 3
+ JP1 3
+Net 44 "" ""
+ RV1 3
+ R3 1
+Net 45 "" ""
+ RV3 3
+ R5 1
+Net 46 "" ""
+ R4 1
+ RV2 3
+Net 47 "" ""
+ IC2 14
+ IC3 2
+}
+#End
