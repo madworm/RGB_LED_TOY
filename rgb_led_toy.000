@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 1 date Tue 20 Dec 2011 05:00:04 PM CET
+PCBNEW-BOARD Version 1 date Tue 20 Dec 2011 05:01:08 PM CET
 
 # Created by Pcbnew(2011-07-08)-stable
 
@@ -3532,7 +3532,7 @@ $EndTEXTPCB
 $TEXTPCB
 Te "Nooooooo!"
 Po 40700 27800 400 400 80 900
-De 20 1 0 Normal C
+De 20 0 0 Normal C
 $EndTEXTPCB
 $TEXTPCB
 Te "POP"
