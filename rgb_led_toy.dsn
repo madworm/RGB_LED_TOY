@@ -62,9 +62,9 @@
       (place JP1 3275 -2310 front 180 (PN ISP))
     )
     (component -R0805
-      (place R5 3265 -3160 back 0 (PN 180R))
+      (place R5 3275 -3180 back 0 (PN 180R))
       (place R1 3485 -2310 back 90 (PN 10k))
-      (place R3 2985 -2785 front 270 (PN 600R))
+      (place R3 2715 -2785 front 90 (PN 600R))
       (place R2 3065 -2310 back 270 (PN 10k))
       (place R4 3275 -3340 back 0 (PN 10k))
       (place R6 3065 -3310 back 155 (PN 10k))
@@ -84,11 +84,11 @@
     (component -C0805
       (place C1 3690 -2870 back 0 (PN 100nF))
       (place C3 3690 -2700 back 180 (PN 100nF))
-      (place C5 3275 -2480 front 0 (PN 100nF))
+      (place C5 3715 -2785 front 90 (PN 100nF))
     )
     (component -C1206
       (place C2 3670 -2785 back 0 (PN 10µF))
-      (place C4 3275 -2570 front 0 (PN 10µF))
+      (place C4 3625 -2785 front 90 (PN 10µF))
     )
     (component -SOT23
       (place Q1 3275 -3475 back 180 (PN "IRLML_2502_P-FET"))
@@ -103,7 +103,7 @@
       (place P3 3835 -2780 back 270 (PN CONN_6))
     )
     (component "MADW__TC33X-POT"
-      (place RV1 2835 -2785 front 90 (PN 4k7))
+      (place RV1 2860 -2785 front 270 (PN 2k))
     )
   )
   (library
@@ -534,28 +534,28 @@
       (pins IC1-15 JP1-4 IC2-2)
     )
     (net /O1.0
-      (pins D5-1 D5-2 D5-3 IC2-5)
+      (pins D1-1 D1-2 D1-3 IC2-5)
     )
     (net /O1.1
-      (pins D6-1 D6-2 D6-3 IC2-6)
+      (pins D2-1 D2-2 D2-3 IC2-6)
     )
     (net /O1.2
-      (pins D7-1 D7-2 D7-3 IC2-7)
+      (pins D3-1 D3-2 D3-3 IC2-7)
     )
     (net /O1.3
-      (pins D8-1 D8-2 D8-3 IC2-8)
+      (pins D4-1 D4-2 D4-3 IC2-8)
     )
     (net /O1.4
-      (pins D1-1 D1-2 D1-3 IC2-9)
+      (pins D5-1 D5-2 D5-3 IC2-9)
     )
     (net /O1.5
-      (pins D2-1 D2-2 D2-3 IC2-10)
+      (pins D6-1 D6-2 D6-3 IC2-10)
     )
     (net /O1.6
-      (pins D3-1 D3-2 D3-3 IC2-11)
+      (pins D7-1 D7-2 D7-3 IC2-11)
     )
     (net /O1.7
-      (pins D4-1 D4-2 D4-3 IC2-12)
+      (pins D8-1 D8-2 D8-3 IC2-12)
     )
     (net /OE
       (pins IC1-7 IC2-13 R2-2)

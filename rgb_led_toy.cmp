@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPCB (2011-07-08)-stable date = Tue 20 Dec 2011 01:05:42 PM CET
+Cmp-Mod V01 Created by CvPCB (2011-07-08)-stable date = Tue 20 Dec 2011 02:36:38 PM CET
 
 BeginCmp
 TimeStamp = /49EB6692;
@@ -36,56 +36,56 @@ IdModule  = -C0805;
 EndCmp
 
 BeginCmp
-TimeStamp = /49EB57EA;
+TimeStamp = /49EB3620;
 Reference = D1;
 ValeurCmp = RGB_SMD;
 IdModule  = MADW__impolux_rgb_smd;
 EndCmp
 
 BeginCmp
-TimeStamp = /49EB57EC;
+TimeStamp = /49EB3626;
 Reference = D2;
 ValeurCmp = RGB_SMD;
 IdModule  = MADW__impolux_rgb_smd;
 EndCmp
 
 BeginCmp
-TimeStamp = /49EB57ED;
+TimeStamp = /49EB3628;
 Reference = D3;
 ValeurCmp = RGB_SMD;
 IdModule  = MADW__impolux_rgb_smd;
 EndCmp
 
 BeginCmp
-TimeStamp = /49EB57EB;
+TimeStamp = /49EB3624;
 Reference = D4;
 ValeurCmp = RGB_SMD;
 IdModule  = MADW__impolux_rgb_smd;
 EndCmp
 
 BeginCmp
-TimeStamp = /49EB3620;
+TimeStamp = /49EB57EA;
 Reference = D5;
 ValeurCmp = RGB_SMD;
 IdModule  = MADW__impolux_rgb_smd;
 EndCmp
 
 BeginCmp
-TimeStamp = /49EB3626;
+TimeStamp = /49EB57EC;
 Reference = D6;
 ValeurCmp = RGB_SMD;
 IdModule  = MADW__impolux_rgb_smd;
 EndCmp
 
 BeginCmp
-TimeStamp = /49EB3628;
+TimeStamp = /49EB57ED;
 Reference = D7;
 ValeurCmp = RGB_SMD;
 IdModule  = MADW__impolux_rgb_smd;
 EndCmp
 
 BeginCmp
-TimeStamp = /49EB3624;
+TimeStamp = /49EB57EB;
 Reference = D8;
 ValeurCmp = RGB_SMD;
 IdModule  = MADW__impolux_rgb_smd;
