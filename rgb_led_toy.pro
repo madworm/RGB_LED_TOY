@@ -1,5 +1,5 @@
-update=Tue 20 Dec 2011 01:30:06 PM CET
-last_client=kicad
+update=Wed 21 Dec 2011 03:18:25 PM CET
+last_client=pcbnew
 [common]
 NetDir=
 [eeschema]
@@ -71,21 +71,25 @@ version=1
 NetIExt=.net
 [cvpcb/libraries]
 EquName1=devcms
+[general]
+version=1
+RootSch=
+BoardNm=
 [pcbnew]
 version=1
 PadDrlX=0
 PadDimH=400
 PadDimV=400
 BoardThickness=630
-TxtPcbV=800
-TxtPcbH=600
-TxtModV=600
-TxtModH=600
-TxtModW=120
+TxtPcbV=400
+TxtPcbH=400
+TxtModV=400
+TxtModH=400
+TxtModW=80
 VEgarde=40
 DrawLar=150
 EdgeLar=150
-TxtLar=120
+TxtLar=80
 MSegLar=120
 LastNetListRead=rgb_led_toy.net
 [pcbnew/libraries]
@@ -100,5 +104,3 @@ LibName7=divers
 LibName8=libcms
 LibName9=display
 LibName10=valves
-[general]
-version=1

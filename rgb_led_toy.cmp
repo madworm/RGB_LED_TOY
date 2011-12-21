@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPCB (2011-07-08)-stable date = Tue 20 Dec 2011 02:36:38 PM CET
+Cmp-Mod V01 Created by CvPCB (2011-07-08)-stable date = Wed 21 Dec 2011 04:37:13 PM CET
 
 BeginCmp
 TimeStamp = /49EB6692;
@@ -15,24 +15,52 @@ IdModule  = -C1206;
 EndCmp
 
 BeginCmp
-TimeStamp = /4EF05742;
+TimeStamp = /4EF1D4A3;
 Reference = C3;
 ValeurCmp = 100nF;
 IdModule  = -C0805;
 EndCmp
 
 BeginCmp
-TimeStamp = /4EF04892;
+TimeStamp = /4EEF8E6C;
 Reference = C4;
+ValeurCmp = 100nF;
+IdModule  = -C0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EF1C9A6;
+Reference = C5;
 ValeurCmp = 10µF;
 IdModule  = -C1206;
 EndCmp
 
 BeginCmp
-TimeStamp = /4EEF8E6C;
-Reference = C5;
+TimeStamp = /4EEF8E7C;
+Reference = C6;
 ValeurCmp = 100nF;
 IdModule  = -C0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EF1C9AB;
+Reference = C7;
+ValeurCmp = 10µF;
+IdModule  = -C1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEF8E81;
+Reference = C8;
+ValeurCmp = 100nF;
+IdModule  = -C0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EF1C9B0;
+Reference = C9;
+ValeurCmp = 10µF;
+IdModule  = -C1206;
 EndCmp
 
 BeginCmp
@@ -106,6 +134,20 @@ IdModule  = MADW__SO16;
 EndCmp
 
 BeginCmp
+TimeStamp = /4EEF855B;
+Reference = IC3;
+ValeurCmp = MBI5168;
+IdModule  = MADW__SO16;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEF855F;
+Reference = IC4;
+ValeurCmp = MBI5168;
+IdModule  = MADW__SO16;
+EndCmp
+
+BeginCmp
 TimeStamp = /4EEF92CE;
 Reference = JP1;
 ValeurCmp = ISP;
@@ -141,45 +183,24 @@ IdModule  = MADW__mounting_hole_3mm;
 EndCmp
 
 BeginCmp
-TimeStamp = /4EF055F3;
+TimeStamp = /4EF1D268;
 Reference = P1;
-ValeurCmp = CONN_4;
+ValeurCmp = I2C;
 IdModule  = SIL-4;
 EndCmp
 
 BeginCmp
-TimeStamp = /4EF055F5;
+TimeStamp = /4EF1D26D;
 Reference = P2;
-ValeurCmp = CONN_4;
+ValeurCmp = PORTC;
 IdModule  = SIL-4;
 EndCmp
 
 BeginCmp
-TimeStamp = /4EF05D69;
+TimeStamp = /4EF1D431;
 Reference = P3;
-ValeurCmp = CONN_6;
+ValeurCmp = FTDI;
 IdModule  = SIL-6;
-EndCmp
-
-BeginCmp
-TimeStamp = /4EF042FA;
-Reference = Q1;
-ValeurCmp = IRLML_2502_P-FET;
-IdModule  = -SOT23;
-EndCmp
-
-BeginCmp
-TimeStamp = /4EF042FD;
-Reference = Q2;
-ValeurCmp = IRLML_2502_P-FET;
-IdModule  = -SOT23;
-EndCmp
-
-BeginCmp
-TimeStamp = /4EF04300;
-Reference = Q3;
-ValeurCmp = IRLML_2502_P-FET;
-IdModule  = -SOT23;
 EndCmp
 
 BeginCmp
@@ -204,51 +225,37 @@ IdModule  = -R0805;
 EndCmp
 
 BeginCmp
-TimeStamp = /4EF04333;
+TimeStamp = /4EEF8D55;
 Reference = R4;
-ValeurCmp = 10k;
+ValeurCmp = 600R;
 IdModule  = -R0805;
 EndCmp
 
 BeginCmp
-TimeStamp = /4EF043EC;
+TimeStamp = /4EEF8D59;
 Reference = R5;
-ValeurCmp = 180R;
-IdModule  = -R0805;
-EndCmp
-
-BeginCmp
-TimeStamp = /4EF04392;
-Reference = R6;
-ValeurCmp = 10k;
-IdModule  = -R0805;
-EndCmp
-
-BeginCmp
-TimeStamp = /4EF043F6;
-Reference = R7;
-ValeurCmp = 180R;
-IdModule  = -R0805;
-EndCmp
-
-BeginCmp
-TimeStamp = /4EF0439C;
-Reference = R9;
-ValeurCmp = 10k;
-IdModule  = -R0805;
-EndCmp
-
-BeginCmp
-TimeStamp = /4EF043FC;
-Reference = R10;
-ValeurCmp = 180R;
+ValeurCmp = 600R;
 IdModule  = -R0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /4EEF8D17;
 Reference = RV1;
-ValeurCmp = 2k;
+ValeurCmp = 4k7;
+IdModule  = MADW__TC33X-POT;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEF8D1E;
+Reference = RV2;
+ValeurCmp = 4k7;
+IdModule  = MADW__TC33X-POT;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EEF8D25;
+Reference = RV3;
+ValeurCmp = 4k7;
 IdModule  = MADW__TC33X-POT;
 EndCmp
 
