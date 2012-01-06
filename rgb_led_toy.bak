@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Fri 23 Dec 2011 02:13:14 PM CET
+EESchema Schematic File Version 2  date Fri 06 Jan 2012 10:15:25 AM CET
 LIBS:power
 LIBS:atmega8_168_328_TQFP
 LIBS:my_parts
@@ -37,8 +37,8 @@ encoding utf-8
 Sheet 1 1
 Title "RGB LED Toy"
 Date "23 dec 2011"
-Rev "2.0 beta"
-Comp "My 2muF - blog.spitzenpfeil.org"
+Rev "2.0 gamma"
+Comp "2012 - My 2muF - blog.spitzenpfeil.org"
 Comment1 ""
 Comment2 ""
 Comment3 ""
