@@ -1,4 +1,4 @@
-# EESchema Netlist Version 1.1 created  Fri 06 Jan 2012 10:17:19 AM CET
+# EESchema Netlist Version 1.1 created  Fri 06 Jan 2012 10:38:17 PM CET
 (
  ( /49EB6692 -C0805 C1 100nF
   ( 1 VCC )
@@ -100,6 +100,38 @@
   ( 5 VCC )
   ( 6 VCC )
  )
+ ( /4F07496C -CHIPLED_0805 D9 LED
+  ( 1 N-000051 )
+  ( 2 /led0 )
+ )
+ ( /4F074973 -CHIPLED_0805 D10 LED
+  ( 1 N-000071 )
+  ( 2 /led0 )
+ )
+ ( /4F074978 -CHIPLED_0805 D11 LED
+  ( 1 N-000050 )
+  ( 2 /led0 )
+ )
+ ( /4F07497C -CHIPLED_0805 D12 LED
+  ( 1 N-000070 )
+  ( 2 /led0 )
+ )
+ ( /4F07497F -CHIPLED_0805 D13 LED
+  ( 1 N-000052 )
+  ( 2 /led0 )
+ )
+ ( /4F074981 -CHIPLED_0805 D14 LED
+  ( 1 N-000069 )
+  ( 2 /led0 )
+ )
+ ( /4F074985 -CHIPLED_0805 D15 LED
+  ( 1 N-000062 )
+  ( 2 /led0 )
+ )
+ ( /4F074A28 -CHIPLED_0805 D16 LED
+  ( 1 N-000061 )
+  ( 2 /led0 )
+ )
  ( /49EB35FB MADW__TQFP_32_7x7 IC1 AT168
   ( 1 ? )
   ( 2 ? )
@@ -132,7 +164,7 @@
   ( 29 /RESET )
   ( 30 /RXI )
   ( 31 /TXO )
-  ( 32 ? )
+  ( 32 /led0 )
  )
  ( /4EEF8554 MADW__SO16 IC2 MBI5168
   ( 1 GND )
@@ -148,13 +180,13 @@
   ( 11 /O1.6 )
   ( 12 /O1.7 )
   ( 13 /OE )
-  ( 14 N-000056 )
+  ( 14 N-000048 )
   ( 15 /R.1 )
   ( 16 VCC )
  )
  ( /4EEF855B MADW__SO16 IC3 MBI5168
   ( 1 GND )
-  ( 2 N-000056 )
+  ( 2 N-000048 )
   ( 3 /SCK )
   ( 4 /LATCH )
   ( 5 /O2.0 )
@@ -166,13 +198,13 @@
   ( 11 /O2.6 )
   ( 12 /O2.7 )
   ( 13 /OE )
-  ( 14 N-000034 )
+  ( 14 N-000046 )
   ( 15 /R.2 )
   ( 16 VCC )
  )
  ( /4EEF855F MADW__SO16 IC4 MBI5168
   ( 1 GND )
-  ( 2 N-000034 )
+  ( 2 N-000046 )
   ( 3 /SCK )
   ( 4 /LATCH )
   ( 5 /O3.0 )
@@ -237,31 +269,63 @@
   ( 2 /OE )
  )
  ( /4EEF8D4E -R0805 R3 600R
-  ( 1 N-000016 )
+  ( 1 N-000014 )
   ( 2 GND )
  )
  ( /4EEF8D55 -R0805 R4 600R
-  ( 1 N-000002 )
+  ( 1 N-000013 )
   ( 2 GND )
  )
  ( /4EEF8D59 -R0805 R5 600R
-  ( 1 N-000003 )
+  ( 1 N-000012 )
   ( 2 GND )
+ )
+ ( /4F0748E6 -R0603 R6 R
+  ( 1 N-000051 )
+  ( 2 VCC )
+ )
+ ( /4F0748EB -R0603 R7 R
+  ( 1 N-000071 )
+  ( 2 VCC )
+ )
+ ( /4F0748ED -R0603 R8 R
+  ( 1 N-000050 )
+  ( 2 VCC )
+ )
+ ( /4F0748EF -R0603 R9 R
+  ( 1 N-000070 )
+  ( 2 VCC )
+ )
+ ( /4F0748F3 -R0603 R10 R
+  ( 1 N-000052 )
+  ( 2 VCC )
+ )
+ ( /4F0748F6 -R0603 R11 R
+  ( 1 N-000069 )
+  ( 2 VCC )
+ )
+ ( /4F0748F9 -R0603 R12 R
+  ( 1 N-000062 )
+  ( 2 VCC )
+ )
+ ( /4F074A22 -R0603 R13 R
+  ( 1 N-000061 )
+  ( 2 VCC )
  )
  ( /4EEF8D17 MADW__TC33X-POT RV1 4k7
   ( 1 /R.1 )
   ( 2 /R.1 )
-  ( 3 N-000016 )
+  ( 3 N-000014 )
  )
  ( /4EEF8D1E MADW__TC33X-POT RV2 4k7
   ( 1 /R.2 )
   ( 2 /R.2 )
-  ( 3 N-000002 )
+  ( 3 N-000013 )
  )
  ( /4EEF8D25 MADW__TC33X-POT RV3 4k7
   ( 1 /R.3 )
   ( 2 /R.3 )
-  ( 3 N-000003 )
+  ( 3 N-000012 )
  )
 )
 *
@@ -311,6 +375,78 @@ $component C9
  C?
  C1-1
 $endlist
+$component D9
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D10
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D11
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D12
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D13
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D14
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D15
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D16
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
 $component R1
  R?
  SM0603
@@ -336,6 +472,54 @@ $component R4
  R?-*
 $endlist
 $component R5
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R6
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R7
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R8
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R9
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R10
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R11
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R12
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R13
  R?
  SM0603
  SM0805

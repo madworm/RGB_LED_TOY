@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPCB (2011-07-08)-stable date = Fri 06 Jan 2012 10:17:19 AM CET
+Cmp-Mod V01 Created by CvPCB (2011-07-08)-stable date = Fri 06 Jan 2012 10:38:17 PM CET
 
 BeginCmp
 TimeStamp = /49EB6692;
@@ -120,6 +120,62 @@ IdModule  = MADW__PLCC6-5050_PLCC2_DUAL;
 EndCmp
 
 BeginCmp
+TimeStamp = /4F07496C;
+Reference = D9;
+ValeurCmp = LED;
+IdModule  = -CHIPLED_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F074973;
+Reference = D10;
+ValeurCmp = LED;
+IdModule  = -CHIPLED_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F074978;
+Reference = D11;
+ValeurCmp = LED;
+IdModule  = -CHIPLED_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F07497C;
+Reference = D12;
+ValeurCmp = LED;
+IdModule  = -CHIPLED_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F07497F;
+Reference = D13;
+ValeurCmp = LED;
+IdModule  = -CHIPLED_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F074981;
+Reference = D14;
+ValeurCmp = LED;
+IdModule  = -CHIPLED_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F074985;
+Reference = D15;
+ValeurCmp = LED;
+IdModule  = -CHIPLED_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F074A28;
+Reference = D16;
+ValeurCmp = LED;
+IdModule  = -CHIPLED_0805;
+EndCmp
+
+BeginCmp
 TimeStamp = /49EB35FB;
 Reference = IC1;
 ValeurCmp = AT168;
@@ -236,6 +292,62 @@ TimeStamp = /4EEF8D59;
 Reference = R5;
 ValeurCmp = 600R;
 IdModule  = -R0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F0748E6;
+Reference = R6;
+ValeurCmp = R;
+IdModule  = -R0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F0748EB;
+Reference = R7;
+ValeurCmp = R;
+IdModule  = -R0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F0748ED;
+Reference = R8;
+ValeurCmp = R;
+IdModule  = -R0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F0748EF;
+Reference = R9;
+ValeurCmp = R;
+IdModule  = -R0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F0748F3;
+Reference = R10;
+ValeurCmp = R;
+IdModule  = -R0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F0748F6;
+Reference = R11;
+ValeurCmp = R;
+IdModule  = -R0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F0748F9;
+Reference = R12;
+ValeurCmp = R;
+IdModule  = -R0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F074A22;
+Reference = R13;
+ValeurCmp = R;
+IdModule  = -R0603;
 EndCmp
 
 BeginCmp
