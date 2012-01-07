@@ -39,15 +39,15 @@
     )
   )
   (placement
+    (component LOGO
+      (place G1 3545 -3250 front 0 (PN LOGO))
+      (place G2 3005 -3250 front 0 (PN LOGO))
+    )
     (component -CHIPLED_0805
-      (place D16 2995 -3460 front 252.5 (PN LED))
-      (place D9 3555 -3460 front 292.5 (PN LED))
-      (place D10 3950 -3065 front 337.5 (PN LED))
-      (place D11 3950 -2505 front 22.5 (PN LED))
-      (place D12 3555 -2110 front 67.5 (PN LED))
-      (place D13 2995 -2110 front 112.5 (PN LED))
-      (place D14 2600 -2505 front 157.5 (PN LED))
-      (place D15 2600 -3065 front 202.5 (PN LED))
+      (place D16 2995 -3460 front 253 (PN LED))
+      (place D10 3950 -3065 front 338 (PN LED))
+      (place D12 3555 -2110 front 68 (PN LED))
+      (place D14 2600 -2505 front 158 (PN LED))
     )
     (component MADW__TQFP_32_7x7
       (place IC1 3275 -2785 front 0 (PN AT168))
@@ -109,17 +109,25 @@
       (place D8 2765 -3300 front 225 (PN RGB_SMD))
     )
     (component -R0603
-      (place R6 3585 -3525 front 22.5 (PN R))
-      (place R7 4020 -3090 front 67.5 (PN R))
-      (place R8 4015 -2475 front 112.5 (PN R))
-      (place R9 3585 -2045 front 157.5 (PN R))
-      (place R10 2970 -2040 front 202.5 (PN R))
-      (place R11 2530 -2480 front 247.5 (PN R))
-      (place R12 2535 -3095 front 292.5 (PN R))
-      (place R13 2970 -3530 front 342.5 (PN R))
+      (place R6 3585 -3525 front 23 (PN R))
+      (place R7 4020 -3090 front 68 (PN R))
+      (place R8 4015 -2475 front 113 (PN R))
+      (place R9 3585 -2045 front 158 (PN R))
+      (place R10 2970 -2040 front 203 (PN R))
+      (place R11 2530 -2480 front 248 (PN R))
+      (place R12 2535 -3095 front 293 (PN R))
+      (place R13 2970 -3530 front 343 (PN R))
+    )
+    (component -CHIPLED_0805::1
+      (place D9 3555 -3460 front 293 (PN LED))
+      (place D11 3950 -2505 front 23 (PN LED))
+      (place D13 2995 -2110 front 113 (PN LED))
+      (place D15 2600 -3065 front 203 (PN LED))
     )
   )
   (library
+    (image LOGO
+    )
     (image -CHIPLED_0805
       (outline (path signal 2.6  11.8 19.6  24.6 19.6))
       (outline (path signal 2.6  24.6 19.6  24.6 39.3))
@@ -500,6 +508,64 @@
       (pin Rect[T]Pad_39.3x43.3_mil 1 -33.4 0)
       (pin Rect[T]Pad_39.3x43.3_mil 2 33.4 0)
     )
+    (image -CHIPLED_0805::1
+      (outline (path signal 2.6  11.8 19.6  24.6 19.6))
+      (outline (path signal 2.6  24.6 19.6  24.6 39.3))
+      (outline (path signal 2.6  11.8 39.3  24.6 39.3))
+      (outline (path signal 2.6  11.8 19.6  11.8 39.3))
+      (outline (path signal 2.6  -12.7 19.6  -6.8 19.6))
+      (outline (path signal 2.6  -6.8 19.6  -6.8 29.5))
+      (outline (path signal 2.6  -12.7 29.5  -6.8 29.5))
+      (outline (path signal 2.6  -12.7 19.6  -12.7 29.5))
+      (outline (path signal 2.6  6.8 19.6  12.7 19.6))
+      (outline (path signal 2.6  12.7 19.6  12.7 29.5))
+      (outline (path signal 2.6  6.8 29.5  12.7 29.5))
+      (outline (path signal 2.6  6.8 19.6  6.8 29.5))
+      (outline (path signal 2.6  -7.8 19.6  7.8 19.6))
+      (outline (path signal 2.6  7.8 19.6  7.8 26.5))
+      (outline (path signal 2.6  -7.8 26.5  7.8 26.5))
+      (outline (path signal 2.6  -7.8 19.6  -7.8 26.5))
+      (outline (path signal 2.6  11.8 -39.3  24.6 -39.3))
+      (outline (path signal 2.6  24.6 -39.3  24.6 -19.6))
+      (outline (path signal 2.6  11.8 -19.6  24.6 -19.6))
+      (outline (path signal 2.6  11.8 -39.3  11.8 -19.6))
+      (outline (path signal 2.6  -24.6 -39.3  -11.8 -39.3))
+      (outline (path signal 2.6  -11.8 -39.3  -11.8 -19.6))
+      (outline (path signal 2.6  -24.6 -19.6  -11.8 -19.6))
+      (outline (path signal 2.6  -24.6 -39.3  -24.6 -19.6))
+      (outline (path signal 2.6  6.8 -29.5  12.7 -29.5))
+      (outline (path signal 2.6  12.7 -29.5  12.7 -19.6))
+      (outline (path signal 2.6  6.8 -19.6  12.7 -19.6))
+      (outline (path signal 2.6  6.8 -29.5  6.8 -19.6))
+      (outline (path signal 2.6  -12.7 -29.5  -6.8 -29.5))
+      (outline (path signal 2.6  -6.8 -29.5  -6.8 -19.6))
+      (outline (path signal 2.6  -12.7 -19.6  -6.8 -19.6))
+      (outline (path signal 2.6  -12.7 -29.5  -12.7 -19.6))
+      (outline (path signal 2.6  -7.8 -26.5  7.8 -26.5))
+      (outline (path signal 2.6  7.8 -26.5  7.8 -19.6))
+      (outline (path signal 2.6  -7.8 -19.6  7.8 -19.6))
+      (outline (path signal 2.6  -7.8 -26.5  -7.8 -19.6))
+      (outline (path signal 2.6  -3.9 0  3.9 0))
+      (outline (path signal 2.6  3.9 0  3.9 7.8))
+      (outline (path signal 2.6  -3.9 7.8  3.9 7.8))
+      (outline (path signal 2.6  -3.9 0  -3.9 7.8))
+      (outline (path signal 2.6  -23.6 19.6  -11.8 19.6))
+      (outline (path signal 2.6  -11.8 19.6  -11.8 31.4))
+      (outline (path signal 2.6  -23.6 31.4  -11.8 31.4))
+      (outline (path signal 2.6  -23.6 19.6  -23.6 31.4))
+      (outline (path signal 2.6  -24.6 36.4  -15.7 36.4))
+      (outline (path signal 2.6  -15.7 36.4  -15.7 39.3))
+      (outline (path signal 2.6  -24.6 39.3  -15.7 39.3))
+      (outline (path signal 2.6  -24.6 36.4  -24.6 39.3))
+      (outline (path signal 4  22.6 20.6  22.6 -20.6))
+      (outline (path signal 4  -22.6 -19.6  -22.6 36.4))
+      (outline (path signal 2  -14.8 33.4  -15 32.5  -15.4 31.7  -16 31.1  -16.8 30.7  -17.7 30.5
+            -18.6 30.7  -19.4 31.1  -20 31.7  -20.4 32.5  -20.6 33.4  -20.4 34.3
+            -20 35.1  -19.4 35.7  -18.6 36.1  -17.7 36.3  -16.8 36.1  -16 35.7
+            -15.4 35.1  -15 34.3))
+      (pin Rect[T]Pad_47.2x47.2_mil 1 0 -41.3)
+      (pin Rect[T]Pad_47.2x47.2_mil 2 0 41.3)
+    )
     (padstack Round[A]Pad_160_mil
       (shape (circle Component 160))
       (shape (circle Copper 160))
@@ -709,50 +775,50 @@
       (pins IC1-31 P3-2)
     )
     (net /led0
-      (pins D16-2 IC1-32 D9-2 D10-2 D11-2 D12-2 D13-2 D14-2 D15-2)
+      (pins D16-2 IC1-13 D9-2 D10-2 D11-2 D12-2 D13-2 D14-2 D15-2)
     )
     (net GND
       (pins IC1-5 IC1-3 IC1-21 JP1-6 IC3-1 IC4-1 R5-2 IC2-1 R3-2 R4-2 MH1-1 MH2-1
         MH3-1 MH4-1 C1-2 C4-2 C2-2 P3-1 P1-3 C7-2 C9-2 C6-2 C8-2 C5-2)
     )
-    (net "N-000012"
+    (net "N-000013"
       (pins R5-1 RV3-3)
     )
-    (net "N-000013"
+    (net "N-000014"
       (pins R4-1 RV2-3)
     )
-    (net "N-000014"
+    (net "N-000015"
       (pins R3-1 RV1-3)
+    )
+    (net "N-000043"
+      (pins IC3-2 IC2-14)
     )
     (net "N-000046"
       (pins IC3-14 IC4-2)
     )
-    (net "N-000048"
-      (pins IC3-2 IC2-14)
+    (net "N-000054"
+      (pins R11-1 D14-1)
     )
-    (net "N-000050"
-      (pins R8-1 D11-1)
+    (net "N-000055"
+      (pins R9-1 D12-1)
     )
-    (net "N-000051"
-      (pins R6-1 D9-1)
+    (net "N-000056"
+      (pins R7-1 D10-1)
     )
-    (net "N-000052"
+    (net "N-000059"
+      (pins R12-1 D15-1)
+    )
+    (net "N-000060"
       (pins R10-1 D13-1)
     )
     (net "N-000061"
-      (pins D16-1 R13-1)
+      (pins R8-1 D11-1)
     )
     (net "N-000062"
-      (pins R12-1 D15-1)
-    )
-    (net "N-000069"
-      (pins R11-1 D14-1)
-    )
-    (net "N-000070"
-      (pins R9-1 D12-1)
+      (pins R6-1 D9-1)
     )
     (net "N-000071"
-      (pins R7-1 D10-1)
+      (pins D16-1 R13-1)
     )
     (net VCC
       (pins IC1-6 IC1-4 IC1-18 JP1-2 IC3-16 IC4-16 IC2-16 R1-2 R2-1 C1-1 C4-1 C2-1
@@ -762,9 +828,9 @@
         R10-2 R11-2 R12-2 R13-2)
     )
     (class kicad_default "" /DTR /LATCH /MISO /MOSI /OE /PC0 /PC1 /PC2 /PC3
-      /R.1 /R.2 /R.3 /RESET /RXI /SCK /SCL /SDA /TXO /led0 "N-000012" "N-000013"
-      "N-000014" "N-000046" "N-000048" "N-000050" "N-000051" "N-000052" "N-000061"
-      "N-000062" "N-000069" "N-000070" "N-000071"
+      /R.1 /R.2 /R.3 /RESET /RXI /SCK /SCL /SDA /TXO /led0 "N-000013" "N-000014"
+      "N-000015" "N-000043" "N-000046" "N-000054" "N-000055" "N-000056" "N-000059"
+      "N-000060" "N-000061" "N-000062" "N-000071"
       (circuit
         (use_via Via[0-1]_25:13_mil)
       )

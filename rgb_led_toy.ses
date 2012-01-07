@@ -5,13 +5,9 @@
     (resolution mil 10)
     (component "-CHIPLED_0805"
       (place D16 29950 -34600 front 253)
-      (place D9 35550 -34600 front 293)
       (place D10 39500 -30650 front 338)
-      (place D11 39500 -25050 front 23)
       (place D12 35550 -21100 front 68)
-      (place D13 29950 -21100 front 113)
       (place D14 26000 -25050 front 158)
-      (place D15 26000 -30650 front 203)
     )
     (component MADW__TQFP_32_7x7
       (place IC1 32750 -27850 front 0)
@@ -82,6 +78,12 @@
       (place R12 25350 -30950 front 293)
       (place R13 29700 -35300 front 343)
     )
+    (component "-CHIPLED_0805::1"
+      (place D9 35550 -34600 front 293)
+      (place D11 39500 -25050 front 23)
+      (place D13 29950 -21100 front 113)
+      (place D15 26000 -30650 front 203)
+    )
   )
   (was_is
   )
@@ -123,12 +125,16 @@
     (network_out 
       (net /DTR
         (via "Via[0-1]_25:13_mil" 34448 -20569
+          (type protect)
         )
         (wire
           (path Copper 60
             33124 -20000
             33473 -20000
+            34042 -20569
+            34448 -20569
           )
+          (type protect)
         )
         (wire
           (path Component 60
@@ -137,16 +143,13 @@
             34448 -21716
             34448 -20569
           )
-        )
-        (wire
-          (path Copper 60
-            34448 -20569
-            34042 -20569
-            33473 -20000
-          )
+          (type protect)
         )
       )
       (net /LATCH
+        (via "Via[0-1]_25:13_mil" 37946 -30098
+          (type protect)
+        )
         (wire
           (path Copper 60
             27300 -28873
@@ -158,13 +161,9 @@
             31149 -33511
             33036 -33511
             33247 -33300
-          )
-        )
-        (wire
-          (path Copper 60
             33773 -33300
-            33247 -33300
           )
+          (type protect)
         )
         (wire
           (path Copper 60
@@ -173,49 +172,35 @@
             34758 -33300
             33773 -33300
           )
-        )
-        (via "Via[0-1]_25:13_mil" 37946 -30098
+          (type protect)
         )
         (wire
           (path Copper 60
             38150 -26827
             38150 -27353
+            38412 -27615
+            38412 -29632
+            37946 -30098
           )
+          (type protect)
         )
         (wire
           (path Component 60
             33210 -29730
             33210 -30216
-          )
-        )
-        (wire
-          (path Copper 60
-            37946 -30098
-            38412 -29632
-            38412 -27615
-            38150 -27353
-          )
-        )
-        (wire
-          (path Component 60
-            37946 -30098
-            37382 -29534
-            34932 -29534
-            34127 -30339
             33333 -30339
-            33210 -30216
+            34127 -30339
+            34932 -29534
+            37382 -29534
+            37946 -30098
           )
+          (type protect)
         )
       )
       (net /MISO
         (wire
           (path Component 60
             33250 -26850
-            33250 -27243
-          )
-        )
-        (wire
-          (path Component 60
             33250 -27243
             32856 -27637
             32856 -28013
@@ -225,108 +210,103 @@
             33850 -28893
             33850 -29730
           )
+          (type protect)
         )
       )
       (net /MOSI
-        (via "Via[0-1]_25:13_mil" 34158 -29999
+        (wire
+          (path Component 60
+            34155 -30104
+            34158 -30101
+          )
+          (type protect)
         )
         (wire
           (path Component 60
+            33530 -29730
+            33530 -30216
+            34043 -30216
+            34155 -30104
+          )
+          (type protect)
+        )
+        (via "Via[0-1]_25:13_mil" 34250 -29600
+          (type protect)
+        )
+        (wire
+          (path Component 60
+            33530 -29730
             33530 -29243
             32981 -29243
             32700 -28962
             32700 -28300
             32250 -27850
           )
-        )
-        (wire
-          (path Component 60
-            33530 -29310
-            33530 -29243
-          )
-        )
-        (wire
-          (path Component 60
-            33530 -29730
-            33530 -29310
-          )
-        )
-        (wire
-          (path Component 60
-            33530 -29730
-            33530 -30216
-          )
-        )
-        (wire
-          (path Component 60
-            34158 -29999
-            34158 -30101
-            34043 -30216
-            33530 -30216
-          )
+          (type protect)
         )
         (wire
           (path Copper 60
-            33773 -32300
-            34965 -32300
-            36356 -30909
-            36356 -29671
-            36340 -29655
+            34250 -29600
+            34447 -29600
             34502 -29655
-            34158 -29999
+            36340 -29655
+            36356 -29671
+            36356 -30909
+            34965 -32300
+            33773 -32300
           )
+          (type protect)
+        )
+        (wire
+          (path Component 60
+            34250 -29600
+            34155 -29695
+            34155 -30104
+          )
+          (type protect)
         )
       )
       (net /O1.0
-        (via "Via[0-1]_25:13_mil" 33191 -35052
-        )
-        (via "Via[0-1]_25:13_mil" 36424 -33768
-        )
-        (via "Via[0-1]_25:13_mil" 34407 -33664
-        )
-        (wire
-          (path Component 80
-            33653 -34470
-            33336 -34470
-          )
-        )
-        (wire
-          (path Component 80
-            33653 -34470
-            33734 -34470
-          )
-        )
-        (wire
-          (path Copper 80
-            33773 -33800
-            34309 -33800
-          )
-        )
         (wire
           (path Component 80
             33191 -34549
             33191 -35052
           )
+          (type protect)
         )
         (wire
           (path Component 80
             32750 -34549
             33191 -34549
           )
+          (type protect)
+        )
+        (via "Via[0-1]_25:13_mil" 33191 -35052
+          (type protect)
+        )
+        (via "Via[0-1]_25:13_mil" 36424 -33768
+          (type protect)
+        )
+        (via "Via[0-1]_25:13_mil" 34407 -33664
+          (type protect)
         )
         (wire
           (path Component 80
-            33191 -34549
-            33257 -34549
+            33734 -34470
             33336 -34470
+            33257 -34549
+            33191 -34549
           )
+          (type protect)
         )
         (wire
           (path Copper 80
+            33773 -33800
             34309 -33800
             34309 -33762
             34407 -33664
           )
+          (type protect)
         )
         (wire
           (path Component 80
@@ -334,6 +314,7 @@
             34511 -33768
             34407 -33664
           )
+          (type protect)
         )
         (wire
           (path Copper 80
@@ -345,23 +326,20 @@
             34953 -35052
             33191 -35052
           )
+          (type protect)
         )
       )
       (net /O1.1
         (via "Via[0-1]_25:13_mil" 35633 -33243
+          (type protect)
         )
         (wire
           (path Component 80
             38100 -31859
-            37819 -32140
-          )
-        )
-        (wire
-          (path Component 80
-            37819 -32140
             37460 -32499
             37460 -32610
           )
+          (type protect)
         )
         (wire
           (path Component 80
@@ -369,6 +347,7 @@
             36266 -32610
             35633 -33243
           )
+          (type protect)
         )
         (wire
           (path Copper 80
@@ -376,94 +355,88 @@
             34576 -34300
             35633 -33243
           )
+          (type protect)
         )
       )
       (net /O1.2
         (via "Via[0-1]_25:13_mil" 39956 -27532
+          (type protect)
         )
         (wire
           (path Component 80
+            39449 -27532
             39449 -27215
             39370 -27136
             39370 -26866
           )
+          (type protect)
         )
         (wire
           (path Component 80
             39449 -27850
             39449 -27532
           )
-        )
-        (wire
-          (path Component 80
-            39449 -27532
-            39449 -27215
-          )
+          (type protect)
         )
         (wire
           (path Copper 80
             33773 -34800
-            34309 -34800
+            34754 -34800
+            37682 -31872
+            37682 -31669
+            39905 -29446
+            39905 -27583
+            39956 -27532
           )
+          (type protect)
         )
         (wire
           (path Component 80
             39449 -27532
             39956 -27532
           )
-        )
-        (wire
-          (path Copper 80
-            39956 -27532
-            39905 -27583
-            39905 -29446
-            37682 -31669
-            37682 -31872
-            34754 -34800
-            34309 -34800
-          )
+          (type protect)
         )
       )
       (net /O1.3
-        (via "Via[0-1]_25:13_mil" 37055 -21190
+        (via "Via[0-1]_25:13_mil" 39450 -31700
+          (type protect)
         )
-        (via "Via[0-1]_25:13_mil" 39306 -31530
+        (via "Via[0-1]_25:13_mil" 37055 -21190
+          (type protect)
         )
         (via "Via[0-1]_25:13_mil" 38728 -31040
+          (type protect)
         )
         (wire
           (path Component 80
             37460 -23140
             37047 -22726
-          )
-        )
-        (wire
-          (path Component 80
-            36824 -22615
-            36990 -22781
-          )
-        )
-        (wire
-          (path Component 80
-            36990 -22781
-            37044 -22727
             37046 -22727
-            37047 -22726
-          )
-        )
-        (wire
-          (path Component 80
-            36824 -22615
+            37044 -22727
+            36990 -22781
             36709 -22500
           )
+          (type protect)
         )
         (wire
           (path Component 80
+            38728 -31040
+            38728 -31128
+            39300 -31700
+            39450 -31700
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 80
+            36709 -22500
             36427 -22217
             36709 -21935
             36709 -21536
             37055 -21190
           )
+          (type protect)
         )
         (wire
           (path Copper 80
@@ -472,14 +445,9 @@
             40339 -25397
             40754 -25812
             40754 -30082
-            39306 -31530
+            39450 -31700
           )
-        )
-        (wire
-          (path Component 80
-            36709 -22500
-            36427 -22217
-          )
+          (type protect)
         )
         (wire
           (path Copper 80
@@ -489,22 +457,26 @@
             37877 -31891
             38728 -31040
           )
-        )
-        (wire
-          (path Component 80
-            39306 -31530
-            39218 -31530
-            38728 -31040
-          )
+          (type protect)
         )
       )
       (net /O1.4
+        (via "Via[0-1]_25:13_mil" 32984 -21680
+          (type protect)
+        )
+        (via "Via[0-1]_25:13_mil" 34753 -21668
+          (type protect)
+        )
+        (via "Via[0-1]_25:13_mil" 34829 -20570
+          (type protect)
+        )
         (wire
           (path Component 80
             32750 -21151
             32750 -21446
             32984 -21680
           )
+          (type protect)
         )
         (wire
           (path Copper 80
@@ -512,40 +484,20 @@
             34741 -21680
             32984 -21680
           )
-        )
-        (via "Via[0-1]_25:13_mil" 32984 -21680
-        )
-        (via "Via[0-1]_25:13_mil" 34753 -21668
-        )
-        (via "Via[0-1]_25:13_mil" 34829 -20570
+          (type protect)
         )
         (wire
           (path Component 80
-            31840 -21230
-            32164 -21230
-          )
-        )
-        (wire
-          (path Component 80
-            31840 -21230
             31766 -21230
-          )
-        )
-        (wire
-          (path Component 80
             32164 -21230
             32243 -21151
             32750 -21151
           )
+          (type protect)
         )
         (wire
           (path Copper 80
             31727 -35300
-            32263 -35300
-          )
-        )
-        (wire
-          (path Copper 80
             32263 -35300
             32484 -35521
             35216 -35521
@@ -562,6 +514,7 @@
             36261 -20570
             34829 -20570
           )
+          (type protect)
         )
         (wire
           (path Component 80
@@ -569,11 +522,16 @@
             34753 -20646
             34753 -21668
           )
+          (type protect)
         )
       )
       (net /O1.5
+        (via "Via[0-1]_25:13_mil" 26545 -25048
+          (type protect)
+        )
         (wire
           (path Copper 80
+            31727 -34800
             31191 -34800
             31186 -34795
             30661 -34795
@@ -582,107 +540,80 @@
             26545 -30595
             26545 -25048
           )
-        )
-        (via "Via[0-1]_25:13_mil" 26545 -25048
+          (type protect)
         )
         (wire
           (path Component 80
             27350 -23891
             27068 -24173
-          )
-        )
-        (wire
-          (path Copper 80
-            31727 -34800
-            31191 -34800
-          )
-        )
-        (wire
-          (path Component 80
-            27068 -24173
-            27068 -24174
             27068 -24525
             26545 -25048
           )
+          (type protect)
         )
         (wire
           (path Component 80
             27990 -23140
             27631 -23499
             27631 -23610
-          )
-        )
-        (wire
-          (path Component 80
             27350 -23891
-            27631 -23610
           )
+          (type protect)
         )
       )
       (net /O1.6
+        (via "Via[0-1]_25:13_mil" 27851 -30524
+          (type protect)
+        )
         (wire
           (path Copper 80
             27851 -30524
             27851 -31096
             31055 -34300
-            31191 -34300
+            31727 -34300
           )
-        )
-        (via "Via[0-1]_25:13_mil" 27851 -30524
+          (type protect)
         )
         (wire
           (path Component 80
             26051 -27850
             26051 -28485
-          )
-        )
-        (wire
-          (path Component 80
-            26051 -28485
             26130 -28564
             26130 -28834
           )
-        )
-        (wire
-          (path Copper 80
-            31727 -34300
-            31191 -34300
-          )
+          (type protect)
         )
         (wire
           (path Component 80
             26130 -28834
             26130 -29233
-          )
-        )
-        (wire
-          (path Component 80
-            27851 -30524
             26560 -29233
-            26130 -29233
+            27851 -30524
           )
+          (type protect)
         )
       )
       (net /O1.7
-        (wire
-          (path Component 80
-            28791 -33250
-            29074 -33532
-          )
+        (via "Via[0-1]_25:13_mil" 30783 -33469
+          (type protect)
         )
         (wire
           (path Component 80
+            28791 -33250
             29074 -33532
             29137 -33469
             30783 -33469
           )
+          (type protect)
         )
         (wire
           (path Component 80
+            28040 -32610
             28490 -33060
             28601 -33060
             28791 -33250
           )
+          (type protect)
         )
         (wire
           (path Copper 80
@@ -690,20 +621,16 @@
             31114 -33800
             31727 -33800
           )
-        )
-        (via "Via[0-1]_25:13_mil" 30783 -33469
-        )
-        (wire
-          (path Component 80
-            28040 -32610
-            28490 -33060
-          )
+          (type protect)
         )
       )
       (net /O2.0
+        (via "Via[0-1]_25:13_mil" 34929 -34270
+          (type protect)
+        )
         (wire
           (path Copper 80
-            38650 -27363
+            38650 -26827
             38650 -27767
             38871 -27988
             38871 -29723
@@ -713,33 +640,26 @@
             37539 -31660
             34929 -34270
           )
-        )
-        (via "Via[0-1]_25:13_mil" 34929 -34270
-        )
-        (wire
-          (path Copper 80
-            38650 -26827
-            38650 -27363
-          )
+          (type protect)
         )
         (wire
           (path Component 80
             33734 -35100
             34133 -35100
-          )
-        )
-        (wire
-          (path Component 80
-            34133 -35100
             34133 -34470
             34333 -34270
             34929 -34270
           )
+          (type protect)
         )
       )
       (net /O2.1
+        (via "Via[0-1]_25:13_mil" 38921 -29995
+          (type protect)
+        )
         (wire
           (path Copper 80
+            39150 -26827
             39150 -27363
             39158 -27371
             39158 -27977
@@ -747,61 +667,53 @@
             39417 -29499
             38921 -29995
           )
-        )
-        (via "Via[0-1]_25:13_mil" 38921 -29995
+          (type protect)
         )
         (wire
           (path Component 80
             38546 -32304
             38828 -32022
-          )
-        )
-        (wire
-          (path Copper 80
-            39150 -26827
-            39150 -27363
-          )
-        )
-        (wire
-          (path Component 80
-            38828 -32022
             38387 -31581
             38387 -30529
             38921 -29995
           )
+          (type protect)
         )
       )
       (net /O2.2
         (via "Via[0-1]_25:13_mil" 39650 -26198
+          (type protect)
         )
         (wire
           (path Copper 80
             39650 -26827
             39650 -26198
           )
-        )
-        (wire
-          (path Component 80
-            40000 -26467
-            39919 -26467
-            39650 -26198
-          )
+          (type protect)
         )
         (wire
           (path Component 80
             40000 -26866
             40000 -26467
+            39919 -26467
+            39650 -26198
           )
+          (type protect)
         )
       )
       (net /O2.3
         (via "Via[0-1]_25:13_mil" 37565 -22517
+          (type protect)
         )
         (wire
           (path Copper 80
             40150 -26827
             40150 -26291
+            39909 -26050
+            39909 -24861
+            37565 -22517
           )
+          (type protect)
         )
         (wire
           (path Component 80
@@ -809,40 +721,25 @@
             37565 -22465
             37565 -22517
           )
-        )
-        (wire
-          (path Copper 80
-            40150 -26291
-            39909 -26050
-            39909 -24861
-            37565 -22517
-          )
+          (type protect)
         )
       )
       (net /O2.4
         (via "Via[0-1]_25:13_mil" 31329 -20914
+          (type protect)
         )
         (wire
           (path Component 80
             31329 -20914
             31367 -20876
             31367 -20600
+            31766 -20600
           )
+          (type protect)
         )
         (wire
           (path Copper 80
             40150 -28873
-            40150 -28337
-          )
-        )
-        (wire
-          (path Component 80
-            31766 -20600
-            31367 -20600
-          )
-        )
-        (wire
-          (path Copper 80
             40150 -28337
             40468 -28019
             40468 -25932
@@ -854,9 +751,13 @@
             31356 -20941
             31329 -20914
           )
+          (type protect)
         )
       )
       (net /O2.5
+        (via "Via[0-1]_25:13_mil" 27679 -22728
+          (type protect)
+        )
         (wire
           (path Copper 80
             39650 -28873
@@ -872,6 +773,7 @@
             27822 -22728
             27679 -22728
           )
+          (type protect)
         )
         (wire
           (path Component 80
@@ -879,13 +781,16 @@
             27622 -22728
             27679 -22728
           )
-        )
-        (via "Via[0-1]_25:13_mil" 27679 -22728
+          (type protect)
         )
       )
       (net /O2.6
+        (via "Via[0-1]_25:13_mil" 25538 -28291
+          (type protect)
+        )
         (wire
           (path Copper 80
+            39150 -28873
             39150 -28337
             39015 -28202
             39015 -27835
@@ -900,33 +805,25 @@
             25538 -25281
             25538 -28291
           )
-        )
-        (wire
-          (path Copper 80
-            39150 -28873
-            39150 -28337
-          )
-        )
-        (wire
-          (path Component 80
-            25500 -28436
-            25538 -28398
-            25538 -28291
-          )
+          (type protect)
         )
         (wire
           (path Component 80
             25500 -28834
             25500 -28436
+            25538 -28398
+            25538 -28291
           )
-        )
-        (via "Via[0-1]_25:13_mil" 25538 -28291
+          (type protect)
         )
       )
       (net /O2.7
+        (via "Via[0-1]_25:13_mil" 31142 -34064
+          (type protect)
+        )
         (wire
           (path Component 80
-            28628 -33978
+            28346 -33696
             28658 -34008
             30157 -34008
             30345 -33820
@@ -934,65 +831,49 @@
             30853 -34064
             31142 -34064
           )
-        )
-        (via "Via[0-1]_25:13_mil" 31142 -34064
-        )
-        (wire
-          (path Component 80
-            28346 -33696
-            28628 -33978
-          )
+          (type protect)
         )
         (wire
           (path Copper 80
+            38650 -28873
             38650 -29409
             38550 -29509
             38550 -29862
             34348 -34064
             31142 -34064
           )
-        )
-        (wire
-          (path Copper 80
-            38650 -28873
-            38650 -29409
-          )
+          (type protect)
         )
       )
       (net /O3.0
+        (via "Via[0-1]_25:13_mil" 34371 -34566
+          (type protect)
+        )
         (wire
           (path Copper 80
-            26800 -29409
+            26800 -28873
             26800 -30647
             30211 -34058
             30211 -34142
             30635 -34566
             34371 -34566
           )
-        )
-        (via "Via[0-1]_25:13_mil" 34371 -34566
+          (type protect)
         )
         (wire
           (path Component 80
             33734 -35730
             34133 -35730
-          )
-        )
-        (wire
-          (path Copper 80
-            26800 -28873
-            26800 -29409
-          )
-        )
-        (wire
-          (path Component 80
-            34133 -35730
             34371 -35492
             34371 -34566
           )
+          (type protect)
         )
       )
       (net /O3.1
+        (via "Via[0-1]_25:13_mil" 39373 -32401
+          (type protect)
+        )
         (wire
           (path Copper 80
             39373 -32401
@@ -1007,32 +888,24 @@
             29925 -34262
             29925 -34181
             26300 -30556
-            26300 -29409
+            26300 -28873
           )
-        )
-        (via "Via[0-1]_25:13_mil" 39373 -32401
+          (type protect)
         )
         (wire
           (path Component 80
             38991 -32750
             39274 -32467
-          )
-        )
-        (wire
-          (path Copper 80
-            26300 -28873
-            26300 -29409
-          )
-        )
-        (wire
-          (path Component 80
-            39274 -32467
             39307 -32467
             39373 -32401
           )
+          (type protect)
         )
       )
       (net /O3.2
+        (via "Via[0-1]_25:13_mil" 38826 -25858
+          (type protect)
+        )
         (wire
           (path Copper 80
             38826 -25858
@@ -1050,25 +923,23 @@
             25800 -27534
             25800 -28873
           )
-        )
-        (wire
-          (path Component 80
-            40630 -26467
-            40132 -25969
-            38937 -25969
-            38826 -25858
-          )
-        )
-        (via "Via[0-1]_25:13_mil" 38826 -25858
+          (type protect)
         )
         (wire
           (path Component 80
             40630 -26866
             40630 -26467
+            40132 -25969
+            38937 -25969
+            38826 -25858
           )
+          (type protect)
         )
       )
       (net /O3.3
+        (via "Via[0-1]_25:13_mil" 36443 -21089
+          (type protect)
+        )
         (wire
           (path Copper 80
             36443 -21089
@@ -1081,24 +952,13 @@
             24964 -25080
             24964 -28001
             25300 -28337
+            25300 -28873
           )
-        )
-        (via "Via[0-1]_25:13_mil" 36443 -21089
+          (type protect)
         )
         (wire
           (path Component 80
             37600 -21609
-            37318 -21326
-          )
-        )
-        (wire
-          (path Copper 80
-            25300 -28873
-            25300 -28337
-          )
-        )
-        (wire
-          (path Component 80
             37318 -21326
             37318 -21068
             37211 -20961
@@ -1106,9 +966,13 @@
             36457 -21089
             36443 -21089
           )
+          (type protect)
         )
       )
       (net /O3.4
+        (via "Via[0-1]_25:13_mil" 28724 -21483
+          (type protect)
+        )
         (wire
           (path Component 80
             28724 -21483
@@ -1117,8 +981,9 @@
             30871 -21676
             30871 -20422
             31323 -19970
-            31367 -19970
+            31766 -19970
           )
+          (type protect)
         )
         (wire
           (path Copper 80
@@ -1129,19 +994,16 @@
             25300 -24947
             25300 -26827
           )
-        )
-        (via "Via[0-1]_25:13_mil" 28724 -21483
-        )
-        (wire
-          (path Component 80
-            31766 -19970
-            31367 -19970
-          )
+          (type protect)
         )
       )
       (net /O3.5
+        (via "Via[0-1]_25:13_mil" 26654 -24496
+          (type protect)
+        )
         (wire
           (path Component 80
+            26459 -23000
             26177 -23282
             26353 -23459
             26353 -23723
@@ -1149,62 +1011,58 @@
             26487 -24329
             26654 -24496
           )
+          (type protect)
         )
         (wire
           (path Copper 80
-            25800 -26291
+            25800 -26827
             25800 -25263
             26566 -24497
             26654 -24497
             26654 -24496
           )
-        )
-        (via "Via[0-1]_25:13_mil" 26654 -24496
-        )
-        (wire
-          (path Component 80
-            26459 -23000
-            26177 -23282
-          )
-        )
-        (wire
-          (path Copper 80
-            25800 -26827
-            25800 -26291
-          )
+          (type protect)
         )
       )
       (net /O3.6
         (via "Via[0-1]_25:13_mil" 26037 -29474
+          (type protect)
         )
         (wire
           (path Component 80
             24870 -28834
             24870 -29233
+            25796 -29233
+            26037 -29474
           )
+          (type protect)
         )
         (wire
           (path Copper 80
             26300 -26827
             26300 -27363
-          )
-        )
-        (wire
-          (path Copper 80
-            26300 -27363
             26037 -27626
             26037 -29474
           )
-        )
-        (wire
-          (path Component 80
-            24870 -29233
-            25796 -29233
-            26037 -29474
-          )
+          (type protect)
         )
       )
       (net /O3.7
+        (via "Via[0-1]_25:13_mil" 28702 -34788
+          (type protect)
+        )
+        (via "Via[0-1]_25:13_mil" 29191 -33770
+          (type protect)
+        )
+        (via "Via[0-1]_25:13_mil" 30908 -32586
+          (type protect)
+        )
+        (via "Via[0-1]_25:13_mil" 29640 -26137
+          (type protect)
+        )
+        (via "Via[0-1]_25:13_mil" 26800 -26137
+          (type protect)
+        )
         (wire
           (path Component 80
             29191 -33770
@@ -1216,6 +1074,7 @@
             31018 -32696
             30908 -32586
           )
+          (type protect)
         )
         (wire
           (path Copper 80
@@ -1227,16 +1086,7 @@
             30692 -32370
             30908 -32586
           )
-        )
-        (via "Via[0-1]_25:13_mil" 28702 -34788
-        )
-        (via "Via[0-1]_25:13_mil" 29191 -33770
-        )
-        (via "Via[0-1]_25:13_mil" 30908 -32586
-        )
-        (via "Via[0-1]_25:13_mil" 29640 -26137
-        )
-        (via "Via[0-1]_25:13_mil" 26800 -26137
+          (type protect)
         )
         (wire
           (path Component 80
@@ -1244,6 +1094,7 @@
             28547 -34788
             28702 -34788
           )
+          (type protect)
         )
         (wire
           (path Copper 80
@@ -1251,21 +1102,33 @@
             29191 -34299
             29191 -33770
           )
+          (type protect)
         )
         (wire
           (path Copper 80
             26800 -26827
             26800 -26137
           )
+          (type protect)
         )
         (wire
           (path Component 80
             26800 -26137
             29640 -26137
           )
+          (type protect)
         )
       )
       (net /OE
+        (via "Via[0-1]_25:13_mil" 30224 -32484
+          (type protect)
+        )
+        (via "Via[0-1]_25:13_mil" 30620 -35166
+          (type protect)
+        )
+        (via "Via[0-1]_25:13_mil" 29958 -29014
+          (type protect)
+        )
         (wire
           (path Copper 60
             30224 -32484
@@ -1274,6 +1137,7 @@
             27588 -28339
             27937 -27990
           )
+          (type protect)
         )
         (wire
           (path Copper 60
@@ -1281,12 +1145,15 @@
             28934 -27990
             29958 -29014
           )
+          (type protect)
         )
         (wire
           (path Copper 60
+            27300 -26827
             27300 -27353
             27937 -27990
           )
+          (type protect)
         )
         (wire
           (path Copper 60
@@ -1295,12 +1162,18 @@
             31113 -33300
             31727 -33300
           )
+          (type protect)
         )
         (wire
           (path Copper 60
             27914 -32786
             27669 -33031
+            27914 -33277
+            27914 -34312
+            28768 -35166
+            30620 -35166
           )
+          (type protect)
         )
         (wire
           (path Component 60
@@ -1313,87 +1186,42 @@
             31144 -34642
             30620 -35166
           )
-        )
-        (wire
-          (path Copper 60
-            27669 -33031
-            27914 -33277
-            27914 -34312
-            28768 -35166
-            30620 -35166
-          )
-        )
-        (via "Via[0-1]_25:13_mil" 30224 -32484
-        )
-        (via "Via[0-1]_25:13_mil" 30620 -35166
-        )
-        (wire
-          (path Component 60
-            30368 -28628
-            29982 -29014
-            29958 -29014
-          )
+          (type protect)
         )
         (wire
           (path Component 60
             30854 -28628
             30368 -28628
+            29982 -29014
+            29958 -29014
           )
-        )
-        (via "Via[0-1]_25:13_mil" 29958 -29014
-        )
-        (wire
-          (path Copper 60
-            31990 -33300
-            31727 -33300
-          )
-        )
-        (wire
-          (path Copper 60
-            27300 -26827
-            27300 -27353
-          )
+          (type protect)
         )
         (wire
           (path Copper 60
             38150 -28873
-            38150 -29399
-          )
-        )
-        (wire
-          (path Copper 60
-            31990 -33300
-            32253 -33300
-          )
-        )
-        (wire
-          (path Copper 60
-            32253 -33300
-            32475 -33078
-            32475 -33077
-            34808 -33077
-            37102 -30783
-            37102 -30610
             38150 -29562
-            38150 -29399
+            37102 -30610
+            37102 -30783
+            34808 -33077
+            32475 -33077
+            32475 -33078
+            32253 -33300
+            31727 -33300
           )
+          (type protect)
         )
       )
       (net /PC0
         (wire
           (path Component 60
+            38211 -25411
             37951 -25671
-            37950 -25671
             36843 -25671
             35464 -27050
             34620 -27050
           )
-        )
-        (wire
-          (path Component 60
-            38211 -25411
-            37951 -25671
-          )
+          (type protect)
         )
       )
       (net /PC1
@@ -1403,6 +1231,7 @@
             35468 -26740
             34620 -26740
           )
+          (type protect)
         )
       )
       (net /PC2
@@ -1413,6 +1242,7 @@
             33842 -25166
             33842 -25950
           )
+          (type protect)
         )
       )
       (net /PC3
@@ -1423,6 +1253,7 @@
             35492 -23289
             36089 -23289
           )
+          (type protect)
         )
       )
       (net /R.1
@@ -1430,74 +1261,55 @@
           (path Copper 60
             32041 -30844
             32041 -31173
+            32147 -31279
+            32253 -31279
           )
+          (type protect)
         )
         (wire
           (path Copper 60
             33321 -30450
             32933 -30450
+            32933 -30599
+            32253 -31279
           )
+          (type protect)
         )
         (wire
           (path Copper 60
             31727 -32300
             32253 -32300
-          )
-        )
-        (wire
-          (path Copper 60
-            32041 -31173
-            32147 -31279
             32253 -31279
           )
-        )
-        (wire
-          (path Copper 60
-            32253 -31279
-            32933 -30599
-            32933 -30450
-          )
-        )
-        (wire
-          (path Copper 60
-            32253 -32300
-            32253 -31279
-          )
+          (type protect)
         )
       )
       (net /R.2
         (wire
           (path Copper 60
+            35300 -28196
             35300 -28033
             34906 -27639
             34906 -27141
           )
+          (type protect)
         )
         (wire
           (path Copper 60
             35300 -28421
             35300 -28196
           )
-        )
-        (wire
-          (path Copper 60
-            35300 -28196
-            35300 -28033
-          )
+          (type protect)
         )
         (wire
           (path Copper 60
             37150 -28873
             37150 -28347
-          )
-        )
-        (wire
-          (path Copper 60
-            37150 -28347
             36920 -28117
             35379 -28117
             35300 -28196
           )
+          (type protect)
         )
       )
       (net /R.3
@@ -1507,79 +1319,33 @@
             29756 -27640
             30149 -28033
             30150 -28033
-          )
-        )
-        (wire
-          (path Copper 60
             30150 -28421
-            30150 -28033
           )
+          (type protect)
         )
         (wire
           (path Copper 60
             28300 -26827
             28300 -27353
-          )
-        )
-        (wire
-          (path Copper 60
-            28300 -27353
             29756 -27353
           )
+          (type protect)
         )
         (wire
           (path Copper 60
             29756 -27141
             29756 -27353
           )
+          (type protect)
         )
       )
       (net /RESET
-        (wire
-          (path Component 60
-            32476 -24500
-            32476 -24112
-          )
-        )
         (via "Via[0-1]_25:13_mil" 31220 -20418
+          (type protect)
         )
         (wire
           (path Component 60
             32476 -24500
-            32476 -24888
-          )
-        )
-        (wire
-          (path Component 60
-            32476 -24888
-            32582 -24994
-            32582 -25950
-          )
-        )
-        (wire
-          (path Component 60
-            32582 -26436
-            32644 -26498
-            32644 -27976
-            33250 -28582
-            33250 -28850
-          )
-        )
-        (wire
-          (path Component 60
-            32582 -25950
-            32582 -26436
-          )
-        )
-        (wire
-          (path Copper 60
-            32028 -20000
-            31610 -20418
-            31220 -20418
-          )
-        )
-        (wire
-          (path Component 60
             32476 -24112
             32658 -23930
             32658 -21936
@@ -1589,12 +1355,36 @@
             31098 -20540
             31220 -20418
           )
+          (type protect)
+        )
+        (wire
+          (path Component 60
+            32476 -24500
+            32476 -24888
+            32582 -24994
+            32582 -25950
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 60
+            32582 -25950
+            32582 -26436
+            32644 -26498
+            32644 -27976
+            33250 -28582
+            33250 -28850
+          )
+          (type protect)
         )
         (wire
           (path Copper 60
             32376 -20000
             32028 -20000
+            31610 -20418
+            31220 -20418
           )
+          (type protect)
         )
       )
       (net /RXI
@@ -1602,18 +1392,17 @@
           (path Component 60
             32268 -25950
             32268 -25463
-          )
-        )
-        (wire
-          (path Component 60
-            32250 -22250
-            32065 -22435
             32065 -25260
-            32268 -25463
+            32065 -22435
+            32250 -22250
           )
+          (type protect)
         )
       )
       (net /SCK
+        (via "Via[0-1]_25:13_mil" 37881 -29459
+          (type protect)
+        )
         (wire
           (path Copper 60
             33773 -32800
@@ -1623,50 +1412,37 @@
             30442 -32430
             30442 -32250
             27800 -29608
-            27800 -29399
+            27800 -28873
           )
-        )
-        (via "Via[0-1]_25:13_mil" 37881 -29459
+          (type protect)
         )
         (wire
           (path Component 60
             34620 -28950
             34134 -28950
+            33926 -28742
+            33871 -28742
+            33250 -28121
+            33250 -27850
           )
+          (type protect)
         )
         (wire
           (path Copper 60
             37650 -26827
             37650 -27353
+            37881 -27584
+            37881 -29459
           )
-        )
-        (wire
-          (path Copper 60
-            27800 -28873
-            27800 -29399
-          )
+          (type protect)
         )
         (wire
           (path Component 60
             34620 -28950
-            35107 -28950
-          )
-        )
-        (wire
-          (path Component 60
-            37881 -29459
             37372 -28950
-            35107 -28950
+            37881 -29459
           )
-        )
-        (wire
-          (path Component 60
-            33250 -27850
-            33250 -28121
-            33871 -28742
-            33926 -28742
-            34134 -28950
-          )
+          (type protect)
         )
         (wire
           (path Copper 60
@@ -1676,16 +1452,16 @@
             36943 -30397
             37881 -29459
           )
-        )
-        (wire
-          (path Copper 60
-            37881 -29459
-            37881 -27584
-            37650 -27353
-          )
+          (type protect)
         )
       )
       (net /SCL
+        (via "Via[0-1]_25:13_mil" 32896 -24989
+          (type protect)
+        )
+        (via "Via[0-1]_25:13_mil" 31420 -24523
+          (type protect)
+        )
         (wire
           (path Component 60
             27946 -24704
@@ -1696,6 +1472,7 @@
             30825 -23928
             31420 -24523
           )
+          (type protect)
         )
         (wire
           (path Copper 60
@@ -1704,6 +1481,7 @@
             31423 -24526
             31420 -24523
           )
+          (type protect)
         )
         (wire
           (path Component 60
@@ -1711,26 +1489,38 @@
             32898 -24991
             32898 -25950
           )
-        )
-        (via "Via[0-1]_25:13_mil" 32896 -24989
-        )
-        (via "Via[0-1]_25:13_mil" 31420 -24523
+          (type protect)
         )
       )
       (net /SDA
+        (via "Via[0-1]_25:13_mil" 33738 -26606
+          (type protect)
+        )
+        (via "Via[0-1]_25:13_mil" 31419 -25254
+          (type protect)
+        )
+        (via "Via[0-1]_25:13_mil" 29504 -24146
+          (type protect)
+        )
+        (via "Via[0-1]_25:13_mil" 29036 -25151
+          (type protect)
+        )
         (wire
           (path Component 60
             29504 -24146
             30311 -24146
             31419 -25254
           )
+          (type protect)
         )
         (wire
           (path Component 60
+            27239 -25411
             27500 -25150
             27500 -25151
             29036 -25151
           )
+          (type protect)
         )
         (wire
           (path Copper 60
@@ -1738,12 +1528,7 @@
             29036 -24614
             29036 -25151
           )
-        )
-        (wire
-          (path Component 60
-            27239 -25411
-            27500 -25150
-          )
+          (type protect)
         )
         (wire
           (path Copper 60
@@ -1752,27 +1537,16 @@
             31453 -25288
             31419 -25254
           )
+          (type protect)
         )
         (wire
           (path Component 60
             33738 -26606
             33568 -26436
             33212 -26436
-          )
-        )
-        (wire
-          (path Component 60
             33212 -25950
-            33212 -26436
           )
-        )
-        (via "Via[0-1]_25:13_mil" 33738 -26606
-        )
-        (via "Via[0-1]_25:13_mil" 31419 -25254
-        )
-        (via "Via[0-1]_25:13_mil" 29504 -24146
-        )
-        (via "Via[0-1]_25:13_mil" 29036 -25151
+          (type protect)
         )
       )
       (net /TXO
@@ -1780,18 +1554,96 @@
           (path Component 60
             31952 -25950
             31952 -25463
+            31884 -25395
+            31884 -22884
+            31250 -22250
+          )
+          (type protect)
+        )
+      )
+      (net /led0
+        (wire
+          (path Component 60
+            26393 -25487
+            26393 -26056
+            26692 -26355
+            30778 -26355
+          )
+        )
+        (wire
+          (path Copper 60
+            31292 -30035
+            31292 -26869
+            30778 -26355
           )
         )
         (wire
           (path Component 60
-            31250 -22250
-            31884 -22884
-            31884 -25395
-            31952 -25463
+            32890 -29730
+            32890 -30216
           )
         )
-      )
-      (net /led0
+        (wire
+          (path Component 60
+            31292 -30035
+            31473 -30216
+            32890 -30216
+          )
+        )
+        (via "Via[0-1]_25:13_mil" 31292 -30035
+        )
+        (via "Via[0-1]_25:13_mil" 30778 -26355
+        )
+        (wire
+          (path Component 60
+            26393 -25487
+            26274 -25606
+            25845 -25433
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 60
+            27666 -24258
+            26491 -25433
+            26447 -25433
+            26393 -25487
+          )
+          (type protect)
+        )
+        (via "Via[0-1]_25:13_mil" 27666 -24258
+          (type protect)
+        )
+        (via "Via[0-1]_25:13_mil" 30343 -21634
+          (type protect)
+        )
+        (via "Via[0-1]_25:13_mil" 30439 -34048
+          (type protect)
+        )
+        (via "Via[0-1]_25:13_mil" 27055 -30383
+          (type protect)
+        )
+        (via "Via[0-1]_25:13_mil" 40382 -29480
+          (type protect)
+        )
+        (via "Via[0-1]_25:13_mil" 40016 -29873
+          (type protect)
+        )
+        (via "Via[0-1]_25:13_mil" 36726 -34604
+          (type protect)
+        )
+        (via "Via[0-1]_25:13_mil" 39146 -31895
+          (type protect)
+        )
+        (via "Via[0-1]_25:13_mil" 38672 -31421
+          (type protect)
+        )
+        (via "Via[0-1]_25:13_mil" 35132 -21742
+          (type protect)
+        )
+        (via "Via[0-1]_25:13_mil" 39014 -25410
+          (type protect)
+        )
         (wire
           (path Copper 60
             30343 -21634
@@ -1804,6 +1656,7 @@
             34843 -22031
             35132 -21742
           )
+          (type protect)
         )
         (wire
           (path Copper 60
@@ -1812,6 +1665,7 @@
             30041 -21634
             30343 -21634
           )
+          (type protect)
         )
         (wire
           (path Copper 60
@@ -1821,54 +1675,23 @@
             28466 -24494
             28230 -24258
           )
+          (type protect)
         )
         (wire
           (path Copper 60
             28230 -24258
             27666 -24258
           )
-        )
-        (wire
-          (path Component 60
-            27666 -24258
-            28689 -23235
-            28712 -23235
-            29252 -23775
-            31115 -23775
-            31638 -24298
-            31638 -25950
-          )
-        )
-        (wire
-          (path Component 60
-            27666 -24258
-            26491 -25433
-            26447 -25433
-            26274 -25606
-          )
-        )
-        (via "Via[0-1]_25:13_mil" 27666 -24258
-        )
-        (wire
-          (path Component 60
-            25845 -25433
-            26274 -25606
-          )
-        )
-        (wire
-          (path Component 60
-            29750 -21686
-            29802 -21634
-            30343 -21634
-          )
+          (type protect)
         )
         (wire
           (path Component 60
             29570 -21261
             29750 -21686
+            29802 -21634
+            30343 -21634
           )
-        )
-        (via "Via[0-1]_25:13_mil" 30343 -21634
+          (type protect)
         )
         (wire
           (path Copper 60
@@ -1876,6 +1699,7 @@
             27055 -30664
             27055 -30383
           )
+          (type protect)
         )
         (wire
           (path Copper 60
@@ -1883,63 +1707,51 @@
             35346 -21742
             39014 -25410
           )
+          (type protect)
         )
         (wire
           (path Component 60
             30345 -34721
             30471 -34310
-          )
-        )
-        (wire
-          (path Component 60
-            30439 -34048
-            30439 -34279
             30470 -34310
-            30471 -34310
+            30439 -34279
+            30439 -34048
           )
-        )
-        (via "Via[0-1]_25:13_mil" 30439 -34048
+          (type protect)
         )
         (wire
           (path Component 60
             26161 -31030
             26586 -30850
-          )
-        )
-        (wire
-          (path Component 60
-            27055 -30383
             26588 -30850
-            26586 -30850
+            27055 -30383
           )
-        )
-        (via "Via[0-1]_25:13_mil" 27055 -30383
-        )
-        (wire
-          (path Component 60
-            35964 -34429
-            36362 -34264
-          )
+          (type protect)
         )
         (wire
           (path Component 60
             35930 -34439
             35940 -34429
             35964 -34429
+            36362 -34264
+            36540 -34442
+            36551 -34442
+            36713 -34604
+            36726 -34604
           )
-        )
-        (wire
-          (path Component 60
-            39670 -30238
-            39836 -29838
-          )
+          (type protect)
         )
         (wire
           (path Component 60
             39655 -30267
             39655 -30253
             39670 -30238
+            39836 -29838
+            39837 -29839
+            39982 -29839
+            40016 -29873
           )
+          (type protect)
         )
         (wire
           (path Component 60
@@ -1947,40 +1759,16 @@
             39143 -24866
             39143 -25410
           )
+          (type protect)
         )
         (wire
           (path Component 60
             35167 -20945
             34990 -21372
+            35132 -21514
+            35132 -21742
           )
-        )
-        (wire
-          (path Component 60
-            35167 -20945
-          )
-        )
-        (via "Via[0-1]_25:13_mil" 40382 -29480
-        )
-        (via "Via[0-1]_25:13_mil" 40016 -29873
-        )
-        (via "Via[0-1]_25:13_mil" 36726 -34604
-        )
-        (via "Via[0-1]_25:13_mil" 39146 -31895
-        )
-        (via "Via[0-1]_25:13_mil" 38672 -31421
-        )
-        (via "Via[0-1]_25:13_mil" 35132 -21742
-        )
-        (via "Via[0-1]_25:13_mil" 39014 -25410
-        )
-        (wire
-          (path Component 60
-            36362 -34264
-            36540 -34442
-            36551 -34442
-            36713 -34604
-            36726 -34604
-          )
+          (type protect)
         )
         (wire
           (path Copper 60
@@ -1988,20 +1776,14 @@
             39146 -32184
             39146 -31895
           )
+          (type protect)
         )
         (wire
           (path Component 60
             39014 -25410
             39143 -25410
           )
-        )
-        (wire
-          (path Component 60
-            39836 -29838
-            39837 -29839
-            39982 -29839
-            40016 -29873
-          )
+          (type protect)
         )
         (wire
           (path Component 60
@@ -2014,12 +1796,14 @@
             40615 -29480
             40382 -29480
           )
+          (type protect)
         )
         (wire
           (path Component 60
             39146 -31895
             38672 -31421
           )
+          (type protect)
         )
         (wire
           (path Copper 60
@@ -2027,6 +1811,7 @@
             40382 -29507
             40016 -29873
           )
+          (type protect)
         )
         (wire
           (path Copper 60
@@ -2034,30 +1819,30 @@
             40016 -30077
             38672 -31421
           )
-        )
-        (wire
-          (path Component 60
-            34990 -21372
-            35132 -21514
-            35132 -21742
-          )
+          (type protect)
         )
       )
       (net GND
+        (via "Via[0-1]_35:25_mil" 33928 -28421
+          (type protect)
+        )
         (wire
           (path Component 160
             30050 -25150
             28896 -23996
             28654 -23996
           )
+          (type protect)
         )
         (wire
           (path Copper 160
+            31950 -24924
             32388 -24924
             32721 -25257
             33344 -25257
             33500 -25101
           )
+          (type protect)
         )
         (wire
           (path Component 160
@@ -2065,108 +1850,89 @@
             28876 -29376
             30050 -30550
           )
+          (type protect)
         )
         (wire
           (path Component 160
             28050 -28174
             28488 -28174
-          )
-        )
-        (wire
-          (path Component 160
-            28876 -28351
             28665 -28351
-            28488 -28174
+            28876 -28351
           )
+          (type protect)
         )
         (wire
           (path Component 160
             29000 -28351
             28876 -28351
           )
-        )
-        (via "Via[0-1]_35:25_mil" 33928 -28421
+          (type protect)
         )
         (wire
           (path Component 160
             33301 -31600
             32844 -31600
+            32844 -31069
           )
+          (type protect)
         )
         (wire
           (path Component 160
             36500 -27299
             36003 -27299
+            35622 -27680
+            34620 -27680
           )
-        )
-        (wire
-          (path Copper 160
-            31950 -24924
-            32388 -24924
-          )
+          (type protect)
         )
         (wire
           (path Component 160
             28050 -28174
             27100 -28174
           )
+          (type protect)
         )
         (wire
           (path Component 160
+            33074 -32769
             33074 -32988
             33124 -33038
             33124 -33500
           )
+          (type protect)
         )
         (wire
           (path Copper 160
             30050 -30550
             28949 -29449
             28800 -29449
-          )
-        )
-        (wire
-          (path Copper 160
             28800 -28873
-            28800 -29449
           )
+          (type protect)
         )
         (wire
           (path Component 160
             38400 -27476
             37450 -27476
           )
-        )
-        (wire
-          (path Component 160
-            37012 -27476
-            37012 -27314
-            36997 -27299
-          )
-        )
-        (wire
-          (path Component 160
-            36500 -27299
-            36997 -27299
-          )
+          (type protect)
         )
         (wire
           (path Component 160
             37450 -27476
             37012 -27476
+            37012 -27314
+            36997 -27299
+            36500 -27299
           )
+          (type protect)
         )
         (wire
           (path Component 160
             33074 -32550
             33074 -32769
           )
-        )
-        (wire
-          (path Component 160
-            33074 -32769
-            33074 -32988
-          )
+          (type protect)
         )
         (wire
           (path Component 160
@@ -2174,19 +1940,16 @@
             33301 -32542
             33301 -31600
           )
-        )
-        (wire
-          (path Copper 160
-            36650 -26251
-            36551 -26251
-            35450 -25150
-          )
+          (type protect)
         )
         (wire
           (path Copper 160
             36650 -26827
             36650 -26251
+            36551 -26251
+            35450 -25150
           )
+          (type protect)
         )
         (wire
           (path Component 160
@@ -2194,6 +1957,7 @@
             31398 -27998
             30854 -27998
           )
+          (type protect)
         )
         (wire
           (path Component 160
@@ -2201,50 +1965,41 @@
             34084 -26516
             35450 -25150
           )
+          (type protect)
         )
         (wire
           (path Copper 160
             30250 -22250
-            29832 -22250
+            29744 -22250
+            28654 -23340
+            28654 -23996
           )
-        )
-        (wire
-          (path Component 160
-            36003 -27299
-            35622 -27680
-            34620 -27680
-          )
+          (type protect)
         )
         (wire
           (path Copper 160
             33773 -31800
             34349 -31800
+            34349 -30651
+            34382 -30618
           )
+          (type protect)
         )
         (wire
           (path Component 160
             34620 -27680
-            34140 -27680
-          )
-        )
-        (wire
-          (path Component 160
-            34140 -27680
             34084 -27680
           )
-        )
-        (wire
-          (path Component 160
-            31391 -27368
-            31391 -26491
-            30050 -25150
-          )
+          (type protect)
         )
         (wire
           (path Component 160
             30854 -27368
             31391 -27368
+            31391 -26491
+            30050 -25150
           )
+          (type protect)
         )
         (wire
           (path Component 160
@@ -2252,40 +2007,15 @@
             34931 -31069
             32844 -31069
           )
-        )
-        (wire
-          (path Component 160
-            32844 -31069
-            32844 -31600
-          )
-        )
-        (wire
-          (path Copper 160
-            28654 -23996
-            28654 -23340
-            29744 -22250
-            29832 -22250
-          )
+          (type protect)
         )
         (wire
           (path Copper 160
             33500 -25101
-            33997 -25101
-          )
-        )
-        (wire
-          (path Copper 160
-            35450 -25150
             35401 -25101
-            33997 -25101
+            35450 -25150
           )
-        )
-        (wire
-          (path Copper 160
-            34349 -31800
-            34349 -30651
-            34382 -30618
-          )
+          (type protect)
         )
         (wire
           (path Copper 160
@@ -2293,6 +2023,7 @@
             34450 -30550
             35450 -30550
           )
+          (type protect)
         )
         (wire
           (path Copper 160
@@ -2300,6 +2031,7 @@
             33434 -29670
             34382 -30618
           )
+          (type protect)
         )
         (wire
           (path Copper 160
@@ -2307,6 +2039,7 @@
             32693 -29293
             33434 -29293
           )
+          (type protect)
         )
         (wire
           (path Copper 160
@@ -2315,6 +2048,7 @@
             31475 -28075
             32250 -28850
           )
+          (type protect)
         )
         (wire
           (path Copper 160
@@ -2322,6 +2056,7 @@
             33928 -28799
             33928 -28421
           )
+          (type protect)
         )
         (wire
           (path Component 160
@@ -2330,6 +2065,7 @@
             33929 -28421
             33928 -28421
           )
+          (type protect)
         )
         (wire
           (path Component 160
@@ -2338,86 +2074,61 @@
             32411 -30636
             32844 -31069
           )
+          (type protect)
         )
       )
-      (net "N-000012"
+      (net "N-000013"
+        (via "Via[0-1]_25:13_mil" 30021 -27598
+          (type protect)
+        )
         (wire
           (path Copper 60
             30544 -27141
             30215 -27141
+            30215 -27404
+            30021 -27598
           )
+          (type protect)
         )
         (wire
           (path Component 60
             27100 -27426
             27100 -27775
-          )
-        )
-        (wire
-          (path Component 60
-            30021 -27598
             29844 -27775
-            27100 -27775
-          )
-        )
-        (via "Via[0-1]_25:13_mil" 30021 -27598
-        )
-        (wire
-          (path Copper 60
-            30215 -27141
-            30215 -27404
             30021 -27598
           )
+          (type protect)
         )
       )
-      (net "N-000013"
+      (net "N-000014"
         (via "Via[0-1]_25:13_mil" 35902 -27875
+          (type protect)
         )
         (wire
           (path Component 60
             38400 -28224
             38400 -27875
-          )
-        )
-        (wire
-          (path Copper 60
-            35694 -27470
-            35902 -27678
             35902 -27875
           )
-        )
-        (wire
-          (path Component 60
-            38400 -27875
-            35902 -27875
-          )
+          (type protect)
         )
         (wire
           (path Copper 60
             35694 -27141
             35694 -27470
+            35902 -27678
+            35902 -27875
           )
+          (type protect)
         )
       )
-      (net "N-000014"
+      (net "N-000015"
         (via "Via[0-1]_25:13_mil" 31686 -31239
+          (type protect)
         )
         (wire
           (path Component 60
             32376 -33500
-            32725 -33500
-          )
-        )
-        (wire
-          (path Copper 60
-            32041 -30385
-            31712 -30385
-            31686 -30411
-            31686 -31239
-          )
-        )
-        (wire
-          (path Component 60
             32725 -33500
             32725 -31924
             32643 -31842
@@ -2426,15 +2137,45 @@
             31772 -31153
             31686 -31239
           )
+          (type protect)
         )
         (wire
           (path Copper 60
             32041 -30056
             32041 -30385
+            31712 -30385
+            31686 -30411
+            31686 -31239
           )
+          (type protect)
+        )
+      )
+      (net "N-000043"
+        (wire
+          (path Copper 60
+            37150 -26827
+            37150 -27353
+            37365 -27568
+            37365 -29383
+            37349 -29399
+            37273 -29399
+            36813 -29859
+            36813 -30726
+            34957 -32582
+            32471 -32582
+            32253 -32800
+            31727 -32800
+          )
+          (type protect)
         )
       )
       (net "N-000046"
+        (via "Via[0-1]_25:13_mil" 29565 -29437
+          (type protect)
+        )
+        (via "Via[0-1]_25:13_mil" 37172 -29860
+          (type protect)
+        )
         (wire
           (path Component 60
             37172 -29860
@@ -2447,241 +2188,164 @@
             30354 -29437
             29565 -29437
           )
-        )
-        (wire
-          (path Copper 60
-            28300 -28347
-            28957 -28347
-            29565 -28955
-            29565 -29437
-          )
-        )
-        (via "Via[0-1]_25:13_mil" 29565 -29437
-        )
-        (via "Via[0-1]_25:13_mil" 37172 -29860
-        )
-        (wire
-          (path Copper 60
-            37650 -28873
-            37650 -29399
-          )
+          (type protect)
         )
         (wire
           (path Copper 60
             28300 -28873
             28300 -28347
+            28957 -28347
+            29565 -28955
+            29565 -29437
           )
+          (type protect)
         )
         (wire
           (path Copper 60
-            37172 -29860
-            37189 -29860
+            37650 -28873
             37650 -29399
+            37189 -29860
+            37172 -29860
           )
+          (type protect)
         )
       )
-      (net "N-000048"
-        (wire
-          (path Copper 60
-            37150 -26827
-            37150 -27353
-          )
-        )
-        (wire
-          (path Copper 60
-            31727 -32800
-            32253 -32800
-          )
-        )
-        (wire
-          (path Copper 60
-            32253 -32800
-            32471 -32582
-            34957 -32582
-            36813 -30726
-            36813 -29859
-            37273 -29399
-            37349 -29399
-            37365 -29383
-            37365 -27568
-            37150 -27353
-          )
-        )
-      )
-      (net "N-000050"
-        (wire
-          (path Component 60
-            39661 -25430
-            39674 -25430
-            39880 -25224
-          )
-        )
-        (wire
-          (path Component 60
-            40281 -25057
-            40280 -25057
-            40278 -25059
-          )
-        )
-        (wire
-          (path Component 60
-            40278 -25059
-            39880 -25224
-          )
-        )
-      )
-      (net "N-000051"
-        (wire
-          (path Component 60
-            35170 -34761
-            35170 -34774
-            35376 -34980
-          )
-        )
-        (wire
-          (path Component 60
-            35543 -35381
-            35541 -35379
-            35541 -35378
-          )
-        )
-        (wire
-          (path Component 60
-            35541 -35378
-            35376 -34980
-          )
-        )
-      )
-      (net "N-000052"
-        (wire
-          (path Component 60
-            30330 -20939
-            30330 -20826
-            30174 -20670
-          )
-        )
-        (wire
-          (path Component 60
-            30007 -20269
-            30009 -20271
-            30009 -20272
-          )
-        )
-        (wire
-          (path Component 60
-            30009 -20272
-            30174 -20670
-          )
-        )
-      )
-      (net "N-000061"
-        (wire
-          (path Component 60
-            29381 -35202
-            29497 -34822
-          )
-        )
-        (wire
-          (path Component 60
-            29497 -34822
-            29498 -34822
-            29555 -34765
-            29555 -34479
-          )
-        )
-      )
-      (net "N-000062"
-        (wire
-          (path Component 60
-            25839 -30270
-            25826 -30270
-            25620 -30476
-          )
-        )
-        (wire
-          (path Component 60
-            25219 -30643
-            25220 -30643
-            25222 -30641
-          )
-        )
-        (wire
-          (path Component 60
-            25222 -30641
-            25620 -30476
-          )
-        )
-      )
-      (net "N-000069"
-        (wire
-          (path Component 60
-            25825 -24655
-            25825 -24656
-            25836 -24667
-            26155 -24667
-          )
-        )
+      (net "N-000054"
         (wire
           (path Component 60
             25425 -24490
             25425 -24491
             25428 -24491
-          )
-        )
-        (wire
-          (path Component 60
-            25428 -24491
             25825 -24655
+            25825 -24656
+            25836 -24667
+            26155 -24667
           )
+          (type protect)
         )
       )
-      (net "N-000070"
-        (wire
-          (path Component 60
-            35995 -20975
-            35995 -21193
-            35933 -21255
-          )
-        )
+      (net "N-000055"
         (wire
           (path Component 60
             36160 -20575
             36160 -20578
             36159 -20578
-          )
-        )
-        (wire
-          (path Component 60
-            36159 -20578
             35995 -20975
+            35995 -21193
+            35933 -21255
           )
+          (type protect)
         )
       )
-      (net "N-000071"
-        (wire
-          (path Component 60
-            39675 -31045
-            39357 -31045
-            39345 -31033
-          )
-        )
+      (net "N-000056"
         (wire
           (path Component 60
             40075 -31210
             40075 -31209
             40072 -31209
+            39675 -31045
+            39357 -31045
+            39345 -31033
           )
+          (type protect)
         )
+      )
+      (net "N-000059"
         (wire
           (path Component 60
-            40072 -31209
-            39675 -31045
+            25839 -30270
+            25826 -30270
+            25620 -30476
+            25222 -30641
+            25220 -30643
+            25219 -30643
           )
+          (type protect)
+        )
+      )
+      (net "N-000060"
+        (wire
+          (path Component 60
+            30330 -20939
+            30330 -20826
+            30174 -20670
+            30009 -20272
+            30009 -20271
+            30007 -20269
+          )
+          (type protect)
+        )
+      )
+      (net "N-000061"
+        (wire
+          (path Component 60
+            39661 -25430
+            39674 -25430
+            39880 -25224
+            40278 -25059
+            40280 -25057
+            40281 -25057
+          )
+          (type protect)
+        )
+      )
+      (net "N-000062"
+        (wire
+          (path Component 60
+            35170 -34761
+            35170 -34774
+            35376 -34980
+            35541 -35378
+            35541 -35379
+            35543 -35381
+          )
+          (type protect)
+        )
+      )
+      (net "N-000071"
+        (wire
+          (path Component 60
+            29381 -35202
+            29497 -34822
+            29498 -34822
+            29555 -34765
+            29555 -34479
+          )
+          (type protect)
         )
       )
       (net VCC
         (wire
           (path Component 160
+            24949 -27077
+            24949 -27850
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 160
+            24870 -26866
+            24870 -27077
+            24949 -27077
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 160
+            28296 -22054
+            28141 -22209
+          )
+          (type protect)
+        )
+        (via "Via[0-1]_35:25_mil" 31047 -31859
+          (type protect)
+        )
+        (via "Via[0-1]_35:25_mil" 26493 -31995
+          (type protect)
+        )
+        (wire
+          (path Component 160
+            30019 -35398
             30450 -35530
             30450 -35529
             30545 -35434
@@ -2689,6 +2353,7 @@
             30749 -35433
             31031 -35433
           )
+          (type protect)
         )
         (wire
           (path Component 160
@@ -2696,34 +2361,32 @@
             31285 -32097
             31047 -31859
           )
+          (type protect)
         )
         (wire
           (path Component 160
             27400 -31859
             31047 -31859
           )
-        )
-        (wire
-          (path Copper 160
-            31151 -31800
-            31092 -31859
-            31047 -31859
-          )
+          (type protect)
         )
         (wire
           (path Copper 160
             31727 -31800
             31151 -31800
+            31092 -31859
+            31047 -31859
           )
-        )
-        (via "Via[0-1]_35:25_mil" 31047 -31859
+          (type protect)
         )
         (wire
           (path Component 160
+            32326 -32550
             32326 -32168
             32255 -32097
             32199 -32097
           )
+          (type protect)
         )
         (wire
           (path Copper 160
@@ -2731,6 +2394,7 @@
             31326 -24176
             31950 -24176
           )
+          (type protect)
         )
         (wire
           (path Copper 160
@@ -2738,6 +2402,7 @@
             31121 -25721
             31121 -24381
           )
+          (type protect)
         )
         (wire
           (path Copper 160
@@ -2745,6 +2410,7 @@
             30275 -23535
             31121 -24381
           )
+          (type protect)
         )
         (wire
           (path Copper 160
@@ -2753,16 +2419,20 @@
             28768 -24504
             28768 -26219
             28800 -26251
+            28800 -26827
           )
+          (type protect)
         )
         (wire
           (path Copper 160
             29361 -23289
             29361 -23535
           )
+          (type protect)
         )
         (wire
           (path Copper 160
+            36650 -28873
             36650 -28297
             36434 -28297
             35860 -28871
@@ -2771,19 +2441,16 @@
             32750 -27350
             32250 -26850
           )
+          (type protect)
         )
         (wire
           (path Component 160
             30854 -28313
             30318 -28313
-          )
-        )
-        (wire
-          (path Component 160
-            30374 -27683
             30318 -27739
-            30318 -28313
+            30374 -27683
           )
+          (type protect)
         )
         (wire
           (path Component 160
@@ -2792,12 +2459,7 @@
             30374 -27572
             30374 -27683
           )
-        )
-        (wire
-          (path Component 160
-            30019 -35398
-            30450 -35530
-          )
+          (type protect)
         )
         (wire
           (path Component 160
@@ -2805,24 +2467,22 @@
             31328 -35136
             31328 -35100
           )
+          (type protect)
         )
         (wire
           (path Component 160
+            31766 -35730
             31328 -35730
             31031 -35433
           )
-        )
-        (wire
-          (path Copper 160
-            28800 -26827
-            28800 -26251
-          )
+          (type protect)
         )
         (wire
           (path Component 160
             30854 -27683
             30374 -27683
           )
+          (type protect)
         )
         (wire
           (path Component 160
@@ -2831,25 +2491,23 @@
             26576 -26987
             26531 -27032
           )
+          (type protect)
         )
         (wire
           (path Component 160
             28160 -27426
             28326 -27426
             28503 -27249
-          )
-        )
-        (wire
-          (path Component 160
             29000 -27249
-            28503 -27249
           )
+          (type protect)
         )
         (wire
           (path Component 160
             28050 -27426
             28160 -27426
           )
+          (type protect)
         )
         (wire
           (path Component 160
@@ -2857,18 +2515,7 @@
             28450 -22209
             28741 -22500
           )
-        )
-        (wire
-          (path Component 160
-            28141 -22209
-            27986 -22364
-          )
-        )
-        (wire
-          (path Component 160
-            28296 -22054
-            28141 -22209
-          )
+          (type protect)
         )
         (wire
           (path Component 160
@@ -2879,20 +2526,25 @@
             27818 -22079
             27818 -22197
             27986 -22364
+            28141 -22209
           )
+          (type protect)
         )
         (wire
           (path Component 160
-            27448 -22122
+            27210 -22360
             27494 -22076
             27540 -22076
           )
+          (type protect)
         )
         (wire
           (path Component 160
             27540 -22076
             27540 -21919
+            27850 -21609
           )
+          (type protect)
         )
         (wire
           (path Component 160
@@ -2900,71 +2552,44 @@
             28741 -22669
             28741 -22500
           )
-        )
-        (wire
-          (path Component 160
-            28947 -20721
-            28265 -21403
-            28174 -21313
-            28146 -21313
-          )
+          (type protect)
         )
         (wire
           (path Component 160
             29393 -20531
             28947 -20721
-          )
-        )
-        (wire
-          (path Component 160
-            27850 -21609
+            28265 -21403
+            28174 -21313
             28146 -21313
-          )
-        )
-        (wire
-          (path Component 160
             27850 -21609
-            27540 -21919
           )
-        )
-        (wire
-          (path Component 160
-            27210 -22360
-            27448 -22122
-          )
+          (type protect)
         )
         (wire
           (path Component 160
             25175 -25110
-            24993 -25560
-          )
-        )
-        (wire
-          (path Component 160
             24993 -25560
             24994 -25560
             25175 -25741
             25175 -26103
             25500 -26428
           )
+          (type protect)
         )
         (wire
           (path Component 160
             25500 -26866
             25500 -26428
           )
+          (type protect)
         )
         (wire
           (path Component 160
             26130 -26866
             26130 -26428
-          )
-        )
-        (wire
-          (path Component 160
-            26130 -26428
             25500 -26428
           )
+          (type protect)
         )
         (wire
           (path Component 160
@@ -2972,19 +2597,16 @@
             26296 -27032
             26130 -26866
           )
+          (type protect)
         )
         (wire
           (path Component 160
             25481 -31257
             25671 -31703
-          )
-        )
-        (wire
-          (path Component 160
-            26199 -32010
             25892 -31703
-            25671 -31703
+            26199 -32010
           )
+          (type protect)
         )
         (wire
           (path Component 160
@@ -2992,96 +2614,110 @@
             26478 -32010
             26493 -31995
           )
+          (type protect)
         )
         (wire
           (path Component 160
+            26509 -32750
             26199 -32440
             26199 -32010
           )
-        )
-        (wire
-          (path Component 160
-            36197 -35106
-            36610 -34935
-          )
+          (type protect)
         )
         (wire
           (path Component 160
             36157 -35119
             36170 -35106
             36197 -35106
+            36610 -34935
+            36610 -34936
+            36805 -34936
+            37290 -34451
           )
+          (type protect)
         )
         (wire
           (path Component 160
             40325 -30590
             40327 -30590
             40328 -30591
+            40515 -30139
+            40316 -29940
+            40316 -29792
+            40114 -29590
+            40114 -29386
+            40000 -29272
+            40000 -29227
           )
-        )
-        (wire
-          (path Component 160
-            40006 -24403
-            39835 -23990
-          )
+          (type protect)
         )
         (wire
           (path Component 160
             40019 -24443
             40019 -24416
             40006 -24403
+            39835 -23990
+            39571 -23990
+            39419 -23838
+            38938 -23838
+            38897 -23797
+            38856 -23797
           )
+          (type protect)
         )
         (wire
           (path Component 160
             35540 -20325
             35541 -20324
             35541 -20322
+            35089 -20135
+            35011 -20213
+            34559 -20213
+            34471 -20301
+            34338 -20301
+            34180 -20459
+            34180 -20592
+            34172 -20600
           )
-        )
-        (via "Via[0-1]_35:25_mil" 26493 -31995
+          (type protect)
         )
         (wire
           (path Component 160
             31766 -35100
             31328 -35100
           )
-        )
-        (wire
-          (path Component 160
-            35541 -20322
-            35089 -20135
-          )
+          (type protect)
         )
         (wire
           (path Component 160
             33734 -20600
             34172 -20600
           )
-        )
-        (wire
-          (path Component 160
-            40328 -30591
-            40515 -30139
-          )
+          (type protect)
         )
         (wire
           (path Component 160
             27260 -33390
             26784 -32913
+            26783 -32914
+            26673 -32914
+            26509 -32750
           )
+          (type protect)
         )
         (wire
           (path Component 160
             27400 -31859
             27090 -31549
           )
+          (type protect)
         )
         (wire
           (path Component 160
             32750 -20049
             33424 -20049
           )
+          (type protect)
         )
         (wire
           (path Component 160
@@ -3089,6 +2725,7 @@
             33503 -19970
             33424 -20049
           )
+          (type protect)
         )
         (wire
           (path Component 160
@@ -3096,109 +2733,89 @@
             33424 -20290
             33734 -20600
           )
+          (type protect)
         )
         (wire
           (path Component 160
             34172 -20600
             34172 -21230
+            33953 -21230
           )
-        )
-        (wire
-          (path Component 160
-            38717 -22836
-            38827 -22836
-            38991 -23000
-          )
+          (type protect)
         )
         (wire
           (path Component 160
             38240 -22360
             38717 -22836
+            38827 -22836
+            38991 -23000
           )
+          (type protect)
         )
         (wire
           (path Component 160
             38991 -23000
             39301 -23310
+            38856 -23755
           )
+          (type protect)
         )
         (wire
           (path Component 160
             38546 -23446
             38856 -23755
           )
+          (type protect)
         )
         (wire
           (path Component 160
             40551 -27850
             40551 -28316
             40630 -28395
+            40630 -28614
           )
+          (type protect)
         )
         (wire
           (path Component 160
             40630 -28834
             40630 -28614
           )
-        )
-        (wire
-          (path Component 160
-            40630 -28614
-            40630 -28395
-          )
+          (type protect)
         )
         (wire
           (path Component 160
             38240 -33390
             37469 -33390
             37465 -33385
+            37303 -33547
           )
+          (type protect)
         )
         (wire
           (path Component 160
             37600 -34141
             37290 -34451
           )
-        )
-        (wire
-          (path Component 160
-            36610 -34935
-            36610 -34936
-            36805 -34936
-            37290 -34451
-          )
+          (type protect)
         )
         (wire
           (path Component 160
             32750 -35651
             32076 -35651
-          )
-        )
-        (wire
-          (path Component 160
-            31766 -35730
             31997 -35730
-            32076 -35651
+            31766 -35730
           )
+          (type protect)
         )
         (wire
           (path Component 160
             37450 -28326
             37072 -28326
             36997 -28401
+            36500 -28401
           )
-        )
-        (wire
-          (path Component 160
-            32326 -32550
-            32326 -32168
-          )
-        )
-        (wire
-          (path Copper 160
-            36650 -28873
-            36650 -28297
-          )
+          (type protect)
         )
         (wire
           (path Component 160
@@ -3206,18 +2823,23 @@
             31417 -27683
             30854 -27683
           )
+          (type protect)
         )
         (wire
           (path Component 160
             33224 -24500
             33224 -24062
+            33409 -23877
+            33409 -22773
           )
+          (type protect)
         )
         (wire
           (path Component 160
             38100 -23891
             38255 -24046
           )
+          (type protect)
         )
         (wire
           (path Component 160
@@ -3225,6 +2847,7 @@
             37006 -33250
             36709 -33250
           )
+          (type protect)
         )
         (wire
           (path Component 160
@@ -3232,6 +2855,7 @@
             33250 -21933
             33250 -22250
           )
+          (type protect)
         )
         (wire
           (path Component 160
@@ -3240,97 +2864,69 @@
             38444 -23857
             38255 -24046
           )
+          (type protect)
         )
         (wire
           (path Component 160
             34620 -28630
             35157 -28630
-          )
-        )
-        (wire
-          (path Component 160
-            36003 -28401
             35386 -28401
-            35157 -28630
+            36500 -28401
           )
+          (type protect)
         )
         (wire
           (path Component 160
             37450 -28224
             37450 -28326
           )
-        )
-        (wire
-          (path Component 160
-            39301 -23310
-            38856 -23755
-          )
-        )
-        (wire
-          (path Component 160
-            37303 -33547
-            37465 -33385
-          )
-        )
-        (wire
-          (path Component 160
-            36997 -28401
-            36500 -28401
-          )
-        )
-        (wire
-          (path Component 160
-            36500 -28401
-            36003 -28401
-          )
+          (type protect)
         )
         (wire
           (path Component 160
             36845 -34005
             37154 -33696
           )
+          (type protect)
         )
         (wire
           (path Component 160
             37154 -33696
             37303 -33547
           )
+          (type protect)
         )
         (wire
           (path Component 160
             36845 -34005
             37290 -34451
           )
+          (type protect)
         )
         (wire
           (path Copper 160
             31950 -24176
             31950 -23778
+            32076 -23778
+            32906 -22948
           )
-        )
-        (wire
-          (path Component 160
-            31766 -35730
-            31328 -35730
-          )
+          (type protect)
         )
         (wire
           (path Component 160
             39370 -28834
             39370 -29272
-          )
-        )
-        (wire
-          (path Component 160
+            39955 -29272
             40000 -29227
-            40000 -29272
           )
+          (type protect)
         )
         (wire
           (path Component 160
             31657 -34470
             32020 -34107
           )
+          (type protect)
         )
         (wire
           (path Component 160
@@ -3340,40 +2936,32 @@
             36334 -34059
             36555 -34059
             36609 -34005
-            36844 -34005
             36845 -34005
           )
+          (type protect)
         )
         (wire
           (path Component 160
             32020 -34107
             31928 -34015
             31928 -32550
-          )
-        )
-        (wire
-          (path Component 160
             32326 -32550
-            31928 -32550
           )
+          (type protect)
         )
         (wire
           (path Component 160
             32199 -31600
             32199 -32097
           )
+          (type protect)
         )
         (wire
           (path Component 160
             33734 -21230
             33953 -21230
           )
-        )
-        (wire
-          (path Component 160
-            33953 -21230
-            34172 -21230
-          )
+          (type protect)
         )
         (wire
           (path Component 160
@@ -3381,37 +2969,29 @@
             39208 -28672
             38848 -28672
           )
-        )
-        (wire
-          (path Component 160
-            39370 -29272
-            39955 -29272
-            40000 -29227
-          )
+          (type protect)
         )
         (wire
           (path Component 160
             38856 -23797
             38733 -23920
           )
+          (type protect)
         )
         (wire
           (path Component 160
             31766 -34470
             31657 -34470
           )
+          (type protect)
         )
         (wire
           (path Component 160
             31657 -34470
             31328 -34470
-          )
-        )
-        (wire
-          (path Component 160
             31328 -35100
-            31328 -34470
           )
+          (type protect)
         )
         (wire
           (path Component 160
@@ -3419,29 +2999,21 @@
             37796 -28672
             37450 -28326
           )
+          (type protect)
         )
         (wire
           (path Component 160
             38856 -23755
-            38856 -23756
             38856 -23797
           )
-        )
-        (wire
-          (path Component 160
-            38856 -23797
-            38897 -23797
-            38938 -23838
-            39419 -23838
-            39571 -23990
-            39835 -23990
-          )
+          (type protect)
         )
         (wire
           (path Component 160
             40000 -29227
             40000 -28834
           )
+          (type protect)
         )
         (wire
           (path Component 160
@@ -3449,36 +3021,15 @@
             40220 -28614
             40630 -28614
           )
-        )
-        (wire
-          (path Component 160
-            24870 -26866
-            24870 -27077
-          )
-        )
-        (wire
-          (path Component 160
-            24949 -27850
-            24949 -27176
-          )
+          (type protect)
         )
         (wire
           (path Copper 160
             33500 -23999
             33500 -23542
+            32906 -22948
           )
-        )
-        (wire
-          (path Component 160
-            24949 -27077
-            24949 -27176
-          )
-        )
-        (wire
-          (path Component 160
-            24870 -27077
-            24949 -27077
-          )
+          (type protect)
         )
         (wire
           (path Component 160
@@ -3486,45 +3037,30 @@
             25289 -27077
             25500 -26866
           )
-        )
-        (wire
-          (path Component 160
-            26784 -32913
-            26783 -32914
-            26673 -32914
-            26509 -32750
-          )
-        )
-        (wire
-          (path Component 160
-            26509 -32750
-            26199 -32440
-          )
+          (type protect)
         )
         (wire
           (path Component 160
             26954 -32304
             26645 -31995
           )
+          (type protect)
         )
         (wire
           (path Component 160
             26645 -31995
             26493 -31995
           )
-        )
-        (wire
-          (path Copper 160
-            27077 -33004
-            27077 -32579
-            26493 -31995
-          )
+          (type protect)
         )
         (wire
           (path Copper 160
             27386 -33314
             27077 -33004
+            27077 -32579
+            26493 -31995
           )
+          (type protect)
         )
         (wire
           (path Component 160
@@ -3533,13 +3069,7 @@
             37494 -24046
             38255 -24046
           )
-        )
-        (wire
-          (path Component 160
-            33224 -24062
-            33409 -23877
-            33409 -22773
-          )
+          (type protect)
         )
         (wire
           (path Component 160
@@ -3547,22 +3077,7 @@
             33409 -22409
             33250 -22250
           )
-        )
-        (wire
-          (path Component 160
-            40000 -29272
-            40114 -29386
-            40114 -29590
-            40316 -29792
-            40316 -29940
-            40515 -30139
-          )
-        )
-        (wire
-          (path Copper 160
-            32906 -22948
-            33500 -23542
-          )
+          (type protect)
         )
         (wire
           (path Copper 160
@@ -3570,13 +3085,7 @@
             33250 -22604
             32906 -22948
           )
-        )
-        (wire
-          (path Copper 160
-            32906 -22948
-            32076 -23778
-            31950 -23778
-          )
+          (type protect)
         )
         (wire
           (path Component 160
@@ -3588,18 +3097,7 @@
             38848 -26315
             38848 -28672
           )
-        )
-        (wire
-          (path Component 160
-            35089 -20135
-            35011 -20213
-            34559 -20213
-            34471 -20301
-            34338 -20301
-            34180 -20459
-            34180 -20592
-            34172 -20600
-          )
+          (type protect)
         )
         (wire
           (path Component 160
@@ -3607,6 +3105,7 @@
             26645 -31994
             27090 -31549
           )
+          (type protect)
         )
         (wire
           (path Component 160
@@ -3618,6 +3117,7 @@
             27301 -31338
             27090 -31549
           )
+          (type protect)
         )
       )
     )
