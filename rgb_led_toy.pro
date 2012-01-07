@@ -1,4 +1,4 @@
-update=Wed 21 Dec 2011 03:18:25 PM CET
+update=Sat 07 Jan 2012 04:05:48 PM CET
 last_client=pcbnew
 [common]
 NetDir=
@@ -87,10 +87,10 @@ TxtModV=400
 TxtModH=400
 TxtModW=80
 VEgarde=40
-DrawLar=150
-EdgeLar=150
+DrawLar=80
+EdgeLar=80
 TxtLar=80
-MSegLar=120
+MSegLar=80
 LastNetListRead=rgb_led_toy.net
 [pcbnew/libraries]
 LibDir=
