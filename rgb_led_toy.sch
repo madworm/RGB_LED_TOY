@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sat 07 Jan 2012 09:49:16 PM CET
+EESchema Schematic File Version 2  date Tue 10 Jan 2012 11:49:42 AM CET
 LIBS:power
 LIBS:atmega8_168_328_TQFP
 LIBS:my_parts
@@ -36,7 +36,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 1
 Title "RGB LED Toy"
-Date "7 jan 2012"
+Date "10 jan 2012"
 Rev "2.0.d"
 Comp "2012 - My 2muF - blog.spitzenpfeil.org"
 Comment1 ""
@@ -572,7 +572,7 @@ Text Label 1800 5400 2    60   ~ 0
 RXI
 Text Label 1800 5500 2    60   ~ 0
 VCC
-Text Label 1800 5700 2    60   ~ 0
+Text Label 1800 5200 2    60   ~ 0
 DTR
 Text Label 4050 4250 3    60   ~ 0
 DTR
@@ -590,7 +590,7 @@ TXO
 Text Label 1450 2000 2    60   ~ 0
 RXI
 NoConn ~ 1850 5600
-Text Label 1800 5200 2    60   ~ 0
+Text Label 1800 5700 2    60   ~ 0
 GND
 $Comp
 L CONN_6 P3
@@ -599,7 +599,7 @@ P 2200 5450
 F 0 "P3" V 2150 5450 60  0000 C CNN
 F 1 "FTDI" V 2250 5450 60  0000 C CNN
 	1    2200 5450
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Text Label 4050 3400 0    60   ~ 0
 SDA

@@ -1,4 +1,4 @@
-# EESchema Netlist Version 1.1 created  Sat 07 Jan 2012 09:37:02 PM CET
+# EESchema Netlist Version 1.1 created  Tue 10 Jan 2012 11:49:39 AM CET
 (
  ( /49EB6692 -C0805 C1 100nF
   ( 1 VCC )
@@ -254,10 +254,10 @@
  )
  ( /4EF1D431 SIL-6 P3 FTDI
   ( 1 GND )
-  ( 2 /TXO )
-  ( 3 /RXI )
-  ( 4 VCC )
-  ( 5 ? )
+  ( 2 ? )
+  ( 3 VCC )
+  ( 4 /RXI )
+  ( 5 /TXO )
   ( 6 /DTR )
  )
  ( /49EB58E2 -R0805 R1 10k
