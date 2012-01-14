@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Wed 11 Jan 2012 03:03:35 PM CET
+EESchema Schematic File Version 2  date Sat 14 Jan 2012 07:17:03 PM CET
 LIBS:power
 LIBS:atmega8_168_328_TQFP
 LIBS:my_parts
@@ -36,7 +36,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 1
 Title "RGB LED Toy"
-Date "11 jan 2012"
+Date "14 jan 2012"
 Rev "2.0.d"
 Comp "2012 - My 2muF - blog.spitzenpfeil.org"
 Comment1 ""
@@ -44,8 +44,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-NoConn ~ 3950 2100
-NoConn ~ 1550 2200
 Connection ~ 3750 5400
 Connection ~ 3350 5400
 Connection ~ 2950 5400
@@ -407,6 +405,10 @@ Connection ~ 3550 5400
 Wire Wire Line
 	2750 5400 4150 5400
 Connection ~ 3950 5400
+Wire Wire Line
+	1450 2600 1550 2600
+NoConn ~ 3950 2100
+NoConn ~ 1550 2200
 NoConn ~ 1550 2700
 NoConn ~ 1550 2500
 NoConn ~ 1550 2400
@@ -562,7 +564,7 @@ F 1 "R" V 2750 6250 50  0000 C CNN
 	1    2750 6250
 	1    0    0    -1  
 $EndComp
-Text Label 1550 2600 2    60   ~ 0
+Text Label 1450 2600 2    60   ~ 0
 led0
 Text Label 1800 5300 2    60   ~ 0
 TXO
