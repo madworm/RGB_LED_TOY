@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPCB (2011-07-08)-stable date = Sat 14 Jan 2012 07:17:14 PM CET
+Cmp-Mod V01 Created by CvPcb (2012-jan-04)-stable date = Tue 08 May 2012 05:45:27 PM CEST
 
 BeginCmp
 TimeStamp = /49EB6692;
@@ -369,6 +369,13 @@ TimeStamp = /4EEF8D25;
 Reference = RV3;
 ValeurCmp = 4k7;
 IdModule  = MADW__TC33X-POT;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FA922E7;
+Reference = U1;
+ValeurCmp = MADW__TSOP38238;
+IdModule  = SIL-3;
 EndCmp
 
 EndListe

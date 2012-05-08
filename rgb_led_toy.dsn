@@ -1,9 +1,9 @@
-(pcb /black_hole/home/robert/Electronics/Arduino/KiCAD/Projects/RGB_LED_TOY/rgb_led_toy.dsn
+(pcb /home/robert/Electronics/Arduino/KiCAD/Projects/RGB_LED_TOY/rgb_led_toy.dsn
   (parser
     (string_quote ")
     (space_in_quoted_tokens on)
-    (host_cad "Kicad's PCBNEW")
-    (host_version "(2011-07-08)-stable")
+    (host_cad "KiCad's Pcbnew")
+    (host_version "(2012-jan-04)-stable")
   )
   (resolution mil 10)
   (unit mil)
@@ -39,7 +39,15 @@
     )
   )
   (placement
+    (component MADW__mounting_hole_3mm
+      (place MH4 3545 -3055 front 0 (PN CONN_1))
+      (place MH2 3545 -2515 front 0 (PN CONN_1))
+      (place MH1 3005 -2515 front 0 (PN CONN_1))
+      (place MH3 3005 -3055 front 0 (PN CONN_1))
+    )
     (component LOGO
+      (place G3 2555 -2550 back 180 (PN LOGO))
+      (place G4 3990 -2550 back 180 (PN LOGO))
       (place G1 3545 -3250 front 0 (PN LOGO))
       (place G2 3005 -3250 front 0 (PN LOGO))
     )
@@ -62,16 +70,10 @@
     )
     (component -R0805
       (place R5 2710 -2780 front 270 (PN 600R))
-      (place R1 3285 -2450 front 0 (PN 10k))
+      (place R1 3284.2 -2450 front 0 (PN 10k))
       (place R3 3275 -3350 front 0 (PN 600R))
       (place R2 2765 -3305 back 225 (PN 10k))
       (place R4 3840 -2785 front 90 (PN 600R))
-    )
-    (component MADW__mounting_hole_3mm
-      (place MH1 3005 -2515 front 0 (PN CONN_1))
-      (place MH2 3545 -2515 front 0 (PN CONN_1))
-      (place MH3 3005 -3055 front 0 (PN CONN_1))
-      (place MH4 3545 -3055 front 0 (PN CONN_1))
     )
     (component -C0805
       (place C1 3195 -2455 back 90 (PN 100nF))
@@ -124,8 +126,18 @@
       (place D13 2995 -2110 front 113 (PN LED))
       (place D15 2600 -3065 front 203 (PN LED))
     )
+    (component "SIL-3"
+      (place U1 3275.6 -2307.1 front 0 (PN MADW__TSOP38238))
+    )
   )
   (library
+    (image MADW__mounting_hole_3mm
+      (outline (path signal 15  90 0  85.5 -27.8  72.8 -52.9  52.9 -72.8  27.8 -85.5  0 -90
+            -27.8 -85.5  -52.9 -72.8  -72.8 -52.9  -85.5 -27.8  -90 0  -85.5 27.8
+            -72.8 52.9  -52.9 72.8  -27.8 85.5  0 90  27.8 85.5  52.9 72.8
+            72.8 52.9  85.5 27.8))
+      (pin Round[A]Pad_165.4_mil 1 0 0)
+    )
     (image LOGO
     )
     (image -CHIPLED_0805
@@ -375,13 +387,6 @@
       (pin Rect[T]Pad_51.1x59_mil 1 -37.4 0)
       (pin Rect[T]Pad_51.1x59_mil 2 37.4 0)
     )
-    (image MADW__mounting_hole_3mm
-      (outline (path signal 15  90 0  85.5 -27.8  72.8 -52.9  52.9 -72.8  27.8 -85.5  0 -90
-            -27.8 -85.5  -52.9 -72.8  -72.8 -52.9  -85.5 -27.8  -90 0  -85.5 27.8
-            -72.8 52.9  -52.9 72.8  -27.8 85.5  0 90  27.8 85.5  52.9 72.8
-            72.8 52.9  85.5 27.8))
-      (pin Round[A]Pad_160_mil 1 0 0)
-    )
     (image -C0805
       (outline (path signal 2.6  -42.9 -28.5  -13.4 -28.5))
       (outline (path signal 2.6  -13.4 -28.5  -13.4 28.5))
@@ -566,9 +571,19 @@
       (pin Rect[T]Pad_47.2x47.2_mil 1 0 -41.3)
       (pin Rect[T]Pad_47.2x47.2_mil 2 0 41.3)
     )
-    (padstack Round[A]Pad_160_mil
-      (shape (circle Component 160))
-      (shape (circle Copper 160))
+    (image "SIL-3"
+      (outline (path signal 12  -150 -50  -150 50))
+      (outline (path signal 12  -150 50  150 50))
+      (outline (path signal 12  150 50  150 -50))
+      (outline (path signal 12  150 -50  -150 -50))
+      (outline (path signal 12  -50 50  -50 -50))
+      (pin Rect[A]Pad_55x55_mil 1 -100 0)
+      (pin Round[A]Pad_55_mil 2 0 0)
+      (pin Round[A]Pad_55_mil 3 100 0)
+    )
+    (padstack Round[A]Pad_165.4_mil
+      (shape (circle Component 165.4))
+      (shape (circle Copper 165.4))
       (attach off)
     )
     (padstack Round[A]Pad_55_mil
@@ -650,6 +665,9 @@
   (network
     (net /DTR
       (pins C3-2 P3-6)
+    )
+    (net /INT0
+      (pins IC1-32 U1-1)
     )
     (net /LATCH
       (pins IC1-14 IC3-4 IC4-4 IC2-4)
@@ -778,17 +796,17 @@
       (pins D16-2 IC1-10 D9-2 D10-2 D11-2 D12-2 D13-2 D14-2 D15-2)
     )
     (net GND
-      (pins IC1-5 IC1-3 IC1-21 JP1-6 IC3-1 IC4-1 R5-2 IC2-1 R3-2 R4-2 MH1-1 MH2-1
-        MH3-1 MH4-1 C1-2 C4-2 C2-2 P3-1 P1-3 C7-2 C9-2 C6-2 C8-2 C5-2)
+      (pins MH4-1 MH2-1 MH1-1 MH3-1 IC1-5 IC1-3 IC1-21 JP1-6 IC3-1 IC4-1 R5-2 IC2-1
+        R3-2 R4-2 C1-2 C4-2 C2-2 P3-1 P1-3 C7-2 C9-2 C6-2 C8-2 C5-2 U1-2)
     )
-    (net "N-000013"
-      (pins R5-1 RV3-3)
-    )
-    (net "N-000014"
+    (net "N-000002"
       (pins R4-1 RV2-3)
     )
-    (net "N-000015"
+    (net "N-000003"
       (pins R3-1 RV1-3)
+    )
+    (net "N-000015"
+      (pins R5-1 RV3-3)
     )
     (net "N-000043"
       (pins IC3-2 IC2-14)
@@ -796,26 +814,26 @@
     (net "N-000046"
       (pins IC3-14 IC4-2)
     )
-    (net "N-000054"
+    (net "N-000051"
       (pins R11-1 D14-1)
     )
-    (net "N-000055"
+    (net "N-000052"
       (pins R9-1 D12-1)
     )
-    (net "N-000056"
+    (net "N-000053"
       (pins R7-1 D10-1)
     )
-    (net "N-000059"
-      (pins R10-1 D13-1)
-    )
-    (net "N-000060"
+    (net "N-000057"
       (pins R8-1 D11-1)
     )
-    (net "N-000061"
+    (net "N-000059"
       (pins R6-1 D9-1)
     )
-    (net "N-000070"
+    (net "N-000060"
       (pins R12-1 D15-1)
+    )
+    (net "N-000061"
+      (pins R10-1 D13-1)
     )
     (net "N-000071"
       (pins D16-1 R13-1)
@@ -825,12 +843,12 @@
         P3-3 P1-4 C7-1 C9-1 C6-1 C8-1 C5-1 D1-4 D1-5 D1-6 D1-6@1 D2-4 D2-5 D2-6 D2-6@1
         D3-4 D3-5 D3-6 D3-6@1 D4-4 D4-5 D4-6 D4-6@1 D5-4 D5-5 D5-6 D5-6@1 D6-4 D6-5
         D6-6 D6-6@1 D7-4 D7-5 D7-6 D7-6@1 D8-4 D8-5 D8-6 D8-6@1 R6-2 R7-2 R8-2 R9-2
-        R10-2 R11-2 R12-2 R13-2)
+        R10-2 R11-2 R12-2 R13-2 U1-3)
     )
-    (class kicad_default "" /DTR /LATCH /MISO /MOSI /OE /PC0 /PC1 /PC2 /PC3
-      /R.1 /R.2 /R.3 /RESET /RXI /SCK /SCL /SDA /TXO /led0 "N-000013" "N-000014"
-      "N-000015" "N-000043" "N-000046" "N-000054" "N-000055" "N-000056" "N-000059"
-      "N-000060" "N-000061" "N-000070" "N-000071"
+    (class kicad_default "" /DTR /INT0 /LATCH /MISO /MOSI /OE /PC0 /PC1 /PC2
+      /PC3 /R.1 /R.2 /R.3 /RESET /RXI /SCK /SCL /SDA /TXO /led0 "N-000002"
+      "N-000003" "N-000015" "N-000043" "N-000046" "N-000051" "N-000052" "N-000053"
+      "N-000057" "N-000059" "N-000060" "N-000061" "N-000071"
       (circuit
         (use_via Via[0-1]_25:13_mil)
       )

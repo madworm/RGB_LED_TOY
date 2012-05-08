@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sat 14 Jan 2012 07:17:03 PM CET
+EESchema Schematic File Version 2  date Tue 08 May 2012 05:44:56 PM CEST
 LIBS:power
 LIBS:atmega8_168_328_TQFP
 LIBS:my_parts
@@ -36,14 +36,29 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 1
 Title "RGB LED Toy"
-Date "14 jan 2012"
-Rev "2.0.d"
+Date "8 may 2012"
+Rev "2.0.e"
 Comp "2012 - My 2muF - blog.spitzenpfeil.org"
 Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Connection ~ 1400 6900
+Wire Wire Line
+	1250 6950 1250 6850
+Wire Wire Line
+	1250 6850 1400 6850
+Wire Wire Line
+	1400 6850 1400 7200
+Connection ~ 1400 7000
+Wire Wire Line
+	1450 7000 1400 7000
+Wire Wire Line
+	1450 2200 1550 2200
+Connection ~ 2850 850 
+Wire Wire Line
+	1550 850  2850 850 
 Connection ~ 3750 5400
 Connection ~ 3350 5400
 Connection ~ 2950 5400
@@ -107,11 +122,6 @@ Wire Wire Line
 	1150 5750 1200 5750
 Wire Wire Line
 	1150 5150 1200 5150
-Wire Wire Line
-	1400 7000 1450 7000
-Wire Wire Line
-	1450 7200 1400 7200
-Connection ~ 1400 7000
 Wire Wire Line
 	7250 6550 7300 6550
 Wire Wire Line
@@ -331,14 +341,6 @@ Wire Wire Line
 Wire Wire Line
 	6150 6550 6200 6550
 Wire Wire Line
-	1400 7200 1400 6900
-Connection ~ 1400 7100
-Wire Wire Line
-	1400 7100 1450 7100
-Wire Wire Line
-	1450 6900 1350 6900
-Connection ~ 1400 6900
-Wire Wire Line
 	1200 5250 1150 5250
 Wire Wire Line
 	1150 5650 1200 5650
@@ -407,8 +409,51 @@ Wire Wire Line
 Connection ~ 3950 5400
 Wire Wire Line
 	1450 2600 1550 2600
+Wire Wire Line
+	1550 1550 1650 1550
+Wire Wire Line
+	1650 1550 1650 1650
+Wire Wire Line
+	1550 1200 1650 1200
+Wire Wire Line
+	1400 7200 1450 7200
+Wire Wire Line
+	1400 6900 1450 6900
+Wire Wire Line
+	1450 7100 1400 7100
+Connection ~ 1400 7100
+$Comp
+L GND #PWR01
+U 1 1 4FA93F65
+P 1250 6950
+F 0 "#PWR01" H 1250 6950 30  0001 C CNN
+F 1 "GND" H 1250 6880 30  0001 C CNN
+	1    1250 6950
+	1    0    0    -1  
+$EndComp
+Text Label 1450 2200 2    60   ~ 0
+INT0
+Text Label 1650 1200 0    60   ~ 0
+INT0
+$Comp
+L GND #PWR02
+U 1 1 4FA92301
+P 1650 1650
+F 0 "#PWR02" H 1650 1650 30  0001 C CNN
+F 1 "GND" H 1650 1580 30  0001 C CNN
+	1    1650 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L MADW__TSOP38238 U1
+U 1 1 4FA922E7
+P 1150 1200
+F 0 "U1" H 1100 1650 60  0000 C CNN
+F 1 "MADW__TSOP38238" H 1200 700 60  0000 C CNN
+	1    1150 1200
+	1    0    0    -1  
+$EndComp
 NoConn ~ 3950 2100
-NoConn ~ 1550 2200
 NoConn ~ 1550 2700
 NoConn ~ 1550 2500
 NoConn ~ 1550 2400
@@ -695,8 +740,6 @@ Text Label 6950 4600 0    60   ~ 0
 VCC
 Text Label 6450 4600 2    60   ~ 0
 GND
-Text Label 1350 6900 2    60   ~ 0
-GND
 $Comp
 L CONN_1 MH4
 U 1 1 4EEF99A9
@@ -734,19 +777,19 @@ F 1 "CONN_1" H 1600 6955 30  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG01
+L PWR_FLAG #FLG03
 U 1 1 4EEF9904
 P 2950 4550
-F 0 "#FLG01" H 2950 4820 30  0001 C CNN
+F 0 "#FLG03" H 2950 4820 30  0001 C CNN
 F 1 "PWR_FLAG" H 2950 4780 30  0000 C CNN
 	1    2950 4550
 	0    1    1    0   
 $EndComp
 $Comp
-L PWR_FLAG #FLG02
+L PWR_FLAG #FLG04
 U 1 1 4EEF98EB
 P 3050 1050
-F 0 "#FLG02" H 3050 1320 30  0001 C CNN
+F 0 "#FLG04" H 3050 1320 30  0001 C CNN
 F 1 "PWR_FLAG" H 3050 1280 30  0000 C CNN
 	1    3050 1050
 	0    1    1    0   
@@ -1176,10 +1219,10 @@ VCC
 Text Label 2750 4700 0    60   ~ 0
 GND
 $Comp
-L GND #PWR03
+L GND #PWR05
 U 1 1 49EB3A7A
 P 2750 4750
-F 0 "#PWR03" H 2750 4750 30  0001 C CNN
+F 0 "#PWR05" H 2750 4750 30  0001 C CNN
 F 1 "GND" H 2750 4680 30  0001 C CNN
 	1    2750 4750
 	1    0    0    -1  
@@ -1187,10 +1230,10 @@ $EndComp
 Text Label 2850 850  0    60   ~ 0
 VCC
 $Comp
-L VCC #PWR04
+L VCC #PWR06
 U 1 1 49EB3A61
 P 2850 700
-F 0 "#PWR04" H 2850 800 30  0001 C CNN
+F 0 "#PWR06" H 2850 800 30  0001 C CNN
 F 1 "VCC" H 2850 800 30  0000 C CNN
 	1    2850 700 
 	1    0    0    -1  
