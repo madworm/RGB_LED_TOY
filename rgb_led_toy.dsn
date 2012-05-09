@@ -40,7 +40,7 @@
   )
   (placement
     (component LOGO
-      (place G*** 3725 -3225 back 180 (PN LOGO))
+      (place G3 3700 -3255 back 270 (PN LOGO))
       (place G1 3545 -3250 front 0 (PN LOGO))
       (place G2 3005 -3250 front 0 (PN LOGO))
     )
@@ -132,7 +132,7 @@
       (place R13 2970 -3530 front 343 (PN R))
     )
     (component "SIL-3"
-      (place U1 3275 -2325 front 0 (PN MADW__TSOP38238))
+      (place U1 3275 -2325 front 180 (PN MADW__TSOP38238))
     )
   )
   (library
