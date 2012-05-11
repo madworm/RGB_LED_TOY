@@ -43,7 +43,7 @@
       (place U1 3275 -2325 front 180 (PN MADW__TSOP38238))
     )
     (component LOGO
-      (place G3 3700 -3255 back 270 (PN LOGO))
+      (place G3 3715 -3275 back 270 (PN LOGO))
       (place G1 3545 -3250 front 0 (PN LOGO))
       (place G2 3005 -3250 front 0 (PN LOGO))
     )
@@ -877,7 +877,7 @@
       (pins IC4-12 D8-1)
     )
     (net /OE
-      (pins IC1-9 IC3-13 IC4-13 IC2-13 R2-2)
+      (pins IC1-1 IC3-13 IC4-13 IC2-13 R2-2)
     )
     (net /PC0
       (pins IC1-23 P2-1)
@@ -934,35 +934,35 @@
     (net "N-000007"
       (pins R5-1 RV3-3)
     )
-    (net "N-000049"
-      (pins IC3-14 IC4-2)
-    )
-    (net "N-000050"
+    (net "N-000042"
       (pins IC3-2 IC2-14)
     )
+    (net "N-000046"
+      (pins IC3-14 IC4-2)
+    )
     (net "N-000051"
-      (pins D15-1 R12-1)
+      (pins D14-1 R11-1)
     )
     (net "N-000052"
-      (pins D13-1 R10-1)
+      (pins D12-1 R9-1)
     )
     (net "N-000053"
+      (pins D10-1 R7-1)
+    )
+    (net "N-000056"
+      (pins D13-1 R10-1)
+    )
+    (net "N-000057"
       (pins D11-1 R8-1)
     )
-    (net "N-000054"
+    (net "N-000058"
       (pins D9-1 R6-1)
     )
     (net "N-000059"
+      (pins D15-1 R12-1)
+    )
+    (net "N-000071"
       (pins D16-1 R13-1)
-    )
-    (net "N-000061"
-      (pins D10-1 R7-1)
-    )
-    (net "N-000062"
-      (pins D12-1 R9-1)
-    )
-    (net "N-000063"
-      (pins D14-1 R11-1)
     )
     (net VCC
       (pins U1-3 D4-4 D4-5 D4-6 D4-6@1 D5-4 D5-5 D5-6 D5-6@1 IC1-6 IC1-4 IC1-18 JP1-2
@@ -973,8 +973,8 @@
     )
     (class kicad_default "" /DTR /INT0 /LATCH /MISO /MOSI /OE /PC0 /PC1 /PC2
       /PC3 /R.1 /R.2 /R.3 /RESET /RXI /SCK /SCL /SDA /TXO /led0 "N-000002"
-      "N-000003" "N-000007" "N-000049" "N-000050" "N-000051" "N-000052" "N-000053"
-      "N-000054" "N-000059" "N-000061" "N-000062" "N-000063"
+      "N-000003" "N-000007" "N-000042" "N-000046" "N-000051" "N-000052" "N-000053"
+      "N-000056" "N-000057" "N-000058" "N-000059" "N-000071"
       (circuit
         (use_via Via[0-1]_25:13_mil)
       )
