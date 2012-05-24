@@ -1,4 +1,4 @@
-update=Sat 12 May 2012 04:58:56 PM CEST
+update=Thu 24 May 2012 04:45:39 PM CEST
 last_client=pcbnew
 [common]
 NetDir=
@@ -76,9 +76,9 @@ LibName30=valves
 LibName31=atmel
 [pcbnew]
 version=1
-PadDrlX=0
-PadDimH=400
-PadDimV=400
+PadDrlX=320
+PadDimH=550
+PadDimV=550
 BoardThickness=630
 TxtPcbV=400
 TxtPcbH=400
