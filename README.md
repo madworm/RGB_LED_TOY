@@ -6,6 +6,9 @@ LAYOUT FILES: Led ring board with 8 RGB LEDs driven by an ATmega168-20AU TQFP-32
 
 You will find code for this project in [this](https://github.com/madworm/rgb_led_toy_test) repository.
 
+[![RGB_LED_TOY](/Docs/V2.1-aka_smaug-01.jpg)](/Docs/V2.1-aka_smaug-01.jpg)
+[![RGB_LED_TOY](/Docs/V2.1-aka_smaug-02.jpg)](/Docs/V2.1-aka_smaug-02.jpg)
+
 
 ---
 
