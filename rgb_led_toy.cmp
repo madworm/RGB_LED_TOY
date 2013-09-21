@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by PcbNew date = Sat 21 Sep 2013 02:04:04 AM CEST
+Cmp-Mod V01 Created by PcbNew date = Sun 22 Sep 2013 12:44:51 AM CEST
 
 BeginCmp
 TimeStamp = /49EB6692;
@@ -151,54 +151,61 @@ BeginCmp
 TimeStamp = /4EEF999D;
 Reference = MH1;
 ValeurCmp = CONN_1;
-IdModule  = MADW__mounting_hole_3mm;
+IdModule  = MADW__mounting_hole_2mm;
 EndCmp
 
 BeginCmp
 TimeStamp = /4EEF99A3;
 Reference = MH2;
 ValeurCmp = CONN_1;
-IdModule  = MADW__mounting_hole_3mm;
+IdModule  = MADW__mounting_hole_2mm;
 EndCmp
 
 BeginCmp
 TimeStamp = /4EEF99A6;
 Reference = MH3;
 ValeurCmp = CONN_1;
-IdModule  = MADW__mounting_hole_3mm;
+IdModule  = MADW__mounting_hole_2mm;
 EndCmp
 
 BeginCmp
 TimeStamp = /4EEF99A9;
 Reference = MH4;
 ValeurCmp = CONN_1;
-IdModule  = MADW__mounting_hole_3mm;
+IdModule  = MADW__mounting_hole_2mm;
 EndCmp
 
 BeginCmp
-TimeStamp = /523C92F5;
-Reference = NJ1;
-ValeurCmp = NET-JOIN;
-IdModule  = MADW__SMD-net-noin-0.5mm;
-EndCmp
-
-BeginCmp
-TimeStamp = /4EF1D268;
+TimeStamp = /523DFB20;
 Reference = P1;
-ValeurCmp = I2C;
-IdModule  = MADW__SIL-4;
+ValeurCmp = CONN_8;
+IdModule  = MADW__SIL-8-1.27mm;
 EndCmp
 
 BeginCmp
-TimeStamp = /4EF1D26D;
+TimeStamp = /523DFB46;
 Reference = P2;
-ValeurCmp = PORTC;
-IdModule  = MADW__SIL-4;
+ValeurCmp = CONN_8;
+IdModule  = MADW__SIL-8-1.27mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /523DFB34;
+Reference = P3;
+ValeurCmp = CONN_8;
+IdModule  = MADW__SIL-8-1.27mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /523DFB4C;
+Reference = P4;
+ValeurCmp = CONN_8;
+IdModule  = MADW__SIL-8-1.27mm;
 EndCmp
 
 BeginCmp
 TimeStamp = /4EF1D431;
-Reference = P3;
+Reference = P5;
 ValeurCmp = FTDI;
 IdModule  = MADW__SIL-6;
 EndCmp
@@ -208,13 +215,6 @@ TimeStamp = /49EB58E2;
 Reference = R1;
 ValeurCmp = 10k;
 IdModule  = MADW__R0805;
-EndCmp
-
-BeginCmp
-TimeStamp = /4FA922E7;
-Reference = U1;
-ValeurCmp = MADW__TSOP38238;
-IdModule  = MADW__SIL-3;
 EndCmp
 
 EndListe
