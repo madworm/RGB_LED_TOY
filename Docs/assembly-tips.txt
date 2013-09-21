@@ -1,7 +1,0 @@
-
-* Flux is your friend.
-* Get some 'blue-tack' or similar putty-like stuff to keep the board from moving.
-* The RGB LEDs are __very__ heat sensitive. Start with 250°C and slowly increase temperature if necessary.
-
-* You __must__ solder the ISP header before the AVR chip. Make sure it is flush with the other side,
-  otherwise the AVR won't fit (you could use a custom plug with pogo-pins as an alternative).

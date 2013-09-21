@@ -36,26 +36,16 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "RGB LED Toy"
-Date "11 may 2012"
-Rev "2.1"
-Comp "2012 - My 2muF - blog.spitzenpfeil.org"
+Title "RGB LED Ring"
+Date "21 Sep 2013"
+Rev "3.0"
+Comp "2013 - blog.spitzenpfeil.org"
 Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
 NoConn ~ 1550 2500
-Connection ~ 1400 6900
-Wire Wire Line
-	1250 6950 1250 6850
-Wire Wire Line
-	1250 6850 1400 6850
-Wire Wire Line
-	1400 6850 1400 7200
-Connection ~ 1400 7000
-Wire Wire Line
-	1450 7000 1400 7000
 Wire Wire Line
 	1450 2200 1550 2200
 Connection ~ 2850 850 
@@ -174,25 +164,7 @@ Wire Wire Line
 	1650 1550 1650 1650
 Wire Wire Line
 	1550 1200 1650 1200
-Wire Wire Line
-	1400 7200 1450 7200
-Wire Wire Line
-	1400 6900 1450 6900
-Wire Wire Line
-	1450 7100 1400 7100
-Connection ~ 1400 7100
 NoConn ~ 3950 2600
-$Comp
-L GND #PWR01
-U 1 1 4FA93F65
-P 1250 6950
-F 0 "#PWR01" H 1250 6950 30  0001 C CNN
-F 1 "GND" H 1250 6880 30  0001 C CNN
-F 2 "" H 1250 6950 60  0001 C CNN
-F 3 "" H 1250 6950 60  0001 C CNN
-	1    1250 6950
-	1    0    0    -1  
-$EndComp
 Text Label 1450 2200 2    60   ~ 0
 INT0
 Text Label 1650 1200 0    60   ~ 0
@@ -249,7 +221,7 @@ Text Label 1450 2000 2    60   ~ 0
 RXI
 NoConn ~ 1850 5600
 Text Label 1800 5700 2    60   ~ 0
-GND
+GNDP
 $Comp
 L CONN_6 P3
 U 1 1 4EF1D431
@@ -297,7 +269,7 @@ PC1
 Text Label 1200 5850 0    60   ~ 0
 PC0
 Text Label 1200 5250 0    60   ~ 0
-GND
+GNDP
 Text Label 1200 5150 0    60   ~ 0
 VCC
 $Comp
@@ -441,7 +413,7 @@ MISO
 Text Label 1950 6350 0    60   ~ 0
 MOSI
 Text Label 1950 6450 0    60   ~ 0
-GND
+GNDP
 Text Label 1950 6250 0    60   ~ 0
 VCC
 $Comp
@@ -995,4 +967,10 @@ Wire Wire Line
 	3400 6000 3400 6150
 Wire Wire Line
 	3650 6000 3650 6150
+Text Label 3850 5400 0    60   ~ 0
+GNDP
+NoConn ~ 1450 6900
+NoConn ~ 1450 7000
+NoConn ~ 1450 7100
+NoConn ~ 1450 7200
 $EndSCHEMATC
