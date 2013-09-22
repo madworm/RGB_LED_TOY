@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by PcbNew date = Sun 22 Sep 2013 12:44:51 AM CEST
+Cmp-Mod V01 Created by CvPcb (2013-09-20 BZR 4325)-product date = Sun 22 Sep 2013 12:21:52 PM CEST
 
 BeginCmp
 TimeStamp = /49EB6692;
@@ -78,9 +78,9 @@ IdModule  = MADW__C0805;
 EndCmp
 
 BeginCmp
-TimeStamp = /49EB35FB;
+TimeStamp = /523E29D8;
 Reference = IC1;
-ValeurCmp = AT168;
+ValeurCmp = ATMEGA328-A;
 IdModule  = MADW__TQFP_32_7x7;
 EndCmp
 
@@ -208,6 +208,13 @@ TimeStamp = /4EF1D431;
 Reference = P5;
 ValeurCmp = FTDI;
 IdModule  = MADW__SIL-6;
+EndCmp
+
+BeginCmp
+TimeStamp = /523EC524;
+Reference = Q1;
+ValeurCmp = 16MHz;
+IdModule  = MADW__murata-resonator_CSTCE-G;
 EndCmp
 
 BeginCmp

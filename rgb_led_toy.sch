@@ -30,6 +30,7 @@ LIBS:siliconi
 LIBS:contrib
 LIBS:valves
 LIBS:atmel
+LIBS:murata-resonators
 LIBS:rgb_led_toy-cache
 EELAYER 24 0
 EELAYER END
@@ -781,9 +782,9 @@ VCC
 Text Label 3050 5900 2    60   ~ 0
 VCC
 Text Label 3050 6000 2    60   ~ 0
-PB6
+XTAL1
 Text Label 3050 6100 2    60   ~ 0
-PB7
+XTAL2
 Text Label 3900 5400 2    60   ~ 0
 PD5
 Text Label 3900 5500 2    60   ~ 0
@@ -855,9 +856,9 @@ PB1
 Text Label 3050 1250 0    60   ~ 0
 PB2
 Text Label 3050 1650 0    60   ~ 0
-PB6
+XTAL1
 Text Label 3050 1750 0    60   ~ 0
-PB7
+XTAL2
 Wire Wire Line
 	2950 1150 3050 1150
 Wire Wire Line
@@ -971,4 +972,36 @@ Connection ~ 950  3350
 Wire Wire Line
 	1050 3250 950  3250
 Connection ~ 950  3250
+$Comp
+L CSTLA_T Q1
+U 1 1 523EC524
+P 3750 4150
+F 0 "Q1" H 3550 4300 50  0000 L BNN
+F 1 "16MHz" H 3700 4300 50  0000 L BNN
+F 2 "murata-resonators-CSTLA_T" H 3750 4300 50  0001 C CNN
+F 3 "" H 3750 4150 60  0000 C CNN
+	1    3750 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR013
+U 1 1 523EC53D
+P 3750 4550
+F 0 "#PWR013" H 3750 4550 30  0001 C CNN
+F 1 "GND" H 3750 4480 30  0001 C CNN
+F 2 "" H 3750 4550 60  0000 C CNN
+F 3 "" H 3750 4550 60  0000 C CNN
+	1    3750 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 4450 3750 4550
+Text Label 3450 4150 2    60   ~ 0
+XTAL1
+Text Label 4050 4150 0    60   ~ 0
+XTAL2
+Wire Wire Line
+	3950 4150 4050 4150
+Wire Wire Line
+	3450 4150 3550 4150
 $EndSCHEMATC
