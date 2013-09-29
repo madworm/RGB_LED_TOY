@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/robert/Electronics/Arduino/KiCAD/Projects/RGB_LED_TOY/rgb_led_toy.sch)
-    (date "Sun 29 Sep 2013 01:18:01 PM CEST")
+    (date "Sun 29 Sep 2013 07:56:39 PM CEST")
     (tool "eeschema (2013-09-28 BZR 4356)-product"))
   (components
     (comp (ref C3)
@@ -307,10 +307,10 @@
   (libraries
     (library (logical my_parts)
       (uri /home/robert/Arduino/KiCAD/LIBS/my_parts.lib))
-    (library (logical device)
-      (uri /usr/share/kicad/library/device.lib))
     (library (logical conn)
       (uri /usr/share/kicad/library/conn.lib))
+    (library (logical device)
+      (uri /usr/share/kicad/library/device.lib))
     (library (logical atmel)
       (uri /usr/share/kicad/library/atmel.lib))
     (library (logical murata-resonators)
