@@ -1,9 +1,9 @@
-(kicad_pcb (version 3) (host pcbnew "(2013-09-28 BZR 4356)-product")
+(kicad_pcb (version 3) (host pcbnew "(2014-02-21 BZR 4711)-product")
 
   (general
     (links 97)
     (no_connects 0)
-    (area 57.244578 44.798578 109.125422 96.679422)
+    (area 58.181086 48.971999 108.188915 92.506001)
     (thickness 1.6002)
     (drawings 56)
     (tracks 340)
@@ -16,7 +16,7 @@
   (title_block
     (title "RGB LED Ring")
     (date "21 Sep 2013")
-    (rev 3.0.b)
+    (rev 3.0.c)
     (company "2013 - blog.spitzenpfeil.org")
   )
 
