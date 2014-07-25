@@ -1,0 +1,14 @@
+
+Bill of materials:
+------------------
+
+C1,C3		ceramic capacitor, 100nF, 0805, min. 10V
+C2		ceramic capacitor, 10µF,  0805, min. 10V
+C4-C11  	ceramic capacitor, 4.7µF, 0805, min. 10V
+R1		resistor, 10k, 0805
+IC1		ATMEGA168-A, TQFP32
+JP1		3x2-pin header, male, 0.1in
+LED1-LED8: 	WS2812B, PLCC4-5050
+P5		1x6-pin header, male, 0.1in
+Q1		resonator, 16MHz, Murata, CSTCE16M0V53-R0
+
